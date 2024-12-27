@@ -10,22 +10,23 @@ const companies = [
   { 
     id: '1', 
     name: 'Google WE Scholar', 
-    logo: '/placeholder.svg?height=100&width=100',
+    logo: '/google logo.png',
     students: [
-      { id: '1', name: 'Alice Johnson', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
-      { id: '2', name: 'Bob Smith', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
-      { id: '3', name: 'Charlie Brown', year: 2, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
-      { id: '4', name: 'Diana Lee', year: 3, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
+      { id: '1', name: 'Devika Jain', year: 2024, branch: 'AI-ML', image: '/we/devikawe.jpg' },
+      { id: '2', name: 'Sakshi Soni', year: 2024, branch: 'CSE', image: '/we/sakshiwe.jpg' },
+      { id: '3', name: 'Ishita Narang', year: 2023, branch: 'IT', image: '/we/ishitawe.jpg' },
+      { id: '4', name: 'Saumya Johar', year: 2022, branch: 'CSE', image: '/we/saumyawe.jpg' },
+      { id: '5', name: 'Bhumika Gupta', year: 2022, branch: 'CSE', image: '/we/bhumikawe.jpg' },
     ]
   },
   { 
     id: '2', 
     name: 'Google STEP', 
-    logo: '/placeholder.svg?height=100&width=100',
+    logo: '/google logo.png',
     students: [
-      { id: '1', name: 'MAHAK', year: 2, branch: 'CSE AI', image: '/placeholder.svg?height=200&width=200' },
+      { id: '1', name: 'MAHAK', year: 2025, branch: 'CSE AI', image: '/placeholder.svg?height=200&width=200' },
       { id: '2', name: 'Bob Smith', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
-      { id: '3', name: 'Charlie Brown', year: 2, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
+      { id: '3', name: 'Bhumika Gupta', year: 2023, branch: 'CSE', image: '/we/bhumikawe.jpg' },
       { id: '4', name: 'Diana Lee', year: 3, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
     ]
   },
@@ -51,12 +52,12 @@ const companies = [
   },
   { 
     id: '5', 
-    name: 'Uber she++/STAR', 
+    name: 'Uber STAR', 
     logo: '/placeholder.svg?height=100&width=100',
     students: [
-      { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
-      { id: '6', name: 'Frank White', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
-      { id: '7', name: 'Grace Taylor', year: 2, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
+      { id: '1', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
+      { id: '2', name: 'Namita Arya', year: 2022, branch: 'CSE', image: '/placeholder.svg?height=200&width=200' },
+      { id: '3', name: 'Chaynika Arora', year: 2022, branch: 'ECE', image: '/uber/chaynikauber.jpg' },
     ]
   },
   { 
@@ -66,7 +67,7 @@ const companies = [
     students: [
       { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
       { id: '6', name: 'Frank White', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
-      { id: '7', name: 'Grace Taylor', year: 2, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
+      { id: '3', name: 'Chaynika Arora', year: 2022, branch: 'ECE', image: '/uber/chaynikauber.jpg' },
     ]
   },
 ]
@@ -130,7 +131,7 @@ export default function CompanyPage() {
           ))}
         </select>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         {filteredStudents.map((student) => (
           <StudentCard key={student.id} {...student} />
         ))}
