@@ -1,8 +1,7 @@
 {
     "functions": {
-      "my-app/app/api/placements/*.ts": {
-        "includeFiles": "data/**"
-      }
+        "app/api/placements/*.ts": {
+            "includeFiles": "data/**"
+        }
     }
-  }
-  
+}
