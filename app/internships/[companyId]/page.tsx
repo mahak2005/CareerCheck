@@ -9,18 +9,7 @@ import StudentCard from '@/components/StudentCard'
 const companies = [
   { 
     id: '1', 
-    name: 'TechCorp', 
-    logo: '/placeholder.svg?height=100&width=100',
-    students: [
-      { id: '1', name: 'Alice Johnson', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
-      { id: '2', name: 'Bob Smith', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
-      { id: '3', name: 'Charlie Brown', year: 2, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
-      { id: '4', name: 'Diana Lee', year: 3, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
-    ]
-  },
-  { 
-    id: '4', 
-    name: 'TechCorp', 
+    name: 'Google WE Scholar', 
     logo: '/placeholder.svg?height=100&width=100',
     students: [
       { id: '1', name: 'Alice Johnson', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
@@ -31,7 +20,48 @@ const companies = [
   },
   { 
     id: '2', 
-    name: 'InnoSoft', 
+    name: 'Google STEP', 
+    logo: '/placeholder.svg?height=100&width=100',
+    students: [
+      { id: '1', name: 'MAHAK', year: 2, branch: 'CSE AI', image: '/placeholder.svg?height=200&width=200' },
+      { id: '2', name: 'Bob Smith', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
+      { id: '3', name: 'Charlie Brown', year: 2, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
+      { id: '4', name: 'Diana Lee', year: 3, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
+    ]
+  },
+  { 
+    id: '3', 
+    name: 'DeSHAW', 
+    logo: '/placeholder.svg?height=100&width=100',
+    students: [
+      { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
+      { id: '6', name: 'Frank White', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
+      { id: '7', name: 'Grace Taylor', year: 2, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
+    ]
+  },
+  { 
+    id: '4', 
+    name: 'NPX Wit Scholar', 
+    logo: '/placeholder.svg?height=100&width=100',
+    students: [
+      { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
+      { id: '6', name: 'Frank White', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
+      { id: '7', name: 'Grace Taylor', year: 2, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
+    ]
+  },
+  { 
+    id: '5', 
+    name: 'Uber she++/STAR', 
+    logo: '/placeholder.svg?height=100&width=100',
+    students: [
+      { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
+      { id: '6', name: 'Frank White', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
+      { id: '7', name: 'Grace Taylor', year: 2, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
+    ]
+  },
+  { 
+    id: '6', 
+    name: 'LinkedIN Coachin', 
     logo: '/placeholder.svg?height=100&width=100',
     students: [
       { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
@@ -83,7 +113,7 @@ export default function CompanyPage() {
       <div className="mb-4 flex flex-wrap gap-4">
         <select 
           onChange={(e) => setYearFilter(e.target.value ? Number(e.target.value) : null)}
-          className="border rounded-md p-2"
+          className="border rounded-md p-2 text-black"
         >
           <option value="">All Years</option>
           {years.map(year => (
@@ -92,7 +122,7 @@ export default function CompanyPage() {
         </select>
         <select 
           onChange={(e) => setBranchFilter(e.target.value || null)}
-          className="border rounded-md p-2"
+          className="border rounded-md p-2 text-black"
         >
           <option value="">All Branches</option>
           {branches.map(branch => (
@@ -108,42 +138,4 @@ export default function CompanyPage() {
     </div>
   )
 }
-
-// import { notFound } from 'next/navigation'
-// import CompanyPage from '@/components/CompanyPage'
-
-// // Mock data for companies and selected students
-// const companies = [
-//   { 
-//     id: '1', 
-//     name: 'TechCorp', 
-//     logo: '/placeholder.svg?height=100&width=100',
-//     students: [
-//       { id: '1', name: 'Alice Johnson', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
-//       { id: '2', name: 'Bob Smith', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
-//       { id: '3', name: 'Charlie Brown', year: 2, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
-//       { id: '4', name: 'Diana Lee', year: 3, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
-//     ]
-//   },
-//   { 
-//     id: '2', 
-//     name: 'InnoSoft', 
-//     logo: '/placeholder.svg?height=100&width=100',
-//     students: [
-//       { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
-//       { id: '6', name: 'Frank White', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
-//       { id: '7', name: 'Grace Taylor', year: 2, branch: 'Mechanical Engineering', image: '/placeholder.svg?height=200&width=200' },
-//     ]
-//   },
-// ]
-
-// export default function Page({ params }: { params: { companyId: string } }) {
-//   const company = companies.find(c => c.id === params.companyId)
-
-//   if (!company) {
-//     notFound()
-//   }
-
-//   return <CompanyPage company={company} />
-// }
 
