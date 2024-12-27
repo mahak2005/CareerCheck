@@ -10,7 +10,7 @@ export interface PlacementRecord {
 
 export async function readCSVFile(year: string, branch: string): Promise<PlacementRecord[]> {
   try {
-    const filePath = `public/data/${year}/${branch.toLowerCase()}.csv`
+    const filePath = `data/${year}/${branch.toLowerCase()}.csv`
     const fileContent = await fs.readFile(filePath, 'utf-8')
     return parse(fileContent, {
       columns: true,
