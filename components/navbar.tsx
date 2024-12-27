@@ -17,14 +17,14 @@ export function Navbar() {
             <Link href="/placements" className="hover:text-gray-300">
               Placements
             </Link>
-            <Link href="/student-profile" className="hover:text-gray-300">
-              Student Profile
-            </Link>
             <Link href="/analytics" className="hover:text-gray-300">
               Analytics
             </Link>
             <Link href="/internships" className="hover:text-gray-300">
               Internships
+            </Link>
+            <Link href="/student-profile" className="hover:text-gray-300">
+              Alumni Connect
             </Link>
           </div>
         </div>
