@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/*.ts": {
+      "my-app/app/api/**/*.ts": {
         "includeFiles": "data/**"
       }
     }
