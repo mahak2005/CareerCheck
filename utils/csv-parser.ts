@@ -5,13 +5,16 @@ export interface PlacementRecord {
   RollNumber: string
   Name: string
   FinalOffer: string
-  "CTC (Lakh)": string
+  "CTC (LPA)": string
 }
 
 export async function readCSVFile(year: string, branch: string): Promise<PlacementRecord[]> {
   try {
     if (branch === 'cumulative') {
       const branches = ['cse', 'it', 'ece', 'mae'];
+      if (year === '2023') {
+        branches.push('barch');
+      }
       let allData: PlacementRecord[] = [];
       for (const b of branches) {
         const filePath = `data/${year}/${b}.csv`;
@@ -60,7 +63,7 @@ export function filterPlacementData(
 
     // CTC range filter
     if (filters.ctcRange?.min || filters.ctcRange?.max) {
-      const ctc = parseFloat(record["CTC (Lakh)"])
+      const ctc = parseFloat(record["CTC (LPA)"])
       if (
         filters.ctcRange.min &&
         ctc < parseFloat(filters.ctcRange.min)

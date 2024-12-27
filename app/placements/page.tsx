@@ -30,7 +30,15 @@ export default function PlacementsPage() {
   const [placementData, setPlacementData] = useState<PlacementRecord[]>([])
   const [loading, setLoading] = useState(false)
 
-  // Fetch data whenever filters change
+  const branches = [
+    { value: "cumulative", label: "Cumulative" },
+    { value: "cse", label: "CSE" },
+    { value: "it", label: "IT" },
+    { value: "ece", label: "ECE" },
+    { value: "mae", label: "MAE" },
+    ...(selectedYear === "2023" ? [{ value: "barch", label: "B.Arch" }] : []),
+  ]
+
   useEffect(() => {
     async function fetchData() {
       setLoading(true)
@@ -60,6 +68,12 @@ export default function PlacementsPage() {
     fetchData()
   }, [selectedYear, selectedBranch, searchName, selectedCompanies, ctcRange])
 
+  useEffect(() => {
+    if (selectedYear !== "2023" && selectedBranch === "barch") {
+      setSelectedBranch("cumulative")
+    }
+  }, [selectedYear, selectedBranch])
+
   return (
     <div className="min-h-screen bg-gray-950 text-gray-50">
       <Navbar />
@@ -79,14 +93,8 @@ export default function PlacementsPage() {
           </div>
 
           {/* Branch Selection */}
-          <div className="flex gap-4">
-            {[
-              { value: "cumulative", label: "Cumulative" },
-              { value: "cse", label: "CSE" },
-              { value: "it", label: "IT" },
-              { value: "ece", label: "ECE" },
-              { value: "mae", label: "MAE" },
-            ].map((branch) => (
+          <div className="flex flex-wrap gap-4">
+            {branches.map((branch) => (
               <Button
                 key={branch.value}
                 variant={selectedBranch === branch.value ? "default" : "secondary"}
@@ -113,10 +121,10 @@ export default function PlacementsPage() {
             <div className="space-y-2">
               <label className="text-sm font-medium">Filter by Companies</label>
               <Select
-                onValueChange={(value) => 
-                  setSelectedCompanies(prev => 
-                    prev.includes(value) 
-                      ? prev.filter(c => c !== value)
+                onValueChange={(value) =>
+                  setSelectedCompanies((prev) =>
+                    prev.includes(value)
+                      ? prev.filter((c) => c !== value)
                       : [...prev, value]
                   )
                 }
@@ -125,21 +133,25 @@ export default function PlacementsPage() {
                   <SelectValue placeholder="Select companies" />
                 </SelectTrigger>
                 <SelectContent>
-                  {Array.from(new Set(placementData.map(d => d.FinalOffer))).map((company) => (
-                    <SelectItem key={company} value={company}>
-                      {company}
-                    </SelectItem>
-                  ))}
+                  {Array.from(new Set(placementData.map((d) => d.FinalOffer))).map(
+                    (company) => (
+                      <SelectItem key={company} value={company}>
+                        {company}
+                      </SelectItem>
+                    )
+                  )}
                 </SelectContent>
               </Select>
               {selectedCompanies.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-2">
-                  {selectedCompanies.map(company => (
+                  {selectedCompanies.map((company) => (
                     <Button
                       key={company}
                       variant="secondary"
                       size="sm"
-                      onClick={() => setSelectedCompanies(prev => prev.filter(c => c !== company))}
+                      onClick={() =>
+                        setSelectedCompanies((prev) => prev.filter((c) => c !== company))
+                      }
                     >
                       {company} ×
                     </Button>
@@ -183,7 +195,7 @@ export default function PlacementsPage() {
                     <TableHead>Roll Number</TableHead>
                     <TableHead>Name</TableHead>
                     <TableHead>Final Offer</TableHead>
-                    <TableHead>CTC (Lakh)</TableHead>
+                    <TableHead>CTC (LPA)</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -192,7 +204,7 @@ export default function PlacementsPage() {
                       <TableCell>{row.RollNumber}</TableCell>
                       <TableCell>{row.Name}</TableCell>
                       <TableCell>{row.FinalOffer}</TableCell>
-                      <TableCell>{row["CTC (Lakh)"]}</TableCell>
+                      <TableCell>{row["CTC (LPA)"]}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
