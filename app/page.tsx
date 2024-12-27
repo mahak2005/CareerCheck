@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/navbar"
-
+import { redirect } from 'next/navigation'
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-950 text-gray-50">
@@ -10,9 +10,12 @@ export default function HomePage() {
           <p className="text-xl text-gray-400">
             Explore placement statistics and career opportunities at IGDTUW
           </p>
+          
         </div>
       </main>
     </div>
   )
 }
+
+
 
