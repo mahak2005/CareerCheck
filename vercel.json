@@ -1,6 +1,6 @@
 {
     "functions": {
-      "my-app/app/api/placements/route.ts": {
+      "my-app/app/api/placements/*.ts": {
         "includeFiles": "data/**"
       }
     }
