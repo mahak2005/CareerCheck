@@ -1,4 +1,5 @@
 import { parse } from 'csv-parse/sync'
+import fs from 'fs/promises'
 
 export interface PlacementRecord {
   RollNumber: string
@@ -9,15 +10,8 @@ export interface PlacementRecord {
 
 export async function readCSVFile(year: string, branch: string): Promise<PlacementRecord[]> {
   try {
-    const filePath = `/data/${year}/${branch.toLowerCase()}.csv` // No need for 'public' here
-    const response = await fetch(filePath)
-    
-    if (!response.ok) {
-      throw new Error(`Failed to fetch file from ${filePath}`)
-    }
-
-    const fileContent = await response.text()
-
+    const filePath = `public/data/${year}/${branch.toLowerCase()}.csv`
+    const fileContent = await fs.readFile(filePath, 'utf-8')
     return parse(fileContent, {
       columns: true,
       skip_empty_lines: true
@@ -70,3 +64,4 @@ export function filterPlacementData(
     return true
   })
 }
+
