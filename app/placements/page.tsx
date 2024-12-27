@@ -23,8 +23,8 @@ import type { PlacementRecord } from "@/utils/csv-parser"
 
 export default function PlacementsPage() {
   const [selectedYear, setSelectedYear] = useState("2023")
-  const [selectedBranch, setSelectedBranch] = useState("all")
-  const [searchRollNo, setSearchRollNo] = useState("")
+  const [selectedBranch, setSelectedBranch] = useState("cumulative")
+  const [searchName, setSearchName] = useState("")
   const [selectedCompanies, setSelectedCompanies] = useState<string[]>([])
   const [ctcRange, setCtcRange] = useState({ min: "", max: "" })
   const [placementData, setPlacementData] = useState<PlacementRecord[]>([])
@@ -43,7 +43,7 @@ export default function PlacementsPage() {
           body: JSON.stringify({
             year: selectedYear,
             branch: selectedBranch,
-            rollNumber: searchRollNo,
+            name: searchName,
             companies: selectedCompanies,
             ctcRange: ctcRange,
           }),
@@ -58,7 +58,7 @@ export default function PlacementsPage() {
     }
 
     fetchData()
-  }, [selectedYear, selectedBranch, searchRollNo, selectedCompanies, ctcRange])
+  }, [selectedYear, selectedBranch, searchName, selectedCompanies, ctcRange])
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-50">
@@ -81,7 +81,7 @@ export default function PlacementsPage() {
           {/* Branch Selection */}
           <div className="flex gap-4">
             {[
-              { value: "all", label: "Cumulative" },
+              { value: "cumulative", label: "Cumulative" },
               { value: "cse", label: "CSE" },
               { value: "it", label: "IT" },
               { value: "ece", label: "ECE" },
@@ -99,13 +99,13 @@ export default function PlacementsPage() {
 
           {/* Search Filters */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Roll Number Search */}
+            {/* Name Search */}
             <div className="space-y-2">
-              <label className="text-sm font-medium">Search by Roll Number</label>
+              <label className="text-sm font-medium">Search by Name</label>
               <Input
-                placeholder="Enter Roll Number"
-                value={searchRollNo}
-                onChange={(e) => setSearchRollNo(e.target.value)}
+                placeholder="Enter Name"
+                value={searchName}
+                onChange={(e) => setSearchName(e.target.value)}
               />
             </div>
 

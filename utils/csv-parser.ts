@@ -10,30 +10,44 @@ export interface PlacementRecord {
 
 export async function readCSVFile(year: string, branch: string): Promise<PlacementRecord[]> {
   try {
-    const filePath = `data/${year}/${branch.toLowerCase()}.csv`
-    const fileContent = await fs.readFile(filePath, 'utf-8')
-    return parse(fileContent, {
-      columns: true,
-      skip_empty_lines: true
-    }) as PlacementRecord[]
+    if (branch === 'cumulative') {
+      const branches = ['cse', 'it', 'ece', 'mae'];
+      let allData: PlacementRecord[] = [];
+      for (const b of branches) {
+        const filePath = `data/${year}/${b}.csv`;
+        const fileContent = await fs.readFile(filePath, 'utf-8');
+        allData = allData.concat(parse(fileContent, {
+          columns: true,
+          skip_empty_lines: true
+        }) as PlacementRecord[]);
+      }
+      return allData;
+    } else {
+      const filePath = `data/${year}/${branch.toLowerCase()}.csv`;
+      const fileContent = await fs.readFile(filePath, 'utf-8');
+      return parse(fileContent, {
+        columns: true,
+        skip_empty_lines: true
+      }) as PlacementRecord[];
+    }
   } catch (error) {
-    console.error(`Error reading CSV file: ${error}`)
-    return []
+    console.error(`Error reading CSV file: ${error}`);
+    return [];
   }
 }
 
 export function filterPlacementData(
   data: PlacementRecord[],
   filters: {
-    rollNumber?: string
+    name?: string
     companies?: string[]
     ctcRange?: { min: string; max: string }
   }
 ): PlacementRecord[] {
   return data.filter((record) => {
-    // Roll number filter
-    if (filters.rollNumber && !record.RollNumber.includes(filters.rollNumber)) {
-      return false
+    // Name filter
+    if (filters.name && !record.Name.toLowerCase().includes(filters.name.toLowerCase())) {
+      return false;
     }
 
     // Companies filter

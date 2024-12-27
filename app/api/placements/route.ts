@@ -6,7 +6,7 @@ export async function POST(request: Request) {
     const {
       year,
       branch,
-      rollNumber,
+      name,
       companies,
       ctcRange
     } = await request.json()
@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     
     // Apply filters
     data = filterPlacementData(data, {
-      rollNumber,
+      name,
       companies,
       ctcRange
     })
