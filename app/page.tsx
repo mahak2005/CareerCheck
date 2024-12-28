@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-center mb-8 text-gray-100">Welcome to Career Check</h1>
           <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
             Empowering students and professionals to make informed career decisions. 
-            Explore our placement history and see how we've helped shape successful careers.
+            Explore our placement history and see how we have helped shape successful careers.
           </p>
 
           <section className="mb-16">
