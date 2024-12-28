@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion'
+import { useEffect, useRef } from 'react'
 
 interface TimelineEvent {
   year: number
@@ -9,15 +9,14 @@ interface TimelineEvent {
   totalStudents: number
   topCompany: string
   visited: number
-  
 }
 
 const timelineData: TimelineEvent[] = [
-  { year: 2024, highestCTC: "56 LPA (Adobe)",totalStudents: 485 , topCompany: "MotorQ, Microsoft, Adobe, Google", visited:135},
-  { year: 2023, highestCTC: "82 LPA (Atlassian)",totalStudents: 475,  topCompany: "Microsoft, Atlassian, Palo Alto",  visited:128 },
-  { year: 2022, highestCTC: "120 LPA (Amazon Dublin)",totalStudents: 460, topCompany: "Amazon, Microsoft, Rippling", visited:116  },
-  { year: 2021, highestCTC: "59.45 LPA (Google)",totalStudents: 304, topCompany: "Microsoft, Google, JPMC", visited:85 },
-  { year: 2020, highestCTC: "43.3 LPA (Microsoft IDC)", totalStudents: 316 , topCompany: "Optum,Microsoft, Adobe ", visited:96 },
+  { year: 2024, highestCTC: "56 LPA (Adobe)", totalStudents: 485, topCompany: "MotorQ, Microsoft, Adobe, Google", visited: 135 },
+  { year: 2023, highestCTC: "82 LPA (Atlassian)", totalStudents: 475, topCompany: "Microsoft, Atlassian, Palo Alto", visited: 128 },
+  { year: 2022, highestCTC: "120 LPA (Amazon Dublin)", totalStudents: 460, topCompany: "Amazon, Microsoft, Rippling", visited: 116 },
+  { year: 2021, highestCTC: "59.45 LPA (Google)", totalStudents: 304, topCompany: "Microsoft, Google, JPMC", visited: 85 },
+  { year: 2020, highestCTC: "43.3 LPA (Microsoft IDC)", totalStudents: 316, topCompany: "Optum, Microsoft, Adobe", visited: 96 },
 ]
 
 const TimelineItem = ({ event, isLeft }: { event: TimelineEvent, isLeft: boolean }) => {
@@ -40,9 +39,7 @@ const TimelineItem = ({ event, isLeft }: { event: TimelineEvent, isLeft: boolean
         hidden: { opacity: 0, x: isLeft ? -50 : 50 },
         visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
       }}
-      className={`mb-8 flex justify-between items-center w-full ${
-        isLeft ? 'flex-row-reverse left-timeline' : 'right-timeline'
-      }`}
+      className={`mb-8 flex justify-between items-center w-full ${isLeft ? 'flex-row-reverse' : ''}`}
     >
       <div className="order-1 w-5/12"></div>
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-4 h-4 rounded-full">
@@ -52,7 +49,7 @@ const TimelineItem = ({ event, isLeft }: { event: TimelineEvent, isLeft: boolean
         <h3 className="mb-3 font-bold text-gray-800 text-xl">{event.year}</h3>
         <p className="text-sm leading-snug tracking-wide text-gray-700 text-opacity-100">
           Highest CTC: {event.highestCTC}<br />
-          Total Students Placed: {event. totalStudents}<br />
+          Total Students Placed: {event.totalStudents}<br />
           Top Recruiters: {event.topCompany} <br />
           Total Recruiters Visited: {event.visited}<br />
         </p>
@@ -73,4 +70,3 @@ export default function PlacementTimeline() {
     </div>
   )
 }
-
