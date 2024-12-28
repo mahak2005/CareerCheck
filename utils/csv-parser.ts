@@ -1,3 +1,63 @@
+
+// export interface AnalyticsData {
+//   Company: string;
+//   "CTC (INR)": number;
+//   "FTE Offers": number;
+//   Year: string;
+// }
+
+// export interface InternshipData {
+//   "Company Name": string;
+//   Stipend: number;
+//   "Internship Offers": number;
+//   Year: string;
+// }
+
+// export async function fetchAnalyticsData(year: string) {
+//   try {
+//     const response = await fetch(`/data/analytics_${year}.json`);
+//     if (!response.ok) {
+//       throw new Error(`HTTP error! status: ${response.status}`);
+//     }
+//     return await response.json() as AnalyticsData[];
+//   } catch (error) {
+//     console.error(`Error fetching analytics data for ${year}:`, error);
+//     return [];
+//   }
+// }
+
+// export async function fetchInternshipData(year: string) {
+//   try {
+//     const response = await fetch(`/data/internships_${year}.json`);
+//     if (!response.ok) {
+//       throw new Error(`HTTP error! status: ${response.status}`);
+//     }
+//     return await response.json() as InternshipData[];
+//   } catch (error) {
+//     console.error(`Error fetching internship data for ${year}:`, error);
+//     return [];
+//   }
+// }
+
+// export async function fetchAllYearsData() {
+//   try {
+//     const years = ['2021', '2022', '2023'];
+//     let allData: AnalyticsData[] = [];
+//     let allInternshipData: InternshipData[] = [];
+
+//     for (const year of years) {
+//       const yearData = await fetchAnalyticsData(year);
+//       const yearInternshipData = await fetchInternshipData(year);
+//       allData = allData.concat(yearData);
+//       allInternshipData = allInternshipData.concat(yearInternshipData);
+//     }
+
+//     return { placementData: allData, internshipData: allInternshipData };
+//   } catch (error) {
+//     console.error('Error fetching all years data:', error);
+//     return { placementData: [], internshipData: [] };
+//   }
+// }
 export interface PlacementRecord {
   RollNumber: string;
   Name: string;
