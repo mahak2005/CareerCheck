@@ -10,7 +10,7 @@ const companies = [
   { 
     id: '1', 
     name: 'Google WE Scholar', 
-    logo: '/google logo.png',
+    logo: '/logo/google logo.png',
     students: [
       { id: '1', name: 'Devika Jain', year: 2024, branch: 'AI-ML', image: '/we/devikawe.jpg' },
       { id: '2', name: 'Sakshi Soni', year: 2024, branch: 'CSE', image: '/we/sakshiwe.jpg' },
