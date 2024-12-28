@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { Navbar } from "@/components/navbar"
-<<<<<<< HEAD
 import { BarChartComponent } from "@/components/BarChart"
 import { PieChartComponent } from "@/components/PieChart"
 import { BranchAnalysis } from "@/components/BranchAnalysis"
@@ -12,9 +11,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { fetchCompanyData, fetchBranchData, fetchAllYearsData } from "@/utils/data-fetcher"
 import type { CompanyPlacementData, CompanyInternshipData, BranchPlacementData, BranchInternshipData } from "@/utils/types"
 
-=======
-import Footer from "@/components/Footer"
->>>>>>> 0ea171d747b286f3c3661e0ab2d7eac581ecc9a9
 export default function AnalyticsPage() {
   const [selectedYear, setSelectedYear] = useState("2023")
   const [activeTab, setActiveTab] = useState("company")
@@ -270,7 +266,6 @@ export default function AnalyticsPage() {
           </TabsContent>
         </Tabs>
       </main>
-      <Footer />
     </div>
   )
 }
