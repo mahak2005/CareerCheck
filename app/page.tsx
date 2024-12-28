@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/navbar"
+import Footer from "@/components/Footer"
 // import { redirect } from 'next/navigation'
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
           
         </div>
       </main>
+      <Footer />
     </div>
   )
 }

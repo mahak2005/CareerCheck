@@ -1,5 +1,5 @@
 "use client"
-
+import Footer from "@/components/Footer"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -213,6 +213,7 @@ export default function PlacementsPage() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   )
 }
