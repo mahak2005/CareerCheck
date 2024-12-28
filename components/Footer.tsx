@@ -11,6 +11,9 @@ const Footer = () => {
             <p className="text-sm text-gray-500">
               {new Date().getFullYear()} Career Check. All rights reserved.
             </p>
+            <a href="https://docs.google.com/forms/d/1oeZcn75reYXgEG8eRJGPZ2QGKDsNSUhcKGW773vbF2k/edit" className="text-sm text-gray-500 underline">
+              Feedback Form</a>
+
           </div>
           <p className="text-sm text-gray-500">
             Developed and maintained by&nbsp;

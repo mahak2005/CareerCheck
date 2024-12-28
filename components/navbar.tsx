@@ -71,6 +71,9 @@ export function Navbar() {
             <Link href="/internships" className="hover:text-gray-300">
               Internships
             </Link>
+            <Link href="/interview-diaries" className="hover:text-gray-300">
+              Interview Diaries
+            </Link>
             <Link href="/alumini-connect" className="hover:text-gray-300">
               Alumni Connect
             </Link>

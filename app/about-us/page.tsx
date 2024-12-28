@@ -48,8 +48,10 @@ export default function AboutUs() {
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl font-bold text-center mb-8 text-white-800">No CTC, No Entry!</h1>
           <p className="text-center text-white-600 mb-12 max-w-2xl mx-auto">
-            Career Check is the comprehensive placement and internship portal of IGDTUW. Our mission is to provide students, alumni, and stakeholders with a clear and dynamic overview of the placement records, trends, and opportunities available at our institution.
+            CAREER CHECK is the comprehensive placement and internship portal of IGDTUW. Our mission is to provide students, alumni, and stakeholders with a clear and dynamic overview of the placement records, trends, and opportunities available at our institution.
           </p>
+          
+
           <div className="flex flex-col sm:flex-row justify-center items-start space-y-8 sm:space-y-0 sm:space-x-8">
             {founders.map((founder, index) => (
               <Card key={index} className="w-full sm:w-[calc(50%-1rem)] max-w-sm overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
