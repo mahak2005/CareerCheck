@@ -22,7 +22,7 @@ const companies = [
   { 
     id: '2', 
     name: 'Google STEP', 
-    logo: '/google logo.png',
+    logo: '/logo/google logo.png',
     students: [
       { id: '1', name: 'MAHAK', year: 2025, branch: 'CSE AI', image: '/placeholder.svg?height=200&width=200' },
       { id: '2', name: 'Bob Smith', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
@@ -33,7 +33,7 @@ const companies = [
   { 
     id: '3', 
     name: 'DeSHAW', 
-    logo: '/placeholder.svg?height=100&width=100',
+    logo: '/logo/deshaw logo.jpg',
     students: [
       { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
       { id: '6', name: 'Frank White', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
@@ -43,7 +43,7 @@ const companies = [
   { 
     id: '4', 
     name: 'NPX Wit Scholar', 
-    logo: '/placeholder.svg?height=100&width=100',
+    logo: '/logo/npx logo.png',
     students: [
       { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
       { id: '6', name: 'Frank White', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
@@ -53,7 +53,7 @@ const companies = [
   { 
     id: '5', 
     name: 'Uber STAR', 
-    logo: '/placeholder.svg?height=100&width=100',
+    logo: '/logo/uber logo.png',
     students: [
       { id: '1', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
       { id: '2', name: 'Namita Arya', year: 2022, branch: 'CSE', image: '/placeholder.svg?height=200&width=200' },
@@ -63,7 +63,7 @@ const companies = [
   { 
     id: '6', 
     name: 'LinkedIN Coachin', 
-    logo: '/placeholder.svg?height=100&width=100',
+    logo: '/logo/linkedin.png',
     students: [
       { id: '5', name: 'Eva Green', year: 3, branch: 'Computer Science', image: '/placeholder.svg?height=200&width=200' },
       { id: '6', name: 'Frank White', year: 4, branch: 'Electrical Engineering', image: '/placeholder.svg?height=200&width=200' },
