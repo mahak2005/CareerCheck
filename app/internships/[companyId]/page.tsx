@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'next/navigation'
 import Image from 'next/image'
 import StudentCard from '@/components/StudentCard'
+import Footer from "@/components/Footer"
 
-// Mock data for companies and selected students
 const companies = [
   { 
     id: '1', 
@@ -136,6 +136,7 @@ export default function CompanyPage() {
           <StudentCard key={student.id} {...student} />
         ))}
       </div>
+      <Footer />
     </div>
   )
 }
