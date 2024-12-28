@@ -16,16 +16,16 @@ interface BranchAnalysisProps {
   }
 }
 
+// Refactor common calculation function for clarity
+const sumData = (data: any[], key: string) => 
+  data.reduce((sum, item) => sum + (item[key] || 0), 0);
+
 export function BranchAnalysis({ year, placementData, internshipData, allYearsData }: BranchAnalysisProps) {
   const getPlacementSeasonGlimpse = () => {
-    const totalPlaced = placementData.reduce((sum, item) => sum + item["Placed Students"], 0)
-    const totalSixMonthInterns = placementData.reduce((sum, item) => sum + item["6 Month Interns"], 0)
-    const totalInterned = internshipData.reduce((sum, item) => sum + item["Interned Students"], 0)
-
     return [
-      { name: "Full-time Offers", value: totalPlaced },
-      { name: "6 Month Interns", value: totalSixMonthInterns },
-      { name: "Interned Students", value: totalInterned }
+      { name: "Full-time Offers", value: sumData(placementData, "Placed Students") },
+      { name: "6 Month Interns", value: sumData(placementData, "6 Month Interns") },
+      { name: "Interned Students", value: sumData(internshipData, "Interned Students") }
     ]
   }
 
@@ -52,21 +52,23 @@ export function BranchAnalysis({ year, placementData, internshipData, allYearsDa
     if (!allYearsData) return []
 
     const yearWiseData: { [key: string]: any } = {}
-    
+
     allYearsData.placements.forEach(item => {
-      if (!yearWiseData[item.Year]) {
-        yearWiseData[item.Year] = {
-          year: item.Year,
+      const year = item.Year;
+      if (!yearWiseData[year]) {
+        yearWiseData[year] = {
+          year,
           "Full-time Offers": 0,
           "Internship Offers": 0
         }
       }
-      yearWiseData[item.Year]["Full-time Offers"] += item["Placed Students"]
+      yearWiseData[year]["Full-time Offers"] += item["Placed Students"]
     })
 
     allYearsData.internships.forEach(item => {
-      if (yearWiseData[item.Year]) {
-        yearWiseData[item.Year]["Internship Offers"] += item["Interned Students"]
+      const year = item.Year;
+      if (yearWiseData[year]) {
+        yearWiseData[year]["Internship Offers"] += item["Interned Students"]
       }
     })
 
@@ -136,4 +138,3 @@ export function BranchAnalysis({ year, placementData, internshipData, allYearsDa
     </div>
   )
 }
-

@@ -1,18 +1,30 @@
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend } from "recharts"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/analysis_card"
 
+// Define a type for the data structure you are passing to BarChart
+interface DataPoint {
+  [key: string]: number | string;  // Allow any key to be a string, number or date
+}
+
 interface BarChartProps {
-  data: any[]
-  xKey: string
-  yKey: string | string[]
-  title: string
-  description: string
-  isMultiYear?: boolean
+  data: DataPoint[];  // Use the specific type instead of `any[]`
+  xKey: string;
+  yKey: string | string[];  // Allows for both a single key or multiple keys
+  title: string;
+  description: string;
+  isMultiYear?: boolean;
 }
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
 
-export function BarChartComponent({ data, xKey, yKey, title, description, isMultiYear = false }: BarChartProps) {
+export function BarChartComponent({
+  data,
+  xKey,
+  yKey,
+  title,
+  description,
+  isMultiYear = false,
+}: BarChartProps) {
   return (
     <Card className="w-full">
       <CardHeader>
@@ -34,7 +46,6 @@ export function BarChartComponent({ data, xKey, yKey, title, description, isMult
               fontSize={12}
               tickLine={false}
               axisLine={false}
-            // tickFormatter={(value) => `${value}`}
             />
             <Tooltip />
             {isMultiYear && <Legend />}
@@ -49,6 +60,5 @@ export function BarChartComponent({ data, xKey, yKey, title, description, isMult
         </ResponsiveContainer>
       </CardContent>
     </Card>
-  )
+  );
 }
-

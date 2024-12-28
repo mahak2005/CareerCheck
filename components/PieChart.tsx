@@ -1,12 +1,17 @@
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from "recharts"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/analysis_card"
 
+// Define a type for the data structure
+interface PieChartDataPoint {
+  [key: string]: string | number;  // Keys can be strings, values can be either string or number
+}
+
 interface PieChartProps {
-  data: any[]
-  dataKey: string
-  nameKey: string
-  title: string
-  description: string
+  data: PieChartDataPoint[];  // Use the PieChartDataPoint type here
+  dataKey: string;  // Key for the value to be used in the Pie chart
+  nameKey: string;  // Key for the name displayed in the Pie chart
+  title: string;
+  description: string;
 }
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#82ca9d', '#ffc658', '#8dd1e1', '#a4de6c', '#d0ed57'];
@@ -30,7 +35,6 @@ export function PieChartComponent({ data, dataKey, nameKey, title, description }
               fill="#8884d8"
               dataKey={dataKey}
               nameKey={nameKey}
-            // label={(entry) => entry.name}
             >
               {data.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -42,6 +46,5 @@ export function PieChartComponent({ data, dataKey, nameKey, title, description }
         </ResponsiveContainer>
       </CardContent>
     </Card>
-  )
+  );
 }
-
