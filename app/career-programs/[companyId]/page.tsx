@@ -39,7 +39,7 @@ const companies = [
   { 
     id: '3', 
     name: 'DESIS Ascend Educare Mentorship', 
-    logo: '/logo/deshaw logo.jpg',
+    logo: '/logo/deshawlogo.png',
     students: [
       { id: '13', name: 'Gunjan Gupta', year: 2022, branch: 'IT', image: '/desis/gunjandesis.jpg' },
       { id: '14', name: 'Nikki Gautum', year: 2024, branch: 'CSE', image: '/desis/nikkidesis.jpg' },
