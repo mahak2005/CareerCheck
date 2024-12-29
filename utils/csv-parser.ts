@@ -13,6 +13,7 @@ const baseUrl = process.env.VERCEL_URL
 
 export async function fetchPlacementData(year: string, branch: string): Promise<PlacementRecord[]> {
   try {
+    console.log(`Fetching data for year: ${year}, branch: ${branch}`);
     if (branch === 'cumulative') {
       const branches = ['cse', 'it', 'ece', 'mae'];
       if (year === '2024') {
