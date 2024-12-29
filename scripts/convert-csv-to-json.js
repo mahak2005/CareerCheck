@@ -2,28 +2,71 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parse/sync');
 
+const dataDir = path.join(__dirname, '..', 'data');
+const outputDir = path.join(__dirname, '..', 'public', 'data');
+
+// Ensure output directory exists
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+function convertCsvToJson(inputPath, outputPath) {
+  if (!fs.existsSync(inputPath)) {
+    console.log(`CSV file not found: ${inputPath}`);
+    return;
+  }
+
+  const csvContent = fs.readFileSync(inputPath, 'utf-8');
+  const records = csv.parse(csvContent, {
+    columns: true,
+    skip_empty_lines: true
+  });
+
+  // Ensure the directory exists
+  const outputDirectory = path.dirname(outputPath);
+  if (!fs.existsSync(outputDirectory)) {
+    fs.mkdirSync(outputDirectory, { recursive: true });
+  }
+
+  fs.writeFileSync(outputPath, JSON.stringify(records, null, 2));
+  console.log(`Converted ${inputPath} to ${outputPath}`);
+}
+
+// Process placement data for 2021-2023
 const years = ['2021', '2022', '2023'];
 const branches = ['cse', 'it', 'ece', 'mae', 'barch'];
 
 years.forEach(year => {
   branches.forEach(branch => {
-    const csvFilePath = path.join(__dirname, '..', 'data', year, `${branch}.csv`);
-    const jsonFilePath = path.join(__dirname, '..', 'public', 'data', year, `${branch}.json`);
-
-    if (fs.existsSync(csvFilePath)) {
-      const csvContent = fs.readFileSync(csvFilePath, 'utf-8');
-      const records = csv.parse(csvContent, {
-        columns: true,
-        skip_empty_lines: true
-      });
-
-      fs.mkdirSync(path.dirname(jsonFilePath), { recursive: true });
-      fs.writeFileSync(jsonFilePath, JSON.stringify(records, null, 2));
-
-      console.log(`Converted ${csvFilePath} to ${jsonFilePath}`);
-    } else {
-      console.log(`CSV file not found: ${csvFilePath}`);
-    }
+    const csvFilePath = path.join(dataDir, year, `${branch}.csv`);
+    const jsonFilePath = path.join(outputDir, year, `${branch}.json`);
+    convertCsvToJson(csvFilePath, jsonFilePath);
   });
 });
+
+// Process company data
+const companyYears = ['2021', '2022', '2023', '2024'];
+companyYears.forEach(year => {
+  const placementsInput = path.join(dataDir, 'companies_data', `placements_${year}.csv`);
+  const placementsOutput = path.join(outputDir, 'companies_data', `placements_${year}.json`);
+  const internshipsInput = path.join(dataDir, 'companies_data', `internships_${year}.csv`);
+  const internshipsOutput = path.join(outputDir, 'companies_data', `internships_${year}.json`);
+
+  convertCsvToJson(placementsInput, placementsOutput);
+  convertCsvToJson(internshipsInput, internshipsOutput);
+});
+
+// Process branch data
+const branchYears = ['2022', '2023', '2024', '2025'];
+branchYears.forEach(year => {
+  const placementsInput = path.join(dataDir, 'branches_data', `placement_${year}.csv`);
+  const placementsOutput = path.join(outputDir, 'branches_data', `placement_${year}.json`);
+  const internshipsInput = path.join(dataDir, 'branches_data', `internship_${year}.csv`);
+  const internshipsOutput = path.join(outputDir, 'branches_data', `internship_${year}.json`);
+
+  convertCsvToJson(placementsInput, placementsOutput);
+  convertCsvToJson(internshipsInput, internshipsOutput);
+});
+
+console.log('CSV to JSON conversion completed.');
 

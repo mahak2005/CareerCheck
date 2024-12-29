@@ -1,0 +1,47 @@
+[
+  {
+    "Branch": "CSE AI",
+    "Total Students": "73",
+    "Placed Students": "56",
+    "6 Month Interns": "18",
+    "Highest CTC (LPA)": "52.89",
+    "Highest CTC Company": "AWS",
+    "Average CTC (LPA)": "22.82"
+  },
+  {
+    "Branch": "CSE",
+    "Total Students": "188",
+    "Placed Students": "145",
+    "6 Month Interns": "67",
+    "Highest CTC (LPA)": "56",
+    "Highest CTC Company": "Adobe",
+    "Average CTC (LPA)": "25.15"
+  },
+  {
+    "Branch": "IT",
+    "Total Students": "148",
+    "Placed Students": "125",
+    "6 Month Interns": "47",
+    "Highest CTC (LPA)": "52.89",
+    "Highest CTC Company": "AWS",
+    "Average CTC (LPA)": "20.99"
+  },
+  {
+    "Branch": "ECE",
+    "Total Students": "146",
+    "Placed Students": "95",
+    "6 Month Interns": "57",
+    "Highest CTC (LPA)": "56",
+    "Highest CTC Company": "Adobe",
+    "Average CTC (LPA)": "19.63"
+  },
+  {
+    "Branch": "MAE",
+    "Total Students": "96",
+    "Placed Students": "64",
+    "6 Month Interns": "39",
+    "Highest CTC (LPA)": "32",
+    "Highest CTC Company": "OLX",
+    "Average CTC (LPA)": "8.52"
+  }
+]

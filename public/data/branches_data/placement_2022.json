@@ -1,0 +1,42 @@
+[
+  {
+    "Branch": "CSE",
+    "Total Students": "156",
+    "Placed Students": "128",
+    "6 Month Interns": "67",
+    "Highest CTC (LPA)": "55",
+    "Highest CTC Company": "Adobe",
+    "Highest Stipend (LPM)": "1.6",
+    "Highest Stipend Company": "Uber"
+  },
+  {
+    "Branch": "IT",
+    "Total Students": "133",
+    "Placed Students": "118",
+    "6 Month Interns": "40",
+    "Highest CTC (LPA)": "46",
+    "Highest CTC Company": "Microsoft",
+    "Highest Stipend (LPM)": "1.25",
+    "Highest Stipend Company": "Microsoft"
+  },
+  {
+    "Branch": "ECE",
+    "Total Students": "147",
+    "Placed Students": "110",
+    "6 Month Interns": "55",
+    "Highest CTC (LPA)": "55",
+    "Highest CTC Company": "Adobe",
+    "Highest Stipend (LPM)": "1.25",
+    "Highest Stipend Company": "Microsoft"
+  },
+  {
+    "Branch": "MAE",
+    "Total Students": "120",
+    "Placed Students": "104",
+    "6 Month Interns": "33",
+    "Highest CTC (LPA)": "27.75",
+    "Highest CTC Company": "Chegg",
+    "Highest Stipend (LPM)": "1",
+    "Highest Stipend Company": "Amazon"
+  }
+]

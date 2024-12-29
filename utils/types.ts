@@ -1,15 +1,20 @@
+export interface PlacementRecord {
+  RollNumber: string;
+  Name: string;
+  FinalOffer: string;
+  "CTC (LPA)": string;
+}
+
 export interface CompanyPlacementData {
   Company: string;
   "CTC (LPA)": number;
   "FTE Offers": number;
-  Year: string;
 }
 
 export interface CompanyInternshipData {
   "company Name": string;
   "Stipend (INR per month)": number;
   "Internship Offers": number;
-  Year: string;
 }
 
 export interface BranchPlacementData {
@@ -21,7 +26,6 @@ export interface BranchPlacementData {
   "Highest CTC Company": string;
   "Highest Stipend (LPM)": number;
   "Highest Stipend Company": string;
-  Year: string;
 }
 
 export interface BranchInternshipData {
@@ -30,10 +34,10 @@ export interface BranchInternshipData {
   "Interned Students": number;
   "Highest Stipend (LPM)": number;
   "Highest Stipend Company": string;
-  Year: string;
 }
 
 export interface CTCRange {
   range: string;
   count: number;
 }
+

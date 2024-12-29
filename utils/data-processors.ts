@@ -33,6 +33,42 @@ export function calculateStipendStats(data: CompanyInternshipData[]) {
     return { average: avg, highest: max };
 }
 
+export function getTotalOffersByCompany(data: Record<string, CompanyPlacementData[]>) {
+    const totalOffers: Record<string, Record<string, number>> = {};
+
+    Object.entries(data).forEach(([year, yearData]) => {
+        yearData.forEach(item => {
+            if (!totalOffers[item.Company]) {
+                totalOffers[item.Company] = {};
+            }
+            totalOffers[item.Company][year] = item["FTE Offers"];
+        });
+    });
+
+    return Object.entries(totalOffers).map(([company, offers]) => ({
+        company,
+        ...offers,
+    }));
+}
+
+export function getTotalInternshipsByCompany(data: Record<string, CompanyInternshipData[]>) {
+    const totalInternships: Record<string, Record<string, number>> = {};
+
+    Object.entries(data).forEach(([year, yearData]) => {
+        yearData.forEach(item => {
+            if (!totalInternships[item["company Name"]]) {
+                totalInternships[item["company Name"]] = {};
+            }
+            totalInternships[item["company Name"]][year] = item["Internship Offers"];
+        });
+    });
+
+    return Object.entries(totalInternships).map(([company, offers]) => ({
+        company,
+        ...offers,
+    }));
+}
+
 export function calculateBranchStats(
     placementData: BranchPlacementData[],
     internshipData: BranchInternshipData[]

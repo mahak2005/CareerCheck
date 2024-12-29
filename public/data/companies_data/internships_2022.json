@@ -1,0 +1,242 @@
+[
+  {
+    "company Name": "Uber",
+    "Stipend (INR per month)": "160000",
+    "Internship Offers": "2"
+  },
+  {
+    "company Name": "Microsoft",
+    "Stipend (INR per month)": "125000",
+    "Internship Offers": "59"
+  },
+  {
+    "company Name": "Twilio",
+    "Stipend (INR per month)": "122325",
+    "Internship Offers": "4"
+  },
+  {
+    "company Name": "Google",
+    "Stipend (INR per month)": "110000",
+    "Internship Offers": "12"
+  },
+  {
+    "company Name": "Adobe",
+    "Stipend (INR per month)": "100000",
+    "Internship Offers": "8"
+  },
+  {
+    "company Name": "Disney+ Hotstar",
+    "Stipend (INR per month)": "100000",
+    "Internship Offers": "4"
+  },
+  {
+    "company Name": "Flipkart",
+    "Stipend (INR per month)": "100000",
+    "Internship Offers": "4"
+  },
+  {
+    "company Name": "Goldman Sachs",
+    "Stipend (INR per month)": "100000",
+    "Internship Offers": "10"
+  },
+  {
+    "company Name": "Morgan Stanley",
+    "Stipend (INR per month)": "87000",
+    "Internship Offers": "4"
+  },
+  {
+    "company Name": "American Express",
+    "Stipend (INR per month)": "85000",
+    "Internship Offers": "6"
+  },
+  {
+    "company Name": "Walmart",
+    "Stipend (INR per month)": "85000",
+    "Internship Offers": "5"
+  },
+  {
+    "company Name": "Amazon",
+    "Stipend (INR per month)": "80000",
+    "Internship Offers": "5"
+  },
+  {
+    "company Name": "Intuit",
+    "Stipend (INR per month)": "80000",
+    "Internship Offers": "3"
+  },
+  {
+    "company Name": "Wells Fargo",
+    "Stipend (INR per month)": "80000",
+    "Internship Offers": "12"
+  },
+  {
+    "company Name": "Citi Bank",
+    "Stipend (INR per month)": "75000",
+    "Internship Offers": "12"
+  },
+  {
+    "company Name": "Deutsche Bank",
+    "Stipend (INR per month)": "75000",
+    "Internship Offers": "3"
+  },
+  {
+    "company Name": "Atlassian",
+    "Stipend (INR per month)": "70850",
+    "Internship Offers": "5"
+  },
+  {
+    "company Name": "DXC with Globtier",
+    "Stipend (INR per month)": "70000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "ServiceNow",
+    "Stipend (INR per month)": "70000",
+    "Internship Offers": "4"
+  },
+  {
+    "company Name": "BNY Mellon",
+    "Stipend (INR per month)": "60000",
+    "Internship Offers": "3"
+  },
+  {
+    "company Name": "Citrix",
+    "Stipend (INR per month)": "60000",
+    "Internship Offers": "5"
+  },
+  {
+    "company Name": "Myntra",
+    "Stipend (INR per month)": "60000",
+    "Internship Offers": "4"
+  },
+  {
+    "company Name": "Innovate Engineering Solutions",
+    "Stipend (INR per month)": "50000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "JPMC",
+    "Stipend (INR per month)": "50000",
+    "Internship Offers": "15"
+  },
+  {
+    "company Name": "LoadShare Networks",
+    "Stipend (INR per month)": "50000",
+    "Internship Offers": "4"
+  },
+  {
+    "company Name": "Oracle",
+    "Stipend (INR per month)": "50000",
+    "Internship Offers": "5"
+  },
+  {
+    "company Name": "Samsung",
+    "Stipend (INR per month)": "50000",
+    "Internship Offers": "6"
+  },
+  {
+    "company Name": "Zenduty",
+    "Stipend (INR per month)": "45000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "LinkedIn",
+    "Stipend (INR per month)": "40000",
+    "Internship Offers": "3"
+  },
+  {
+    "company Name": "Zomato",
+    "Stipend (INR per month)": "40000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "Expedia",
+    "Stipend (INR per month)": "35000",
+    "Internship Offers": "21"
+  },
+  {
+    "company Name": "Keomart India Private Limited",
+    "Stipend (INR per month)": "35000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "Optum",
+    "Stipend (INR per month)": "35000",
+    "Internship Offers": "34"
+  },
+  {
+    "company Name": "SAP Labs",
+    "Stipend (INR per month)": "35000",
+    "Internship Offers": "4"
+  },
+  {
+    "company Name": "Western Digital",
+    "Stipend (INR per month)": "35000",
+    "Internship Offers": "5"
+  },
+  {
+    "company Name": "Fractal Analytics",
+    "Stipend (INR per month)": "30000",
+    "Internship Offers": "3"
+  },
+  {
+    "company Name": "Visa",
+    "Stipend (INR per month)": "65000",
+    "Internship Offers": "11"
+  },
+  {
+    "company Name": "Barclays",
+    "Stipend (INR per month)": "66667",
+    "Internship Offers": "3"
+  },
+  {
+    "company Name": "GE Power",
+    "Stipend (INR per month)": "25000",
+    "Internship Offers": "2"
+  },
+  {
+    "company Name": "Schneider Electric",
+    "Stipend (INR per month)": "25000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "TVSM",
+    "Stipend (INR per month)": "25000",
+    "Internship Offers": "2"
+  },
+  {
+    "company Name": "Becton Dickinson",
+    "Stipend (INR per month)": "20000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "Iotech Designs Pvt. Ltd.",
+    "Stipend (INR per month)": "20000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "GW (Gaddi Web)",
+    "Stipend (INR per month)": "12000",
+    "Internship Offers": "3"
+  },
+  {
+    "company Name": "Eduladder",
+    "Stipend (INR per month)": "15000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "Schlumberger",
+    "Stipend (INR per month)": "30000",
+    "Internship Offers": "3"
+  },
+  {
+    "company Name": "ITC",
+    "Stipend (INR per month)": "30000",
+    "Internship Offers": "1"
+  },
+  {
+    "company Name": "MITACS Globalink",
+    "Stipend (INR per month)": "128814",
+    "Internship Offers": "1"
+  }
+]

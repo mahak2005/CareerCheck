@@ -1,0 +1,472 @@
+[
+  {
+    "Company": "Google",
+    "CTC (LPA)": "31.96",
+    "FTE Offers": "11"
+  },
+  {
+    "Company": "SAP",
+    "CTC (LPA)": "20.50",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Deutsche Bank",
+    "CTC (LPA)": "19.63",
+    "FTE Offers": "11"
+  },
+  {
+    "Company": "Wells Fargo",
+    "CTC (LPA)": "20.00",
+    "FTE Offers": "10"
+  },
+  {
+    "Company": "Pay U",
+    "CTC (LPA)": "16.50",
+    "FTE Offers": "7"
+  },
+  {
+    "Company": "Adidas",
+    "CTC (LPA)": "12.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Infoedge",
+    "CTC (LPA)": "12.50",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "Lowes",
+    "CTC (LPA)": "19.34",
+    "FTE Offers": "5"
+  },
+  {
+    "Company": "Publicis Sapient",
+    "CTC (LPA)": "10.00",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "Nagarro",
+    "CTC (LPA)": "4.50",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "IBM",
+    "CTC (LPA)": "7.25",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "C2FO",
+    "CTC (LPA)": "12.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Goldman Sachs",
+    "CTC (LPA)": "26.00",
+    "FTE Offers": "6"
+  },
+  {
+    "Company": "Optum UHG",
+    "CTC (LPA)": "13.80",
+    "FTE Offers": "15"
+  },
+  {
+    "Company": "Intuit",
+    "CTC (LPA)": "32.82",
+    "FTE Offers": "6"
+  },
+  {
+    "Company": "Oracle",
+    "CTC (LPA)": "16.64",
+    "FTE Offers": "8"
+  },
+  {
+    "Company": "Western Digital",
+    "CTC (LPA)": "19.16",
+    "FTE Offers": "8"
+  },
+  {
+    "Company": "Uber",
+    "CTC (LPA)": "37.78",
+    "FTE Offers": "4"
+  },
+  {
+    "Company": "Microsoft",
+    "CTC (LPA)": "45.00",
+    "FTE Offers": "37"
+  },
+  {
+    "Company": "Capgemini",
+    "CTC (LPA)": "7.50",
+    "FTE Offers": "7"
+  },
+  {
+    "Company": "Accenture",
+    "CTC (LPA)": "4.50",
+    "FTE Offers": "7"
+  },
+  {
+    "Company": "HashedIn",
+    "CTC (LPA)": "8.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "McKinsey",
+    "CTC (LPA)": "12.00",
+    "FTE Offers": "8"
+  },
+  {
+    "Company": "Pentair",
+    "CTC (LPA)": "9.31",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Halliburton",
+    "CTC (LPA)": "38.70",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "AU Bank",
+    "CTC (LPA)": "8.00",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "Loadshare Networks",
+    "CTC (LPA)": "17.00",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "Deutsche Telekom",
+    "CTC (LPA)": "15.00",
+    "FTE Offers": "5"
+  },
+  {
+    "Company": "Comviva",
+    "CTC (LPA)": "7.20",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Geeks For Geeks",
+    "CTC (LPA)": "3.00",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "To The New",
+    "CTC (LPA)": "4.50",
+    "FTE Offers": "5"
+  },
+  {
+    "Company": "BlueYonder",
+    "CTC (LPA)": "8.59",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "Genpact",
+    "CTC (LPA)": "11.40",
+    "FTE Offers": "10"
+  },
+  {
+    "Company": "Tokopedia",
+    "CTC (LPA)": "12.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "American Express",
+    "CTC (LPA)": "15.64",
+    "FTE Offers": "14"
+  },
+  {
+    "Company": "Chegg",
+    "CTC (LPA)": "11.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Amazon Dublin",
+    "CTC (LPA)": "120.00",
+    "FTE Offers": "4"
+  },
+  {
+    "Company": "Protex AI Ireland",
+    "CTC (LPA)": "Not Disclosed",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Atlassian",
+    "CTC (LPA)": "26.75",
+    "FTE Offers": "4"
+  },
+  {
+    "Company": "ServiceNow",
+    "CTC (LPA)": "25.66",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "Twilio",
+    "CTC (LPA)": "43.14",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "Flipkart",
+    "CTC (LPA)": "26.57",
+    "FTE Offers": "7"
+  },
+  {
+    "Company": "JP Morgan Chase",
+    "CTC (LPA)": "14.00",
+    "FTE Offers": "21"
+  },
+  {
+    "Company": "Adobe",
+    "CTC (LPA)": "55.00",
+    "FTE Offers": "10"
+  },
+  {
+    "Company": "TCS",
+    "CTC (LPA)": "3.53",
+    "FTE Offers": "5"
+  },
+  {
+    "Company": "Baxter",
+    "CTC (LPA)": "10.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Amazon (CSA Role)",
+    "CTC (LPA)": "21.40",
+    "FTE Offers": "4"
+  },
+  {
+    "Company": "Amazon (SWE Role)",
+    "CTC (LPA)": "32.16",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "Jubilant FoodWorks",
+    "CTC (LPA)": "15.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Cognizant",
+    "CTC (LPA)": "6.25",
+    "FTE Offers": "17"
+  },
+  {
+    "Company": "Zynga",
+    "CTC (LPA)": "54.50",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Deloitte",
+    "CTC (LPA)": "7.50",
+    "FTE Offers": "36"
+  },
+  {
+    "Company": "Ericsson",
+    "CTC (LPA)": "6.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Citrix",
+    "CTC (LPA)": "23.74",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "Walmart",
+    "CTC (LPA)": "22.62",
+    "FTE Offers": "23"
+  },
+  {
+    "Company": "VMWare",
+    "CTC (LPA)": "19.73",
+    "FTE Offers": "7"
+  },
+  {
+    "Company": "Barclays (Technology)",
+    "CTC (LPA)": "12.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Visteon",
+    "CTC (LPA)": "6.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Expedia",
+    "CTC (LPA)": "35.00",
+    "FTE Offers": "12"
+  },
+  {
+    "Company": "Morgan Stanley",
+    "CTC (LPA)": "25.30",
+    "FTE Offers": "5"
+  },
+  {
+    "Company": "Schneider Electric",
+    "CTC (LPA)": "9.00",
+    "FTE Offers": "6"
+  },
+  {
+    "Company": "VISA",
+    "CTC (LPA)": "22.80",
+    "FTE Offers": "5"
+  },
+  {
+    "Company": "Bain",
+    "CTC (LPA)": "10.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Cisco",
+    "CTC (LPA)": "14.37",
+    "FTE Offers": "17"
+  },
+  {
+    "Company": "Citi India",
+    "CTC (LPA)": "12.00",
+    "FTE Offers": "15"
+  },
+  {
+    "Company": "Micron Technology",
+    "CTC (LPA)": "9.45",
+    "FTE Offers": "4"
+  },
+  {
+    "Company": "Synopsys",
+    "CTC (LPA)": "18.93",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "ZS Associates",
+    "CTC (LPA)": "18.25",
+    "FTE Offers": "7"
+  },
+  {
+    "Company": "Dunnhumby",
+    "CTC (LPA)": "11.05",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "OYO",
+    "CTC (LPA)": "15.00",
+    "FTE Offers": "4"
+  },
+  {
+    "Company": "FIS Global",
+    "CTC (LPA)": "4.5 - 5.5",
+    "FTE Offers": "6"
+  },
+  {
+    "Company": "PWC Acceleration Center",
+    "CTC (LPA)": "6.00",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "Samsung",
+    "CTC (LPA)": "14.50",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Siemens",
+    "CTC (LPA)": "9.00",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "Barclays (Analyst)",
+    "CTC (LPA)": "12.73",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "PWC India",
+    "CTC (LPA)": "8.50",
+    "FTE Offers": "6"
+  },
+  {
+    "Company": "ZS",
+    "CTC (LPA)": "12.84",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "ExxonMobil",
+    "CTC (LPA)": "11.41",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "Baxter",
+    "CTC (LPA)": "10.08",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "ITC",
+    "CTC (LPA)": "12.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "ITC Supply Chain",
+    "CTC (LPA)": "10.00",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "Bajaj",
+    "CTC (LPA)": "9.09",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Schneider Electric",
+    "CTC (LPA)": "9.00",
+    "FTE Offers": "2"
+  },
+  {
+    "Company": "PwC",
+    "CTC (LPA)": "9.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "TVS",
+    "CTC (LPA)": "8.00",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "Deloitte",
+    "CTC (LPA)": "7.60",
+    "FTE Offers": "5"
+  },
+  {
+    "Company": "BD",
+    "CTC (LPA)": "7.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Anand",
+    "CTC (LPA)": "6.50",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "MG Motors",
+    "CTC (LPA)": "6.00",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Tata Electronics",
+    "CTC (LPA)": "6.00",
+    "FTE Offers": "4"
+  },
+  {
+    "Company": "Mc Dermott",
+    "CTC (LPA)": "5.50",
+    "FTE Offers": "5"
+  },
+  {
+    "Company": "Amazon",
+    "CTC (LPA)": "23.00",
+    "FTE Offers": "3"
+  },
+  {
+    "Company": "Chegg",
+    "CTC (LPA)": "27.75",
+    "FTE Offers": "1"
+  },
+  {
+    "Company": "Volvo",
+    "CTC (LPA)": "5.50",
+    "FTE Offers": "1"
+  }
+]
