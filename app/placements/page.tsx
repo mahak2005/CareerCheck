@@ -133,13 +133,13 @@ export default function PlacementsPage() {
                   <SelectValue placeholder="Select companies" />
                 </SelectTrigger>
                 <SelectContent>
-                  {Array.from(new Set(placementData.map((d) => d.FinalOffer))).map(
-                    (company) => (
+                  {Array.from(new Set(placementData.map((d) => d.FinalOffer))) // Get unique companies
+                    .sort() // Sort the companies in ascending order
+                    .map((company) => (
                       <SelectItem key={company} value={company}>
                         {company}
                       </SelectItem>
-                    )
-                  )}
+                    ))}
                 </SelectContent>
               </Select>
               {selectedCompanies.length > 0 && (
