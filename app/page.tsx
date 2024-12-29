@@ -4,7 +4,8 @@ import PlacementTimeline from "@/components/PlacementTimeline"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#0D1B2A] via-[#1B263B] to-[#1B263B] text-gray-50">
+    
+    <div className="min-h-screen bg-gradient-to-br from-[#000814] to-[#002C47] text-gray-50">
       <Navbar />
       <main className="py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
