@@ -51,4 +51,3 @@ export function BarChartComponent({ data, xKey, yKey, title, description, isMult
     </Card>
   )
 }
-

@@ -81,7 +81,7 @@ export default function PlacementsPage() {
         <div className="space-y-6">
           {/* Year Selection */}
           <div className="flex gap-4">
-            {["2021", "2022", "2023","2024"].map((year) => (
+            {["2021", "2022", "2023", "2024"].map((year) => (
               <Button
                 key={year}
                 variant={selectedYear === year ? "default" : "secondary"}

@@ -44,4 +44,3 @@ export function PieChartComponent({ data, dataKey, nameKey, title, description }
     </Card>
   )
 }
-
