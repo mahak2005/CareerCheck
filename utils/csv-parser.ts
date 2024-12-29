@@ -10,7 +10,10 @@ export interface PlacementRecord {
 // const baseUrl = process.env.VERCEL_URL
 //   ? `https://${process.env.VERCEL_URL}`
 //   : 'http://localhost:3000';
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+const baseUrl =
+  process.env.NODE_ENV === 'production'
+    ? 'https://career-check.vercel.app' // Your production site URL
+    : 'http://localhost:3000'; 
 
 export async function fetchPlacementData(year: string, branch: string): Promise<PlacementRecord[]> {
   try {
