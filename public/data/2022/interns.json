@@ -2,241 +2,241 @@
   {
     "Company": "Uber",
     "Stipend": "160000",
-    "TotalInterns": "2"
+    "TotalOffers": "2"
   },
   {
     "Company": "Microsoft",
     "Stipend": "125000",
-    "TotalInterns": "59"
+    "TotalOffers": "59"
   },
   {
     "Company": "Twilio",
     "Stipend": "122325",
-    "TotalInterns": "4"
+    "TotalOffers": "4"
   },
   {
     "Company": "Google",
     "Stipend": "110000",
-    "TotalInterns": "12"
+    "TotalOffers": "12"
   },
   {
     "Company": "Adobe",
     "Stipend": "100000",
-    "TotalInterns": "8"
+    "TotalOffers": "8"
   },
   {
     "Company": "Disney+ Hotstar",
     "Stipend": "100000",
-    "TotalInterns": "4"
+    "TotalOffers": "4"
   },
   {
     "Company": "Flipkart",
     "Stipend": "100000",
-    "TotalInterns": "4"
+    "TotalOffers": "4"
   },
   {
     "Company": "Goldman Sachs",
     "Stipend": "100000",
-    "TotalInterns": "10"
+    "TotalOffers": "10"
   },
   {
     "Company": "Morgan Stanley",
     "Stipend": "87000",
-    "TotalInterns": "4"
+    "TotalOffers": "4"
   },
   {
     "Company": "American Express",
     "Stipend": "85000",
-    "TotalInterns": "6"
+    "TotalOffers": "6"
   },
   {
     "Company": "Walmart",
     "Stipend": "85000",
-    "TotalInterns": "5"
+    "TotalOffers": "5"
   },
   {
     "Company": "Amazon",
     "Stipend": "80000",
-    "TotalInterns": "5"
+    "TotalOffers": "5"
   },
   {
     "Company": "Intuit",
     "Stipend": "80000",
-    "TotalInterns": "3"
+    "TotalOffers": "3"
   },
   {
     "Company": "Wells Fargo",
     "Stipend": "80000",
-    "TotalInterns": "12"
+    "TotalOffers": "12"
   },
   {
     "Company": "Citi Bank",
     "Stipend": "75000",
-    "TotalInterns": "12"
+    "TotalOffers": "12"
   },
   {
     "Company": "Deutsche Bank",
     "Stipend": "75000",
-    "TotalInterns": "3"
+    "TotalOffers": "3"
   },
   {
     "Company": "Atlassian",
     "Stipend": "70850",
-    "TotalInterns": "5"
+    "TotalOffers": "5"
   },
   {
     "Company": "DXC with Globtier",
     "Stipend": "70000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "ServiceNow",
     "Stipend": "70000",
-    "TotalInterns": "4"
+    "TotalOffers": "4"
   },
   {
     "Company": "BNY Mellon",
     "Stipend": "60000",
-    "TotalInterns": "3"
+    "TotalOffers": "3"
   },
   {
     "Company": "Citrix",
     "Stipend": "60000",
-    "TotalInterns": "5"
+    "TotalOffers": "5"
   },
   {
     "Company": "Myntra",
     "Stipend": "60000",
-    "TotalInterns": "4"
+    "TotalOffers": "4"
   },
   {
     "Company": "Innovate Engineering Solutions",
     "Stipend": "50000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "JPMC",
     "Stipend": "50000",
-    "TotalInterns": "15"
+    "TotalOffers": "15"
   },
   {
     "Company": "LoadShare Networks",
     "Stipend": "50000",
-    "TotalInterns": "4"
+    "TotalOffers": "4"
   },
   {
     "Company": "Oracle",
     "Stipend": "50000",
-    "TotalInterns": "5"
+    "TotalOffers": "5"
   },
   {
     "Company": "Samsung",
     "Stipend": "50000",
-    "TotalInterns": "6"
+    "TotalOffers": "6"
   },
   {
     "Company": "Zenduty",
     "Stipend": "45000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "LinkedIn",
     "Stipend": "40000",
-    "TotalInterns": "3"
+    "TotalOffers": "3"
   },
   {
     "Company": "Zomato",
     "Stipend": "40000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "Expedia",
     "Stipend": "35000",
-    "TotalInterns": "21"
+    "TotalOffers": "21"
   },
   {
     "Company": "Keomart India Private Limited",
     "Stipend": "35000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "Optum",
     "Stipend": "35000",
-    "TotalInterns": "34"
+    "TotalOffers": "34"
   },
   {
     "Company": "SAP Labs",
     "Stipend": "35000",
-    "TotalInterns": "4"
+    "TotalOffers": "4"
   },
   {
     "Company": "Western Digital",
     "Stipend": "35000",
-    "TotalInterns": "5"
+    "TotalOffers": "5"
   },
   {
     "Company": "Fractal Analytics",
     "Stipend": "30000",
-    "TotalInterns": "3"
+    "TotalOffers": "3"
   },
   {
     "Company": "Visa",
     "Stipend": "65000",
-    "TotalInterns": "11"
+    "TotalOffers": "11"
   },
   {
     "Company": "Barclays",
     "Stipend": "66667",
-    "TotalInterns": "3"
+    "TotalOffers": "3"
   },
   {
     "Company": "GE Power",
     "Stipend": "25000",
-    "TotalInterns": "2"
+    "TotalOffers": "2"
   },
   {
     "Company": "Schneider Electric",
     "Stipend": "25000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "TVSM",
     "Stipend": "25000",
-    "TotalInterns": "2"
+    "TotalOffers": "2"
   },
   {
     "Company": "Becton Dickinson",
     "Stipend": "20000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "Iotech Designs Pvt. Ltd.",
     "Stipend": "20000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "GW (Gaddi Web)",
     "Stipend": "12000",
-    "TotalInterns": "3"
+    "TotalOffers": "3"
   },
   {
     "Company": "Eduladder",
     "Stipend": "15000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "Schlumberger",
     "Stipend": "30000",
-    "TotalInterns": "3"
+    "TotalOffers": "3"
   },
   {
     "Company": "ITC",
     "Stipend": "30000",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   },
   {
     "Company": "MITACS Globalink",
     "Stipend": "128814",
-    "TotalInterns": "1"
+    "TotalOffers": "1"
   }
 ]

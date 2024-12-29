@@ -1,4 +1,8 @@
-import type { PlacementRecord as ImportedPlacementRecord, CompanyPlacementData, CompanyInternshipData, BranchPlacementData, BranchInternshipData } from './types';
+// import type { PlacementRecord as ImportedPlacementRecord, CompanyPlacementData, CompanyInternshipData, BranchPlacementData, BranchInternshipData } from './types';
+import type { PlacementRecord as ImportedPlacementRecord, CompanyPlacementData, CompanyInternshipData, BranchPlacementData, BranchInternshipData, AnalysisPlacementData, AnalysisInternshipData } from './types';
+import fs from 'fs';
+import path from 'path';
+import csvParser from 'csv-parser';
 
 export interface PlacementRecord {
   RollNumber: string;
@@ -50,7 +54,7 @@ export async function fetchPlacementData(year: string, branch: string): Promise<
     console.error(`Error fetching placement data: ${error}`);
     return [];
   }
-  
+
 }
 export function filterInternshipData(
   data: InternshipRecord[],
@@ -78,10 +82,71 @@ export function filterInternshipData(
   });
 }
 
+export async function fetchAnalysisData(year: string, type: 'placements' | 'internships'): Promise<AnalysisPlacementData[] | AnalysisInternshipData[]> {
+  try {
+    const response = await fetch(`${baseUrl}/data/${year}/${type}.json`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data.map((item: any) => ({
+      ...item,
+      CTC: type === 'placements' ? Number(item.CTC) : undefined,
+      Stipend: type === 'internships' ? Number(item.Stipend) : undefined,
+      FTEOffers: type === 'placements' ? Number(item.FTEOffers) : undefined,
+      TotalOffers: type === 'internships' ? Number(item.TotalOffers) : undefined,
+    }));
+  } catch (error) {
+    console.error(`Error fetching ${type} data for ${year}:`, error);
+    return [];
+  }
+}
+
+// //InternShip Analysis table
+// export async function fetchInternshipDataAnalysis(year: string): Promise<InternshipData[]> {
+//   try {
+//     console.log(`Fetching internship data analysis for year: ${year}`);
+
+//     const url = `${baseUrl}/data/${year}/interns.json`;  // Path to the interns JSON for the selected year
+//     const response = await fetch(url);
+
+//     if (!response.ok) {
+//       throw new Error(`HTTP error! status: ${response.status}`);
+//     }
+
+//     return await response.json();  // Return the internship data as an array of InternshipData
+//   } catch (error) {
+//     console.error(`Error fetching internship data analysis: ${error}`);
+//     return [];
+//   }
+// }
+
+
+// //Placement Analysis table
+// export async function fetchPlacementDataAnalysis(year: string): Promise<PlacementData[]> {
+//   try {
+//     console.log(`Fetching placement data analysis for year: ${year}`);
+
+//     const url = `${baseUrl}/data/${year}/placements.json`;  // Path to the placements JSON for the selected year
+//     const response = await fetch(url);
+
+//     if (!response.ok) {
+//       throw new Error(`HTTP error! status: ${response.status}`);
+//     }
+
+//     return await response.json();  // Return the placement data as an array of PlacementData
+//   } catch (error) {
+//     console.error(`Error fetching placement data analysis: ${error}`);
+//     return [];
+//   }
+// }
+
+
+
 export async function fetchInternshipData(year: string, branch: string): Promise<InternshipRecord[]> {
   try {
     console.log(`Fetching internship data for year: ${year}, branch: ${branch}`);
-    
+
     if (branch === 'cumulative') {
       const branches = ['cse', 'it', 'ece', 'mae'];
       if (year === '2024') {
@@ -129,6 +194,29 @@ export async function fetchInternshipData(year: string, branch: string): Promise
     return []; // Return an empty array in case of error
   }
 }
+
+// export async function fetchInternshipDataAnalysis(year: string): Promise<InternData[]> {
+//   try {
+//     console.log(`Fetching internship data analysis for year: ${year}`);
+
+//     // Construct the file path based on the year provided
+//     const filePath = `data/${year}/${year}_interns.csv`;
+
+//     // You would normally use fs or an API call here to fetch the CSV data.
+//     const response = await fetch(filePath);
+
+//     if (!response.ok) {
+//       throw new Error(`HTTP error! Status: ${response.status}`);
+//     }
+
+//     const data: InternData[] = await response.json(); // Assuming the CSV file has been parsed into JSON format
+
+//     return data;
+//   } catch (error) {
+//     console.error(`Error fetching internship data analysis: ${error}`);
+//     return [];
+//   }
+// }
 
 
 export async function fetchCompanyData(year: string): Promise<{ placements: CompanyPlacementData[], internships: CompanyInternshipData[] }> {

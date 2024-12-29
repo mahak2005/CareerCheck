@@ -54,3 +54,27 @@ export interface CTCRange {
   count: number;
 }
 
+
+// export interface InternshipData {
+//   Company: string;
+//   Stipend: number;  // Assuming Stipend is a number, but if it's a string, change it accordingly.
+//   TotalOffers: number;
+// }
+
+// export interface PlacementData {
+//   Company: string;
+//   CTC: number;  // Assuming CTC is in number format (lakhs).
+//   FTEOffers: number;
+// }
+
+export interface AnalysisPlacementData {
+  Company: string;
+  CTC: number;
+  FTEOffers: number;
+}
+
+export interface AnalysisInternshipData {
+  Company: string;
+  Stipend: number;
+  TotalOffers: number;
+}

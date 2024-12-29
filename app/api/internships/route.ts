@@ -8,7 +8,7 @@ export async function POST(request: Request) {
 
         // Fetch the internship data based on year and branch
         let data: InternshipRecord[] = await fetchInternshipData(year, branch);
-
+        
         // Apply filters (no CTC range for internships)
         data = filterInternshipData(data, { name, companies });
 

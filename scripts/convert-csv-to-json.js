@@ -80,5 +80,17 @@ internshipYears.forEach(year => {
   });
 });
 
+// Process 2024 interns data
+
+// const years = ['2021', '2022', '2023', '2024'];
+const categories = ['interns', 'placements']; 
+years.forEach(year => {
+  categories.forEach(category => {
+    const csvFilePath = path.join(dataDir, year, `${category}.csv`);
+    const jsonFilePath = path.join(outputDir, year, `${category}.json`);
+    convertCsvToJson(csvFilePath, jsonFilePath);
+  });
+});
+
 console.log('CSV to JSON conversion completed.');
 

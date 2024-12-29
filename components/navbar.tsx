@@ -144,6 +144,7 @@ export function Navbar() {
               {[
                 { href: '/placements', label: 'Placements' },
                 { href: '/internships', label: 'Internships' },
+                { href: '/analysis', label: 'Analysis' },
                 { href: '/analytics', label: 'Analytics' },
                 { href: '/career-programs', label: 'Career Programs' },
                 { href: '/interview-diaries', label: 'Interview Diaries' },

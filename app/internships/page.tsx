@@ -21,9 +21,6 @@ import {
 } from "@/components/ui/table";
 import { Navbar } from "@/components/navbar";
 
-// interface InternshipPageProps {
-//   internships: InternshipRecord[];
-// }
 
 export default function InternshipsPage() {
   const [selectedYear, setSelectedYear] = useState("2024");
@@ -72,7 +69,8 @@ export default function InternshipsPage() {
         setLoading(false);
       }
     }
-
+      
+  
     fetchData();
   }, [selectedYear, selectedBranch, searchName, selectedCompanies]);
 
