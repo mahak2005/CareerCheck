@@ -4,7 +4,7 @@ import { Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend } f
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/analysis_card"
 
 interface LineChartProps {
-  data: any[]
+  data: unknown[]
   xKey: string
   yKeys: string[]
   title: string

@@ -2,7 +2,7 @@ import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend } fro
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/analysis_card"
 
 interface BarChartProps {
-  data: any[]
+  data: unknown[]
   xKey: string
   yKey: string | string[]
   title: string
@@ -51,4 +51,3 @@ export function BarChartComponent({ data, xKey, yKey, title, description, isMult
     </Card>
   )
 }
-

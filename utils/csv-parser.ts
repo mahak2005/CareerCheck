@@ -1,4 +1,4 @@
-import type { PlacementRecord, CompanyPlacementData, CompanyInternshipData, BranchPlacementData, BranchInternshipData } from './types';
+import type { PlacementRecord as ImportedPlacementRecord, CompanyPlacementData, CompanyInternshipData, BranchPlacementData, BranchInternshipData } from './types';
 
 export interface PlacementRecord {
   RollNumber: string;
@@ -15,8 +15,8 @@ export async function fetchPlacementData(year: string, branch: string): Promise<
   try {
     if (branch === 'cumulative') {
       const branches = ['cse', 'it', 'ece', 'mae'];
-      if (year === '2023') {
-        branches.push('barch');
+      if (year === '2024') {
+        branches.push('cseai');
       }
       let allData: PlacementRecord[] = [];
       for (const b of branches) {
@@ -138,4 +138,3 @@ export function filterPlacementData(
     return true;
   });
 }
-
