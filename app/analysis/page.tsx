@@ -185,24 +185,34 @@ export default function AnalysisPage() {
     }
     fetchData()
   }, [selectedYear, dataType])
-
+  function isPlacementData(item: AnalysisPlacementData | AnalysisInternshipData): item is AnalysisPlacementData {
+    return (item as AnalysisPlacementData).CTC !== undefined;
+  }
+  
   useEffect(() => {
-    const filtered = data.filter((item: any) => {
-      const matchesCompany = selectedCompany ? item.Company === selectedCompany : true
+    const filtered = data.filter((item) => {
+      const matchesCompany = selectedCompany ? item.Company === selectedCompany : true;
+  
       const matchesValueRange = (
-        (!valueRange.min || item[dataType === 'placements' ? 'CTC' : 'Stipend'] >= Number(valueRange.min)) &&
-        (!valueRange.max || item[dataType === 'placements' ? 'CTC' : 'Stipend'] <= Number(valueRange.max))
-      )
+        (!valueRange.min || (isPlacementData(item) ? item.CTC : item.Stipend) >= Number(valueRange.min)) &&
+        (!valueRange.max || (isPlacementData(item) ? item.CTC : item.Stipend) <= Number(valueRange.max))
+      );
+  
       const matchesOfferRange = (
-        (!offerRange.min || item[dataType === 'placements' ? 'FTEOffers' : 'TotalOffers'] >= Number(offerRange.min)) &&
-        (!offerRange.max || item[dataType === 'placements' ? 'FTEOffers' : 'TotalOffers'] <= Number(offerRange.max))
-      )
-      return matchesCompany && matchesValueRange && matchesOfferRange
-    })
-    setFilteredData(filtered)
-  }, [data, selectedCompany, valueRange, offerRange, dataType])
+        (!offerRange.min || (isPlacementData(item) ? item.FTEOffers : item.TotalOffers) >= Number(offerRange.min)) &&
+        (!offerRange.max || (isPlacementData(item) ? item.FTEOffers : item.TotalOffers) <= Number(offerRange.max))
+      );
+  
+      return matchesCompany && matchesValueRange && matchesOfferRange;
+    });
+  
+    setFilteredData(filtered);
+  }, [data, selectedCompany, valueRange, offerRange, dataType]);
+  
 
-  const companies = Array.from(new Set(data.map((item: any) => item.Company)))
+//   const companies = Array.from(new Set(data.map((item: any) => item.Company)))
+const companies = Array.from(new Set(data.map((item: AnalysisPlacementData | AnalysisInternshipData) => item.Company)));
+
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-50">
@@ -238,22 +248,34 @@ export default function AnalysisPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
-              <label className="block text-sm font-medium mb-1">Company</label>
-              <Select onValueChange={setSelectedCompany}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select company" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Companies</SelectItem>
-                  {companies.map((company) => (
-                    <SelectItem key={company} value={company}>
-                      {company}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
+                <div>
+                    <label className="block text-sm font-medium mb-1">Company</label>
+                    <Select onValueChange={setSelectedCompany}>
+                    <SelectTrigger>
+                        <SelectValue placeholder="Select company" />
+                    </SelectTrigger>
+                    <SelectContent>
+                        {companies.map((company) => (
+                        <SelectItem key={company} value={company}>
+                            {company}
+                        </SelectItem>
+                        ))}
+                    </SelectContent>
+                    </Select>
+                    {/* Cross logic to reset selected company */}
+                    {selectedCompany && (
+                    <div className="flex items-center gap-2 mt-2">
+                        <span className="text-sm font-medium">{selectedCompany}</span>
+                        <button
+                        className="text-red-500 hover:text-red-700"
+                        onClick={() => setSelectedCompany("")}
+                        >
+                        ×
+                        </button>
+                    </div>
+                    )}
+                </div>
+
             <div>
               <label className="block text-sm font-medium mb-1">
                 {dataType === 'placements' ? 'CTC Range (LPA)' : 'Stipend Range (INR)'}
@@ -300,15 +322,39 @@ export default function AnalysisPage() {
                 <TableHead>{dataType === 'placements' ? 'FTE Offers' : 'Total Offers'}</TableHead>
               </TableRow>
             </TableHeader>
-            <TableBody>
-              {filteredData.map((item: any, index) => (
+            {/* <TableBody>
+              {filteredData.map((item: AnalysisPlacementData | AnalysisInternshipData, index) => (
                 <TableRow key={index}>
                   <TableCell>{item.Company}</TableCell>
                   <TableCell>{dataType === 'placements' ? item.CTC : item.Stipend}</TableCell>
                   <TableCell>{dataType === 'placements' ? item.FTEOffers : item.TotalOffers}</TableCell>
                 </TableRow>
               ))}
+            </TableBody> */}
+            <TableBody>
+            {filteredData.map((item, index) => (
+                <TableRow key={index}>
+                <TableCell>{item.Company}</TableCell>
+                <TableCell>
+                    {dataType === 'placements' ? (
+                    // TypeScript knows item is AnalysisPlacementData here
+                    'CTC' in item ? item.CTC : 'N/A' 
+                    ) : (
+                    // TypeScript knows item is AnalysisInternshipData here
+                    'Stipend' in item ? item.Stipend : 'N/A'
+                    )}
+                </TableCell>
+                <TableCell>
+                    {dataType === 'placements' ? (
+                    'FTEOffers' in item ? item.FTEOffers : 'N/A'
+                    ) : (
+                    'TotalOffers' in item ? item.TotalOffers : 'N/A'
+                    )}
+                </TableCell>
+                </TableRow>
+            ))}
             </TableBody>
+
           </Table>
         </div>
       </main>

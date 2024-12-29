@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { fetchAnalysisData } from '@/utils/csv-parser';
-import type { AnalysisPlacementData, AnalysisInternshipData } from '@/utils/types';
+// import type { AnalysisPlacementData, AnalysisInternshipData } from '@/utils/types';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
