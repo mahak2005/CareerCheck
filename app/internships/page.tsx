@@ -21,9 +21,9 @@ import {
 } from "@/components/ui/table";
 import { Navbar } from "@/components/navbar";
 
-interface InternshipPageProps {
-  internships: InternshipRecord[];
-}
+// interface InternshipPageProps {
+//   internships: InternshipRecord[];
+// }
 
 export default function InternshipsPage() {
   const [selectedYear, setSelectedYear] = useState("2024");
