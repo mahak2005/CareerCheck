@@ -68,5 +68,17 @@ branchYears.forEach(year => {
   convertCsvToJson(internshipsInput, internshipsOutput);
 });
 
+// Process internship data for 2024 under 'data' directory
+const internshipYears = ['2024'];
+const internshipBranches = ['cse', 'it', 'ece', 'mae', 'cseai'];
+
+internshipYears.forEach(year => {
+  internshipBranches.forEach(branch => {
+    const csvFilePath = path.join(dataDir, year, `${branch}_internship.csv`);
+    const jsonFilePath = path.join(outputDir, year, `${branch}_internship.json`);
+    convertCsvToJson(csvFilePath, jsonFilePath);
+  });
+});
+
 console.log('CSV to JSON conversion completed.');
 

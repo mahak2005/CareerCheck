@@ -5,6 +5,15 @@ export interface PlacementRecord {
   "CTC (LPA)": string;
 }
 
+
+
+export interface InternshipRecord {
+  "S.no": string;
+  Name: string;
+  "InternshipDetails": string;
+}
+
+
 export interface CompanyPlacementData {
   Company: string;
   "CTC (LPA)": number;

@@ -6,6 +6,12 @@ export interface PlacementRecord {
   FinalOffer: string;
   "CTC (LPA)": string;
 }
+export interface InternshipRecord {
+  "S.no": string;
+  Name: string;
+  "InternshipDetails": string;
+}
+
 
 // const baseUrl = process.env.VERCEL_URL
 //   ? `https://${process.env.VERCEL_URL}`
@@ -13,7 +19,7 @@ export interface PlacementRecord {
 const baseUrl =
   process.env.NODE_ENV === 'production'
     ? 'https://career-check.vercel.app' // Your production site URL
-    : 'http://localhost:3000'; 
+    : 'http://localhost:3000';
 
 export async function fetchPlacementData(year: string, branch: string): Promise<PlacementRecord[]> {
   try {
@@ -44,13 +50,76 @@ export async function fetchPlacementData(year: string, branch: string): Promise<
     console.error(`Error fetching placement data: ${error}`);
     return [];
   }
+  
+}
+export function filterInternshipData(
+  data: InternshipRecord[],
+  filters: {
+    name?: string;
+    companies?: string[];
+    internshipDetails?: string;
+  }
+): InternshipRecord[] {
+  return data.filter((record) => {
+    if (filters.name && !record.Name.toLowerCase().includes(filters.name.toLowerCase())) {
+      return false;
+    }
+
+    // Access the 'Internship Details' property with bracket notation
+    if (filters.companies?.length && !filters.companies.includes(record["InternshipDetails"])) {
+      return false;
+    }
+
+    if (filters.internshipDetails && !record["InternshipDetails"].toLowerCase().includes(filters.internshipDetails.toLowerCase())) {
+      return false;
+    }
+
+    return true;
+  });
+}
+
+export async function fetchInternshipData(year: string, branch: string): Promise<BranchInternshipData[]> {
+  try {
+    console.log(`Fetching internship data for year: ${year}, branch: ${branch}`);
+    
+    // Check if branch is 'cumulative' to fetch data for all branches
+    if (branch === 'cumulative') {
+      const branches = ['cse', 'it', 'ece', 'mae'];
+      if (year === '2024') {
+        branches.push('cseai'); // Add 'cseai' if the year is 2024
+      }
+      
+      let allData: BranchInternshipData[] = [];
+      
+      for (const b of branches) {
+        const response = await fetch(`${baseUrl}/data/${year}/${b}_internship.json`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        allData = allData.concat(data);
+      }
+      
+      return allData;
+    } else {
+      // Fetch the internship data for a specific branch
+      const response = await fetch(`${baseUrl}/data/${year}/${branch.toLowerCase()}_internship.json`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    }
+  } catch (error) {
+    console.error(`Error fetching internship data: ${error}`);
+    return [];
+  }
 }
 
 export async function fetchCompanyData(year: string): Promise<{ placements: CompanyPlacementData[], internships: CompanyInternshipData[] }> {
   try {
     const placementsResponse = await fetch(`${baseUrl}/data/companies_data/placements_${year}.json`);
     const internshipsResponse = await fetch(`${baseUrl}/data/companies_data/internships_${year}.json`);
-    
+
     if (!placementsResponse.ok || !internshipsResponse.ok) {
       throw new Error('Failed to fetch data');
     }
@@ -69,7 +138,7 @@ export async function fetchBranchData(year: string): Promise<{ placements: Branc
   try {
     const placementsResponse = await fetch(`${baseUrl}/data/branches_data/placement_${year}.json`);
     const internshipsResponse = await fetch(`${baseUrl}/data/branches_data/internship_${year}.json`);
-    
+
     if (!placementsResponse.ok || !internshipsResponse.ok) {
       throw new Error('Failed to fetch data');
     }
