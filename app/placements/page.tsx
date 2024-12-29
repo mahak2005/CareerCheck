@@ -22,7 +22,7 @@ import { Navbar } from "@/components/navbar"
 import type { PlacementRecord } from "@/utils/csv-parser"
 
 export default function PlacementsPage() {
-  const [selectedYear, setSelectedYear] = useState("2023")
+  const [selectedYear, setSelectedYear] = useState("2024")
   const [selectedBranch, setSelectedBranch] = useState("cumulative")
   const [searchName, setSearchName] = useState("")
   const [selectedCompanies, setSelectedCompanies] = useState<string[]>([])
@@ -36,7 +36,7 @@ export default function PlacementsPage() {
     { value: "it", label: "IT" },
     { value: "ece", label: "ECE" },
     { value: "mae", label: "MAE" },
-    ...(selectedYear === "2023" ? [{ value: "barch", label: "B.Arch" }] : []),
+    ...(selectedYear === "2024" ? [{ value: "cseai", label: "CSEAI" }] : []),
   ]
 
   useEffect(() => {
@@ -69,7 +69,7 @@ export default function PlacementsPage() {
   }, [selectedYear, selectedBranch, searchName, selectedCompanies, ctcRange])
 
   useEffect(() => {
-    if (selectedYear !== "2023" && selectedBranch === "barch") {
+    if (selectedYear !== "2024" && selectedBranch === "cseai") {
       setSelectedBranch("cumulative")
     }
   }, [selectedYear, selectedBranch])
@@ -81,7 +81,7 @@ export default function PlacementsPage() {
         <div className="space-y-6">
           {/* Year Selection */}
           <div className="flex gap-4">
-            {["2021", "2022", "2023"].map((year) => (
+            {["2021", "2022", "2023","2024"].map((year) => (
               <Button
                 key={year}
                 variant={selectedYear === year ? "default" : "secondary"}

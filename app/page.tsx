@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-center mb-4 text-gray-100">Welcome to CAREER CHECK</h1>
           <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
             className="text-2xl font-bold text-center mb-2 text-gray-100">
-            Placements: Because Passion Doesn't Pay Bills.</h3>
+            Placements: Because Passion Doesnt Pay Bills.</h3>
           <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
             Empowering students and professionals to make informed career decisions.
             Explore our placement history and see how we have helped shape successful careers.

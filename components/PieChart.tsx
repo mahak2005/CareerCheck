@@ -2,7 +2,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from "recha
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/analysis_card"
 
 interface PieChartProps {
-  data: any[]
+  data: unknown[]
   dataKey: string
   nameKey: string
   title: string

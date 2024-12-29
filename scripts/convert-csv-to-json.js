@@ -32,9 +32,9 @@ function convertCsvToJson(inputPath, outputPath) {
   console.log(`Converted ${inputPath} to ${outputPath}`);
 }
 
-// Process placement data for 2021-2023
-const years = ['2021', '2022', '2023'];
-const branches = ['cse', 'it', 'ece', 'mae', 'barch'];
+// Process placement data for 2021-2024
+const years = ['2021', '2022', '2023','2024'];
+const branches = ['cse', 'it', 'ece', 'mae', 'cseai'];
 
 years.forEach(year => {
   branches.forEach(branch => {
