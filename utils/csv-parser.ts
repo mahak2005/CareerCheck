@@ -1,4 +1,4 @@
-import type { PlacementRecord, CompanyPlacementData, CompanyInternshipData, BranchPlacementData, BranchInternshipData } from './types';
+import type { PlacementRecord as ImportedPlacementRecord, CompanyPlacementData, CompanyInternshipData, BranchPlacementData, BranchInternshipData } from './types';
 
 export interface PlacementRecord {
   RollNumber: string;
