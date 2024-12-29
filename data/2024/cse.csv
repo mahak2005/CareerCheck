@@ -1,24 +1,24 @@
-RollNumber,Name,FinalOffer,CTC (LPA)
-201012020,Saumya Mahajan,JPMorgan Chase & Co.,19.75
+RollNumber,Name,FinalOffer,CTC (LPA) Drop
+201012020,Saumya Mahajan,JPMC,19.75
 401012020,Anu Sharma,Intuit,45
-501012020,Lubhani Gaat,SAP labs,24.62
+501012020,Lubhani Gaat,SAP Labs,24.62
 601012020,Anukriti Kathane,Barclays,13.32
 701012020,Jasleen Kaur,Intuit,44.92
 801012020,Manvi Kaur,Salesforce,43
 901012020,Jinisha Jain,Fidelity International,9
 1001012020,Manya Sachdeva,Adobe,56
-1101012020,Tanya Dixit,Visa,32
+1101012020,Tanya Dixit,VISA,32
 1201012020,Diksha Bhardwaj,Adobe,56
 1301012020,Namita Arya,Intuit,44.92
 1401012020,Amritaya Ray,Intuit,44.92
 1501012020,Apoorva Tiwari,Uber,38.44
-1601012020,Arushi Yadav,JPMorgan Chase & Co,19.75
+1601012020,Arushi Yadav,JPMC,19.75
 1701012020,Saumya Samir,UKG,15.5
 1801012020,Arpana Jha,SAP Labs,24.62
 2001012020,Pehu,Wells Fargo,24
 2101012020,Shreya Mittal,Goldman Sachs,24
 2201012020,Anshika Singh,Moody's,10
-2601012020,Srishti Wadhwa,Amazon Web Services,53
+2601012020,Srishti Wadhwa,AWS-Amazon Web Services,53
 2701012020,Mansi Soni,Publicis Sapient,16.6
 2901012020,Sampurnna Swain,Nomura,13.66
 3201012020,Shivangi Aggaarwal,VISA,28.5
@@ -38,16 +38,16 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 4601012020,Sanya Bansal,Goldman Sachs,17.5
 4701012020,Ritika Pahwa,Samsung Research and Development Institute India Delhi,15.5
 4801012020,Ananya Singla,Cisco,21.19
-5001012020,Khyati Singh,SAP,24.62
+5001012020,Khyati Singh,SAP Labs,24.62
 5201012020,Anushka Kumari,Moody's Analytics,10
-5301012020,Liza Singh,Tata Motors,10.5
+5301012020,Liza Singh,TATA Motors,10.5
 5401012020,Pragya Khatri,VISA,28.55
 5501012020,Gauri Tomar,Wells Fargo,24
-5601012020,Rishita Gupta,JPMorgan & Chase Co.,19.75
-5801012020,Lipika,Pepsico,10.78
-6001012020,Garima .,SAP,24.62
-6101012020,Anvi Kundu,JP Morgan Chase & Co.,19.75
-6301012020,Vaidehi Singhal,JP Morgan Chase & Co.,19.75
+5601012020,Rishita Gupta,JPMC,19.75
+5801012020,Lipika,PepsiCo,10.78
+6001012020,Garima .,SAP Labs,24.62
+6101012020,Anvi Kundu,JPMC,19.75
+6301012020,Vaidehi Singhal,JPMC,19.75
 6601012020,Mansi Singla,Goldman Sachs,24
 6701012020,Nandini Kumar,Microsoft,51
 6801012020,Akshita Goel,Wells Fargo,24
@@ -59,23 +59,23 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 7501012020,Vanshika Moyal,Morgan Stanley,29.48
 7601012020,Tannu Daral,Barclays,13.33
 7701012020,Ganiti Jagota,AQR,31.5
-7801012020,Medha .,SAP,24.62
-7901012020,Radhika Singh,JP Morgan Chase & Co.,19.75
-8001012020,Manaswini De,Visa,30.19
+7801012020,Medha .,SAP Labs,24.62
+7901012020,Radhika Singh,JPMC,19.75
+8001012020,Manaswini De,VISA,30.19
 8101012020,Chhavi Saini,CitiCorp,18
-8301012020,Shruti Yadav,TATA MOTORS,10.5
+8301012020,Shruti Yadav,TATA Motors,10.5
 8401012020,Gyanvi,Morgan Stanley,23
-8501012020,Ankita Kansotia,JPMorgan & Chase,19.75
+8501012020,Ankita Kansotia,JPMC,19.75
 8701012020,Ishita Chandra,Flipkart,32.58
 8801012020,Shivani.,American Express,18.94
 8901012020,Diksha Malik,Uber,38.44
 9001012020,Kuhuk Agarwal,Google,50.75
-9101012020,Simran Arora,Visa,28.55
+9101012020,Simran Arora,VISA,28.55
 9201012020,Kashish Kumari,Cisco,19.19
 9301012020,Shritul Tiwari,Morgan Stanley,29.48
 9401012020,Pranjal Maheshwari,Expedia,26
 9501012020,Saumya .,Microsoft,50
-9601012020,Muskan .,Amazon AWS,53
+9601012020,Muskan .,AWS-Amazon Web Services,53
 9701012020,Nikita Punia,Mercari,16
 9901012020,Deeksha,Publicis Sapient,17
 10001012020,Ishita Jain,Nomura,14
@@ -84,12 +84,12 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 10401012020,Plaksha,Microsoft,51
 10601012020,Tejaswini Gurram,Urban Company,30
 10701012020,Priyanka,Deutsche Bank,19.63
-10801012020,Diya,Amazon Web Services ( AWS ),52.89
+10801012020,Diya,AWS-Amazon Web Services,52.89
 11001012020,Anushka Ambekar,Novartis,8.53
 11101012020,Diya,PwC,9
-11201012020,Yashvi Sharma,CitiBank,18
+11201012020,Yashvi Sharma,Citi Bank,18
 11301012020,Bhavika Sachdeva,Microsoft,51
-11401012020,Shivani Singh,Airtel payment bank,14.75
+11401012020,Shivani Singh,Airtel Payments Bank,14.75
 11501012020,Niharika Singh,JPMC,19.75
 11601012020,Ishika kashyap,PepsiCo,10.78
 11701012020,Archana Bamal,Lowe's,19.69
@@ -100,13 +100,13 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 12301012020,Bhavya Jain,TATA Motors,10.5
 12401012020,Yashika Goel,Goldman Sachs,24
 12801012020,Aastha Verma,Microsoft,51
-12901012020,Sai Tumili,TATA MOTORS,10.5
+12901012020,Sai Tumili,TATA Motors,10.5
 13001012020,Harshita Rathee,Tesco,20.98
 13201012020,Anushka Dahiya,JPMC,19.75
-13301012020,Riddhi Barodia,Citi,18
+13301012020,Riddhi Barodia,Citi Bank,18
 13401012020,Ritika Gautam,Barclays,13.5
 13501012020,Divyangana,Microsoft,51
-13601012020,Jafrin Khan,Sap Labs India,24.62
+13601012020,Jafrin Khan,SAP Labs,24.62
 13701012020,Aashi Gupta,Wells Fargo,24
 14001012020,Aysha,Airtel,14.75
 14101012020,Ayushi Ukey,HPE,17.5
@@ -126,10 +126,10 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 16301012020,Tanisha Kindo,Deloitte,7.6
 16401012020,Yashika Behl,PhonePe,16
 16501012020,Shruti Koli,United Airlines,8.5
-16601012020,Kumkum Baswal,Deloitte (India),7.6
+16601012020,Kumkum Baswal,Deloitte India,7.6
 17001012020,Palak Jain,Morgan Stanley,29.48
 17101012020,Chhavi Singh,TATA Motors,10.5
-17201012020,Shreya Awasthi,SAP Labs India,24.62
+17201012020,Shreya Awasthi,SAP Labs,24.62
 17401012020,Ahana Vishwakarma,Wells Fargo,24
 17601012020,Prachi Yadav,Nomura,13.66
 17801012020,Chahal Kohli,Microsoft,51
@@ -144,5 +144,5 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 19101012020,Archana Kumari,PepsiCo,10.78
 19401012020,Shivani Marwaha,Fidelity,9
 19501012020,Priyasha Jain,Google,33
-19701012020,Muskan,SAP Labs India,24.62
+19701012020,Muskan,SAP Labs,24.62
 20001012020,Anshika Aggarwal,Google,33
