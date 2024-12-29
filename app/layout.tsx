@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import { Layout } from '@/components/Layout'
-// import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export const metadata: Metadata = {
   title: "Career Check",
   description: "IGDTUW Placement Statistics Portal",
@@ -15,9 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-gray-950 text-gray-50">
-      <Layout>{children}</Layout>
+        {/* Add SpeedInsights here to track performance across the app */}
+        <SpeedInsights />
+        
+        {/* Wrap children with your Layout component */}
+        <Layout>{children}</Layout>
       </body>
     </html>
   )
 }
-
