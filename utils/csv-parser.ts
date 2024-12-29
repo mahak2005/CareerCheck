@@ -78,42 +78,58 @@ export function filterInternshipData(
   });
 }
 
-export async function fetchInternshipData(year: string, branch: string): Promise<BranchInternshipData[]> {
+export async function fetchInternshipData(year: string, branch: string): Promise<InternshipRecord[]> {
   try {
     console.log(`Fetching internship data for year: ${year}, branch: ${branch}`);
     
-    // Check if branch is 'cumulative' to fetch data for all branches
     if (branch === 'cumulative') {
       const branches = ['cse', 'it', 'ece', 'mae'];
       if (year === '2024') {
-        branches.push('cseai'); // Add 'cseai' if the year is 2024
+        branches.push('cseai');
       }
-      
-      let allData: BranchInternshipData[] = [];
-      
+
+      let allData: InternshipRecord[] = [];
+
       for (const b of branches) {
         const response = await fetch(`${baseUrl}/data/${year}/${b}_internship.json`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = await response.json();
-        allData = allData.concat(data);
+
+        const data: BranchInternshipData[] = await response.json();
+
+        // Map BranchInternshipData to InternshipRecord
+        const mappedData: InternshipRecord[] = data.map((item) => ({
+          "S.no": item["S.no"],  // Map S.no
+          Name: item.Name,        // Map Name
+          "InternshipDetails": item.InternshipDetails // Map InternshipDetails
+        }));
+
+        allData = allData.concat(mappedData);
       }
-      
+
       return allData;
     } else {
-      // Fetch the internship data for a specific branch
       const response = await fetch(`${baseUrl}/data/${year}/${branch.toLowerCase()}_internship.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      return await response.json();
+
+      const data: BranchInternshipData[] = await response.json();
+
+      // Map BranchInternshipData to InternshipRecord
+      return data.map((item) => ({
+        "S.no": item["S.no"], // Map S.no
+        Name: item.Name,       // Map Name
+        "InternshipDetails": item.InternshipDetails // Map InternshipDetails
+      }));
     }
   } catch (error) {
     console.error(`Error fetching internship data: ${error}`);
-    return [];
+    return []; // Return an empty array in case of error
   }
 }
+
 
 export async function fetchCompanyData(year: string): Promise<{ placements: CompanyPlacementData[], internships: CompanyInternshipData[] }> {
   try {
