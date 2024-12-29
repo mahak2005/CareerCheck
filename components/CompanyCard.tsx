@@ -35,7 +35,7 @@ interface CompanyCardProps {
 
 export default function CompanyCard({ id, name, logo }: CompanyCardProps) {
   return (
-    <Link href={`/internships/${id}`}>
+    <Link href={`/career-programs/${id}`}>
       <div
         className="relative flex flex-col sm:flex-row items-center border rounded-lg p-6 transition-transform duration-300 transform hover:-translate-y-2 w-[50%] h-[150px] bg-[#edede9] text-[#003049] mx-auto shadow-[0px_4px_10px_rgba(3,4,94,0.6)] hover:shadow-[0px_8px_20px_rgba(3,4,94,0.8)]"
       >
