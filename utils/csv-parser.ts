@@ -316,3 +316,68 @@ export function filterPlacementData(
     return true;
   });
 }
+
+
+
+//Analytics page
+export async function fetchBranchAnalysisData(type: 'internships' | 'placements', year: string): Promise<BranchInternshipData[] | BranchPlacementData[]> {
+  try {
+    const response = await fetch(`${baseUrl}/data/branch_analysis/${type}/${year}.json`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data.map((item: any) => ({
+      ...item,
+      TotalStudents: Number(item.TotalStudents),
+      InternStudents: Number(item.InternStudents),
+      PlacedStudents: Number(item.PlacedStudents),
+      "6MonthInterns": Number(item["6MonthInterns"]),
+      "HighestStipend(LPM)": Number(item["HighestStipend(LPM)"]),
+      "HighestCTC(LPA)": Number(item["HighestCTC(LPA)"]),
+      "AverageCTC(LPA)": Number(item["AverageCTC(LPA)"])
+    }));
+  } catch (error) {
+    console.error(`Error fetching branch ${type} data for ${year}:`, error);
+    return [];
+  }
+}
+
+export async function fetchCompanyAnalysisData(type: 'internships' | 'placements', year: string): Promise<CompanyInternshipData[] | CompanyPlacementData[]> {
+  try {
+    const response = await fetch(`${baseUrl}/data/company_analysis/${type}/${year}.json`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data.map((item: any) => ({
+      ...item,
+      Stipend: Number(item.Stipend),
+      TotalOffers: Number(item.TotalOffers),
+      CTC: Number(item.CTC),
+      FTEOffers: Number(item.FTEOffers)
+    }));
+  } catch (error) {
+    console.error(`Error fetching company ${type} data for ${year}:`, error);
+    return [];
+  }
+}
+
+export function calculateCTCRanges(data: CompanyPlacementData[]): { range: string; count: number }[] {
+  const ranges = [
+    { range: '<10 LPA', count: 0 },
+    { range: '10-20 LPA', count: 0 },
+    { range: '20-30 LPA', count: 0 },
+    { range: '>30 LPA', count: 0 }
+  ];
+
+  data.forEach(item => {
+    if (item.CTC < 10) ranges[0].count += item.FTEOffers;
+    else if (item.CTC < 20) ranges[1].count += item.FTEOffers;
+    else if (item.CTC < 30) ranges[2].count += item.FTEOffers;
+    else ranges[3].count += item.FTEOffers;
+  });
+
+  return ranges;
+}
+

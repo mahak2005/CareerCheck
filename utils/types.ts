@@ -20,34 +20,54 @@ export interface BranchInternshipData {
 
 export interface CompanyPlacementData {
   Company: string;
-  "CTC (LPA)": number;
-  "FTE Offers": number;
+  CTC: number;
+  FTEOffers: number;
 }
 
 export interface CompanyInternshipData {
-  "company Name": string;
-  "Stipend (INR per month)": number;
-  "Internship Offers": number;
+  Company: string;
+  Stipend: number;
+  TotalOffers: number;
+}
+
+// export interface BranchPlacementData {
+//   Branch: string;
+//   "TotalStudents": number;
+//   "PlacedStudents": number;
+//   "6MonthInterns": number;
+//   "HighestCTC(LPA)": number;
+//   HighestCTCCompany: string;
+//   "AverageCTC(LPA)": number;
+// }
+
+// export interface BranchInternshipData {
+//   Branch: string;
+//   TotalStudents: number;
+//   InternStudents: number;
+//   "HighestStipend(LPM)": number;
+//   HighestStipendCompany: string;
+// }
+export interface BranchInternshipData {
+  Branch: string;
+  TotalStudents: number;
+  InternStudents: number;
+  "HighestStipend(LPM)": number;
+  HighestStipendCompany: string;
+  Year: string;
 }
 
 export interface BranchPlacementData {
   Branch: string;
-  "Total Students": number;
-  "Placed Students": number;
-  "6 Month Interns": number;
-  "Highest CTC (LPA)": number;
-  "Highest CTC Company": string;
-  "Highest Stipend (LPM)": number;
-  "Highest Stipend Company": string;
+  "TotalStudents": number;
+  "PlacedStudents": number;
+  "6MonthInterns": number;
+  "HighestCTC(LPA)": number;
+  HighestCTCCompany: string;
+  "AverageCTC(LPA)": number;
+  Year: string;
 }
 
-export interface BranchInternshipData {
-  Branch: string;
-  "Total Students": number;
-  "Interned Students": number;
-  "Highest Stipend (LPM)": number;
-  "Highest Stipend Company": string;
-}
+
 
 export interface CTCRange {
   range: string;

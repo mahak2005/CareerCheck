@@ -82,16 +82,16 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0 space-x-3">
             <Link href="/" className="text-2xl font-bold">
-              <Image 
-                src="/mainlogo.png" 
-                alt="Logo" 
-                width={150} 
-                height={170} 
+              <Image
+                src="/mainlogo.png"
+                alt="Logo"
+                width={150}
+                height={170}
                 className="logo-class"
               />
             </Link>
           </div>
-          
+
           {/* Hamburger Menu Icon */}
           <div className="block lg:hidden">
             <button
@@ -142,20 +142,20 @@ export function Navbar() {
                 </svg>
               </button>
               {[
-                { href: '/placements', label: 'Placements' },
-                { href: '/internships', label: 'Internships' },
+                { href: '/home', label: 'Home' },
+                // { href: '/placements', label: 'Placements' },
+                // { href: '/internships', label: 'Internships' },
                 { href: '/analysis', label: 'Analysis' },
                 { href: '/analytics', label: 'Analytics' },
-                { href: '/career-programs', label: 'Career Programs' },
+                // { href: '/career-programs', label: 'Career Programs' },
                 { href: '/interview-diaries', label: 'Interview Diaries' },
                 { href: '/alumini-connect', label: 'Alumni Connect' },
                 { href: '/about-us', label: 'Us' },
               ].map(({ href, label }) => (
                 <Link key={href} href={href} className="relative block text-gray-300 hover:text-gray-100 text-lg lg:inline">
                   <motion.span
-                    className={`inline-block ${
-                      pathname === href ? 'text-gray-100' : 'text-gray-300 hover:text-gray-100'
-                    }`}
+                    className={`inline-block ${pathname === href ? 'text-gray-100' : 'text-gray-300 hover:text-gray-100'
+                      }`}
                     whileHover={{ y: -2 }}
                     transition={{ type: 'spring', stiffness: 300 }}
                   >

@@ -94,3 +94,31 @@ years.forEach(year => {
 
 console.log('CSV to JSON conversion completed.');
 
+//Convert analytics data
+const branchAnalysisTypes = ['internships', 'placements'];
+const branchAnalysisYears = {
+  internships: ['2023', '2024', '2025'],
+  placements: ['2022', '2023', '2024']
+};
+
+branchAnalysisTypes.forEach(type => {
+  branchAnalysisYears[type].forEach(year => {
+    const inputPath = path.join(dataDir, 'branch_analysis', type, `${year}.csv`);
+    const outputPath = path.join(outputDir, 'branch_analysis', type, `${year}.json`);
+    convertCsvToJson(inputPath, outputPath);
+  });
+});
+
+// Convert company analysis data
+const companyAnalysisTypes = ['internships', 'placements'];
+const companyAnalysisYears = ['2021', '2022', '2023', '2024'];
+
+companyAnalysisTypes.forEach(type => {
+  companyAnalysisYears.forEach(year => {
+    const inputPath = path.join(dataDir, 'company_analysis', type, `${year}.csv`);
+    const outputPath = path.join(outputDir, 'company_analysis', type, `${year}.json`);
+    convertCsvToJson(inputPath, outputPath);
+  });
+});
+
+console.log('CSV to JSON conversion completed.');
