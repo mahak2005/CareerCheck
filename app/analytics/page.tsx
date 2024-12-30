@@ -243,7 +243,7 @@ import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { BranchAnalysisChart } from "@/components/BranchAnalysisChart"
 import { CompanyAnalysisChart } from "@/components/CompanyAnalysisChart"
-import { fetchBranchAnalysisData, fetchCompanyAnalysisData, calculateCTCRanges } from "@/utils/csv-parser"
+import { fetchBranchAnalysisData, fetchCompanyAnalysisData } from "@/utils/csv-parser"
 import type { BranchInternshipData, BranchPlacementData, CompanyInternshipData, CompanyPlacementData } from "@/utils/types"
 
 export default function VisualsPage() {
