@@ -1,5 +1,5 @@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
-import type { BranchInternshipData, BranchPlacementData } from '@/utils/types';
+import type { BranchInternshipData, BranchPlacementData, AggregatedBranchData } from '@/utils/types';
 
 interface BranchAnalysisChartProps {
   data: (BranchInternshipData | BranchPlacementData)[];
@@ -20,16 +20,16 @@ export function BranchAnalysisChart({ data, dataType, selectedYear }: BranchAnal
   }));
 
   const lineChartData = selectedYear === 'all'
-    ? data.reduce((acc, item) => {
+    ? data.reduce((acc: AggregatedBranchData[], item) => {
         const year = item.Year;
         const existingYear = acc.find(d => d.Year === year);
         if (existingYear) {
           existingYear.TotalStudents += dataType === 'internships' ? item.TotalStudents : item["TotalStudents"];
           if (dataType === 'internships') {
-            existingYear.InternStudents += (item as BranchInternshipData).InternStudents;
+            existingYear.InternStudents = (existingYear.InternStudents || 0) + (item as BranchInternshipData).InternStudents;
           } else {
-            existingYear.PlacedStudents += (item as BranchPlacementData)["PlacedStudents"];
-            existingYear["6MonthInterns"] += (item as BranchPlacementData)["6MonthInterns"];
+            existingYear.PlacedStudents = (existingYear.PlacedStudents || 0) + (item as BranchPlacementData)["PlacedStudents"];
+            existingYear["6MonthInterns"] = (existingYear["6MonthInterns"] || 0) + (item as BranchPlacementData)["6MonthInterns"];
           }
         } else {
           acc.push({
@@ -44,7 +44,7 @@ export function BranchAnalysisChart({ data, dataType, selectedYear }: BranchAnal
           });
         }
         return acc;
-      }, [] as any[])
+      }, [])
     : [];
 
   return (
@@ -94,3 +94,4 @@ export function BranchAnalysisChart({ data, dataType, selectedYear }: BranchAnal
     </div>
   );
 }
+

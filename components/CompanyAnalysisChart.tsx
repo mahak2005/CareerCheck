@@ -11,37 +11,69 @@ interface CompanyAnalysisChartProps {
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
 export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAnalysisChartProps) {
+  const isInternshipData = (item: CompanyInternshipData | CompanyPlacementData): item is CompanyInternshipData =>
+    'TotalOffers' in item;
+
+  const isPlacementData = (item: CompanyInternshipData | CompanyPlacementData): item is CompanyPlacementData =>
+    'FTEOffers' in item;
+
   const topCompanies = data
-    .sort((a, b) => (b as any)[dataType === 'internships' ? 'TotalOffers' : 'FTEOffers'] - (a as any)[dataType === 'internships' ? 'TotalOffers' : 'FTEOffers'])
+    .sort((a, b) => {
+      if (dataType === 'internships' && isInternshipData(a) && isInternshipData(b)) {
+        return b.TotalOffers - a.TotalOffers;
+      } else if (dataType === 'placements' && isPlacementData(a) && isPlacementData(b)) {
+        return b.FTEOffers - a.FTEOffers;
+      }
+      return 0;
+    })
     .slice(0, 10);
 
   const topSalaries = data
-    .sort((a, b) => (b as any)[dataType === 'internships' ? 'Stipend' : 'CTC'] - (a as any)[dataType === 'internships' ? 'Stipend' : 'CTC'])
+    .sort((a, b) => {
+      if (dataType === 'internships' && isInternshipData(a) && isInternshipData(b)) {
+        return b.Stipend - a.Stipend;
+      } else if (dataType === 'placements' && isPlacementData(a) && isPlacementData(b)) {
+        return b.CTC - a.CTC;
+      }
+      return 0;
+    })
     .slice(0, 10);
 
-  const commonCompanies = data.filter(company => 
-    data.some(c => c.Company === company.Company && 'FTEOffers' in c && 'TotalOffers' in c)
+  const commonCompanies = data.filter((company): company is CompanyInternshipData & CompanyPlacementData => 
+    isPlacementData(company) && isInternshipData(company)
   );
 
+  interface YearlyData {
+    Year: string;
+    TotalOffers?: number;
+    FTEOffers?: number;
+  }
+
   const lineChartData = selectedYear === 'all'
-    ? data.reduce((acc, item) => {
-        const year = (item as any).Year || selectedYear;
+    ? data.reduce((acc: YearlyData[], item) => {
+        const year = 'Year' in item && typeof item.Year === 'string' ? item.Year : selectedYear;
         const existingYear = acc.find(d => d.Year === year);
         if (existingYear) {
-          existingYear[dataType === 'internships' ? 'TotalOffers' : 'FTEOffers'] += 
-            (item as any)[dataType === 'internships' ? 'TotalOffers' : 'FTEOffers'];
+          if (dataType === 'internships' && isInternshipData(item)) {
+            existingYear.TotalOffers = (existingYear.TotalOffers || 0) + item.TotalOffers;
+          } else if (dataType === 'placements' && isPlacementData(item)) {
+            existingYear.FTEOffers = (existingYear.FTEOffers || 0) + item.FTEOffers;
+          }
         } else {
           acc.push({
             Year: year,
-            [dataType === 'internships' ? 'TotalOffers' : 'FTEOffers']: 
-              (item as any)[dataType === 'internships' ? 'TotalOffers' : 'FTEOffers']
+            ...(dataType === 'internships' && isInternshipData(item)
+              ? { TotalOffers: item.TotalOffers }
+              : isPlacementData(item)
+              ? { FTEOffers: item.FTEOffers }
+              : {})
           });
         }
         return acc;
-      }, [] as any[])
+      }, [])
     : [];
 
-  const ctcRanges = dataType === 'placements' ? calculateCTCRanges(data as CompanyPlacementData[]) : [];
+  const ctcRanges = dataType === 'placements' ? calculateCTCRanges(data.filter(isPlacementData)) : [];
 
   return (
     <div className="space-y-8">
@@ -54,7 +86,17 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey={dataType === 'internships' ? 'TotalOffers' : 'FTEOffers'} fill="#8884d8" />
+            <Bar 
+              dataKey={(item) => 
+                dataType === 'internships' && isInternshipData(item) 
+                  ? item.TotalOffers 
+                  : isPlacementData(item) 
+                  ? item.FTEOffers 
+                  : 0
+              } 
+              fill="#8884d8" 
+              name={dataType === 'internships' ? 'Total Offers' : 'FTE Offers'}
+            />
           </BarChart>
         </ResponsiveContainer>
       </div>
@@ -68,7 +110,17 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey={dataType === 'internships' ? 'Stipend' : 'CTC'} fill="#82ca9d" />
+            <Bar 
+              dataKey={(item) => 
+                dataType === 'internships' && isInternshipData(item) 
+                  ? item.Stipend 
+                  : isPlacementData(item) 
+                  ? item.CTC 
+                  : 0
+              } 
+              fill="#82ca9d" 
+              name={dataType === 'internships' ? 'Stipend' : 'CTC'}
+            />
           </BarChart>
         </ResponsiveContainer>
       </div>

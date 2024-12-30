@@ -98,3 +98,24 @@ export interface AnalysisInternshipData {
   Stipend: number;
   TotalOffers: number;
 }
+
+export interface AggregatedBranchData {
+  Year: string;
+  TotalStudents: number;
+  InternStudents?: number;
+  PlacedStudents?: number;
+  "6MonthInterns"?: number;
+}
+
+export interface AggregatedCompanyData {
+  Year: string;
+  TotalOffers?: number;
+  FTEOffers?: number;
+}
+
+export interface CompanyOfferComparison {
+  Company: string;
+  FTEOffers: number;
+  TotalOffers: number;
+}
+

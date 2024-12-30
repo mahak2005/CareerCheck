@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Briefcase, GraduationCap, Users } from 'lucide-react'
-import Footer from "@/components/Footer"
+// import Footer from "@/components/Footer"
 
 export default function DataPage() {
   return (
