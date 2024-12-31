@@ -84,7 +84,9 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="Company" />
             <YAxis />
-            <Tooltip />
+            <Tooltip
+              contentStyle={{  color: '#073763', border: '1px solid #ccc' }}
+            />
             <Legend />
             <Bar 
               dataKey={(item) => 
@@ -108,7 +110,9 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="Company" />
             <YAxis />
-            <Tooltip />
+            <Tooltip
+              contentStyle={{  color: '#073763', border: '1px solid #ccc' }}
+            />
             <Legend />
             <Bar 
               dataKey={(item) => 
@@ -133,7 +137,9 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="Company" />
               <YAxis />
-              <Tooltip />
+              <Tooltip
+              contentStyle={{  color: '#073763', border: '1px solid #ccc' }}
+              />
               <Legend />
               <Bar dataKey="FTEOffers" fill="#8884d8" />
               <Bar dataKey="TotalOffers" fill="#82ca9d" />
@@ -141,7 +147,6 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
           </ResponsiveContainer>
         </div>
       )}
-
       {dataType === 'placements' && (
         <div className="h-96">
           <h3 className="text-xl font-semibold mb-4">CTC Distribution</h3>
@@ -155,13 +160,52 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
                 outerRadius={80}
                 fill="#8884d8"
                 dataKey="count"
+                label={({ index }) => ctcRanges[index].range}  
               >
                 {ctcRanges.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip />
-              <Legend />
+              <Tooltip
+                content={({ active, payload }) => {
+                  if (active && payload && payload.length) {
+                    const { range, count } = payload[0].payload;
+                    return (
+                      <div
+                        className="custom-tooltip"
+                        style={{
+                          backgroundColor: '#ffffff',
+                          padding: '10px',
+                          borderRadius: '5px', 
+                          boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+                          border: '1px solid #ccc',
+                          color: '#333',
+                          fontSize: '14px', 
+                          textAlign: 'center' 
+                        }}
+                      >
+                        <p>{`${range}: ${count}`}</p>
+                      </div>
+                    );
+                  }
+                  return null;
+                }}
+              />
+              <Legend
+                content={({ payload }) => (
+                  <ul className="flex justify-center space-x-4">
+                    {payload?.map((entry, index) => (
+                      <li key={index} className="flex items-center">
+                        <div
+                          style={{ backgroundColor: entry.color }}
+                          className="w-6 h-6 mr-2"
+                        ></div>
+                        <span>{ctcRanges[index]?.range || "Unknown Range"}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              />
             </PieChart>
           </ResponsiveContainer>
         </div>
@@ -175,7 +219,9 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="Year" />
               <YAxis />
-              <Tooltip />
+              <Tooltip
+              contentStyle={{  color: '#073763', border: '1px solid #ccc' }}
+              />
               <Legend />
               <Line type="monotone" dataKey={dataType === 'internships' ? 'TotalOffers' : 'FTEOffers'} stroke="#8884d8" />
             </LineChart>

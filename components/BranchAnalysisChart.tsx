@@ -55,7 +55,10 @@ export function BranchAnalysisChart({ data, dataType, selectedYear }: BranchAnal
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="Branch" />
             <YAxis />
-            <Tooltip />
+            <Tooltip
+              contentStyle={{  color: '#073763', border: '1px solid #ccc' }}
+            />
+
             <Legend />
             <Bar dataKey="TotalStudents" fill="#8884d8" />
             {dataType === 'internships' ? (

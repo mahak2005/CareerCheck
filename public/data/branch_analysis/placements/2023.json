@@ -1,42 +1,42 @@
 [
   {
     "Branch": "CSE",
-    "Total Students": "168",
-    "Placed Students": "149",
-    "6 Month Interns": "28",
-    "Highest CTC (LPA)": "51",
-    "Highest CTC Company": "Microsoft",
-    "Highest Stipend (LPM)": "1.6",
-    "Highest Stipend Company": "Motorq"
+    "TotalStudents": "168",
+    "PlacedStudents": "149",
+    "6MonthInterns": "28",
+    "HighestCTC(LPA)": "51",
+    "HighestCTCCompany": "Microsoft",
+    "HighestStipend(LPM)": "1.6",
+    "HighestStipendCompany": "Motorq"
   },
   {
     "Branch": "IT",
-    "Total Students": "134",
-    "Placed Students": "100",
-    "6 Month Interns": "12",
-    "Highest CTC (LPA)": "51",
-    "Highest CTC Company": "Microsoft",
-    "Highest Stipend (LPM)": "1.25",
-    "Highest Stipend Company": "Microsoft"
+    "TotalStudents": "134",
+    "PlacedStudents": "100",
+    "6MonthInterns": "12",
+    "HighestCTC(LPA)": "51",
+    "HighestCTCCompany": "Microsoft",
+    "HighestStipend(LPM)": "1.25",
+    "HighestStipendCompany": "Microsoft"
   },
   {
     "Branch": "ECE",
-    "Total Students": "149",
-    "Placed Students": "132",
-    "6 Month Interns": "44",
-    "Highest CTC (LPA)": "51",
-    "Highest CTC Company": "Microsoft",
-    "Highest Stipend (LPM)": "1.6",
-    "Highest Stipend Company": "Uber"
+    "TotalStudents": "149",
+    "PlacedStudents": "132",
+    "6MonthInterns": "44",
+    "HighestCTC(LPA)": "51",
+    "HighestCTCCompany": "Microsoft",
+    "HighestStipend(LPM)": "1.6",
+    "HighestStipendCompany": "Uber"
   },
   {
     "Branch": "MAE",
-    "Total Students": "121",
-    "Placed Students": "94",
-    "6 Month Interns": "33",
-    "Highest CTC (LPA)": "56",
-    "Highest CTC Company": "Adobe",
-    "Highest Stipend (LPM)": "1.25",
-    "Highest Stipend Company": "Microsoft"
+    "TotalStudents": "121",
+    "PlacedStudents": "94",
+    "6MonthInterns": "33",
+    "HighestCTC(LPA)": "56",
+    "HighestCTCCompany": "Adobe",
+    "HighestStipend(LPM)": "1.25",
+    "HighestStipendCompany": "Microsoft"
   }
 ]

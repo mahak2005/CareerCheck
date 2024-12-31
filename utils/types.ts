@@ -30,23 +30,6 @@ export interface CompanyInternshipData {
   TotalOffers: number;
 }
 
-// export interface BranchPlacementData {
-//   Branch: string;
-//   "TotalStudents": number;
-//   "PlacedStudents": number;
-//   "6MonthInterns": number;
-//   "HighestCTC(LPA)": number;
-//   HighestCTCCompany: string;
-//   "AverageCTC(LPA)": number;
-// }
-
-// export interface BranchInternshipData {
-//   Branch: string;
-//   TotalStudents: number;
-//   InternStudents: number;
-//   "HighestStipend(LPM)": number;
-//   HighestStipendCompany: string;
-// }
 export interface BranchInternshipData {
   Branch: string;
   TotalStudents: number;

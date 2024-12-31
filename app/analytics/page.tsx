@@ -249,7 +249,7 @@ import type { BranchInternshipData, BranchPlacementData, CompanyInternshipData, 
 export default function VisualsPage() {
   const [analysisType, setAnalysisType] = useState<'branch' | 'company'>('branch')
   const [dataType, setDataType] = useState<'internships' | 'placements'>('internships')
-  const [selectedYear, setSelectedYear] = useState<string>("all")
+  const [selectedYear, setSelectedYear] = useState<string>("2024")
   const [branchData, setBranchData] = useState<(BranchInternshipData | BranchPlacementData)[]>([])
   const [companyData, setCompanyData] = useState<(CompanyInternshipData | CompanyPlacementData)[]>([])
 
@@ -292,7 +292,7 @@ export default function VisualsPage() {
     <div className="min-h-screen bg-gray-950 text-gray-50">
       <Navbar />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h1 className="text-3xl font-bold mb-8">Visuals</h1>
+        <h1 className="text-3xl font-bold mb-8">Analytics</h1>
         <div className="space-y-6">
           <div className="flex gap-4">
             <Button
@@ -330,7 +330,7 @@ export default function VisualsPage() {
                 <SelectValue placeholder="Select year" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">All Years</SelectItem>
+                
                 {(analysisType === 'branch' ? branchYears[dataType] : companyYears).map((year) => (
                   <SelectItem key={year} value={year}>{year}</SelectItem>
                 ))}
