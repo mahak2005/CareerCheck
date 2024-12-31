@@ -142,14 +142,14 @@ export function Navbar() {
                 </svg>
               </button>
               {[
-                { href: '/home', label: 'Home' },
+                { href: '/data-hub', label: 'Data Hub' },
                 // { href: '/placements', label: 'Placements' },
                 // { href: '/internships', label: 'Internships' },
                 // { href: '/analysis', label: 'Analysis' },
                 { href: '/analytics', label: 'Analytics' },
                 { href: '/career-programs', label: 'Career Programs' },
                 { href: '/interview-diaries', label: 'Interview Diaries' },
-                { href: '/alumini-connect', label: 'Alumni Connect' },
+                { href: '/alumni-connect', label: 'Alumni Connect' },
                 { href: '/about-us', label: 'Us' },
               ].map(({ href, label }) => (
                 <Link key={href} href={href} className="relative block text-gray-300 hover:text-gray-100 text-lg lg:inline">

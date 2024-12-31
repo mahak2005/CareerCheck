@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'next/navigation'
 import Image from 'next/image'
 import StudentCard from '@/components/StudentCard'
-import Footer from "@/components/Footer"
+// import Footer from "@/components/Footer"
 
 const companies = [
   { 
@@ -157,7 +157,7 @@ export default function CompanyPage() {
           <StudentCard key={student.id} {...student} />
         ))}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

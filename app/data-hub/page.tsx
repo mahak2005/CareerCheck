@@ -10,9 +10,9 @@ export default function DataPage() {
     <div className="min-h-screen bg-gray-950 text-gray-50">
       <Navbar />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h1 className="text-3xl font-bold mb-8">Data</h1>
+        <h1 className="text-3xl font-bold mb-8">Data Hub</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="bg-gray-800">
+          <Card className="bg-[#edf2f4]">
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Briefcase className="mr-2" />
@@ -30,7 +30,7 @@ export default function DataPage() {
             </CardFooter>
           </Card>
 
-          <Card className="bg-gray-800">
+          <Card className="bg-[#edf2f4]">
             <CardHeader>
               <CardTitle className="flex items-center">
                 <GraduationCap className="mr-2" />
@@ -47,7 +47,7 @@ export default function DataPage() {
               </Link>
             </CardFooter>
           </Card>
-          <Card className="bg-gray-800">
+          <Card className="bg-[#edf2f4]">
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Users className="mr-2" />

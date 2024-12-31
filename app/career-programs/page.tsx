@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import CompanyCard from '@/components/CompanyCard'
-import Footer from "@/components/Footer"
+// import Footer from "@/components/Footer"
 
 // Mock data for companies
 const companies = [
@@ -25,7 +25,7 @@ export default function ProgramPage() {
           <CompanyCard key={company.id} {...company} />
         ))}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

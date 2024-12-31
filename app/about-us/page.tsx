@@ -3,7 +3,7 @@ import { Github, Linkedin, Twitter } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import { Navbar } from "@/components/navbar"
-import Footer from "@/components/Footer"
+// import Footer from "@/components/Footer"
 
 interface FounderInfo {
   name: string
@@ -91,7 +91,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

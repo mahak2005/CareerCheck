@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { Navbar } from './navbar';
-
+import Footer from './Footer';
 interface LayoutProps {
   children: ReactNode;
 }
@@ -12,6 +12,7 @@ export function Layout({ children }: LayoutProps) {
       <main className="flex-grow pt-16" style={{ paddingTop: 'var(--navbar-height, 4rem)' }}>
         {children}
       </main>
+      <Footer />
     </div>
   );
 }

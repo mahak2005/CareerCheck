@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/navbar"
-import Footer from "@/components/Footer"
+// import Footer from "@/components/Footer"
 import PlacementTimeline from "@/components/PlacementTimeline"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -17,18 +17,18 @@ export default function Home() {
             Empowering students and professionals to make informed career decisions. 
             Explore our placement history and see how we have helped shape successful careers.
           </p>
-          <div className="mt-8">
+          {/* <div className="mt-8">
             <Link href="/home" passHref>
               <Button size="lg">Explore Data</Button>
             </Link>
-          </div>
+          </div> */}
           <section className="mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-white">Placement Timeline</h2>
             <PlacementTimeline />
           </section>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
