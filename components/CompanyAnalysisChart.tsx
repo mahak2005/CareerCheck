@@ -129,7 +129,7 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
         </ResponsiveContainer>
       </div>
 
-      {commonCompanies.length > 0 && (
+      {/* {commonCompanies.length > 0 && (
         <div className="h-96">
           <h3 className="text-xl font-semibold mb-4">Companies with both Internship and FTE Offers</h3>
           <ResponsiveContainer width="100%" height="100%">
@@ -146,7 +146,7 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
             </BarChart>
           </ResponsiveContainer>
         </div>
-      )}
+      )} */}
       {dataType === 'placements' && (
         <div className="h-96">
           <h3 className="text-xl font-semibold mb-4">CTC Distribution</h3>

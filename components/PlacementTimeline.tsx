@@ -6,18 +6,18 @@ import { useEffect, useRef } from 'react'
 interface TimelineEvent {
   year: number
   highestCTC: string
-  totalStudents: number
+  totalStudents: string
   topCompany: string
   visited: string
 }
 
 const timelineData: TimelineEvent[] = [
-  { year: 2025, highestCTC: "1 Cr (MotorQ)", totalStudents: 488, topCompany: "Google, Microsoft, Adobe, Oracle", visited: "130+" },
-  { year: 2024, highestCTC: "80+ LPA (Atlassian)", totalStudents: 485, topCompany: "MotorQ, Microsoft, Adobe, Google", visited:" 135 "},
-  { year: 2023, highestCTC: "82 LPA (Atlassian)", totalStudents: 475, topCompany: "Microsoft, Atlassian, Palo Alto", visited: "128" },
-  { year: 2022, highestCTC: "120 LPA (Amazon Dublin)", totalStudents: 460, topCompany: "Amazon, Microsoft, Rippling", visited: "116" },
-  { year: 2021, highestCTC: "59.45 LPA (Google)", totalStudents: 304, topCompany: "Microsoft, Google, JPMC", visited: "85" },
-  { year: 2020, highestCTC: "43.3 LPA (Microsoft IDC)", totalStudents: 316, topCompany: "Optum, Microsoft, Adobe", visited: "96" },
+  { year: 2025, highestCTC: "1 Cr (MotorQ)", totalStudents: "Ongoing", topCompany: "Ongoing", visited: "Ongoing" },
+  { year: 2024, highestCTC: "80+ LPA (Atlassian)", totalStudents: "485", topCompany: "MotorQ, Microsoft, Adobe, Google", visited: " 135 " },
+  { year: 2023, highestCTC: "82 LPA (Atlassian)", totalStudents: "475", topCompany: "Microsoft, Atlassian, Palo Alto", visited: "128" },
+  { year: 2022, highestCTC: "120 LPA (Amazon Dublin)", totalStudents: "460", topCompany: "Amazon, Microsoft, Rippling", visited: "116" },
+  { year: 2021, highestCTC: "59.45 LPA (Google)", totalStudents: "304", topCompany: "Microsoft, Google, JPMC", visited: "85" },
+  { year: 2020, highestCTC: "43.3 LPA (Microsoft IDC)", totalStudents: "316", topCompany: "Optum, Microsoft, Adobe", visited: "96" },
 ]
 
 const TimelineItem = ({ event, isLeft }: { event: TimelineEvent, isLeft: boolean }) => {
