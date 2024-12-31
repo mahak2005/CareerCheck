@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/navbar"
 // import Footer from "@/components/Footer"
 import PlacementTimeline from "@/components/PlacementTimeline"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+// import Link from "next/link"
+// import { Button } from "@/components/ui/button"
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#000814] to-[#002C47] text-gray-50">

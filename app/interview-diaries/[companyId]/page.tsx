@@ -15,7 +15,7 @@ export default function CompanyInterviewDiary({ params }: { params: { companyId:
       <h1 className="text-3xl font-bold mb-8">{company.name} Interview Diary</h1>
       <p className="text-lg">
         This is where you can get detailed information about interviews at {company.name}.
-        You'll get experiences, common questions, tips, and more.
+        You will get experiences, common questions, tips, and more.
       </p>
     </div>
   )
