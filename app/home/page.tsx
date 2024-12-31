@@ -36,10 +36,10 @@ export default function DataPage() {
                 <GraduationCap className="mr-2" />
                 Internships
               </CardTitle>
-              <CardDescription>Explore internship opportunities</CardDescription>
+              <CardDescription>View and analyze internship data</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Discover internship trends, company offerings, and student experiences.</p>
+              <p>Discover internship trends, company offerings and more.</p>
             </CardContent>
             <CardFooter>
               <Link href="/internships" passHref>
@@ -47,30 +47,29 @@ export default function DataPage() {
               </Link>
             </CardFooter>
           </Card>
-
           <Card className="bg-gray-800">
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Users className="mr-2" />
-                Career Program
+                Company Analysis
               </CardTitle>
-              <CardDescription>Access career development resources</CardDescription>
+              <CardDescription>Access company analysis.</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Find information about career workshops, mentorship programs, and skill development.</p>
+              <p>Analyse the company stats for placement and internship offers for different years.</p>
             </CardContent>
             <CardFooter>
-              <Link href="/career-programs" passHref>
-                <Button>Explore Program</Button>
+              <Link href="/analysis" passHref>
+                <Button>View Analysis</Button>
               </Link>
             </CardFooter>
           </Card>
         </div>
-        
+
       </main>
-      
+
     </div>
-    
+
   )
 }
 
