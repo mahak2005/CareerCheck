@@ -39,9 +39,9 @@ export function CompanyAnalysisChart({ data, dataType, selectedYear }: CompanyAn
     })
     .slice(0, 10);
 
-  const commonCompanies = data.filter((company): company is CompanyInternshipData & CompanyPlacementData => 
-    isPlacementData(company) && isInternshipData(company)
-  );
+  // const commonCompanies = data.filter((company): company is CompanyInternshipData & CompanyPlacementData => 
+  //   isPlacementData(company) && isInternshipData(company)
+  // );
 
   interface YearlyData {
     Year: string;
