@@ -28,7 +28,7 @@ const companies = [
     name: 'Google STEP', 
     logo: '/logo/google logo.png',
     students: [
-      { id: '7', name: 'MAHAK', year: 2025, branch: 'CSE AI', image: '/mahak.jpg' },
+      // { id: '7', name: 'MAHAK', year: 2025, branch: 'CSE AI', image: '/mahak.jpg' },
       { id: '8', name: 'Ayushi Arora', year: 2023, branch: 'CSE', image: '/step/ayushistep.jpg' },
       { id: '9', name: 'Bhumika Gupta', year: 2023, branch: 'CSE', image: '/we/bhumikawe.jpg' },
       { id: '10', name: 'Jahnavi Malhotra', year: 2022, branch: 'CSE', image: '/step/jahnavistep.jpg' },
