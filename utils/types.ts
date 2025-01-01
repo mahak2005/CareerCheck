@@ -5,11 +5,6 @@ export interface PlacementRecord {
   "CTC (LPA)": string;
 }
 
-// export interface InternshipRecord {
-//   "S.no": string; 
-//   Name: string;
-//   "InternshipDetails": string; 
-// }
 export interface InternshipRecord {
   RollNumber: string;
   Name: string;
@@ -18,12 +13,6 @@ export interface InternshipRecord {
 }
 
 
-
-// export interface BranchInternshipData {
-//   "S.no": string;  
-//   Name: string;  
-//   InternshipDetails: string; 
-// }
 export interface BranchInternshipData {
   RollNumber: string;    // Updated from "S.no" to RollNumber
   Name: string;          // No change
@@ -71,18 +60,6 @@ export interface CTCRange {
   count: number;
 }
 
-
-// export interface InternshipData {
-//   Company: string;
-//   Stipend: number;  // Assuming Stipend is a number, but if it's a string, change it accordingly.
-//   TotalOffers: number;
-// }
-
-// export interface PlacementData {
-//   Company: string;
-//   CTC: number;  // Assuming CTC is in number format (lakhs).
-//   FTEOffers: number;
-// }
 
 export interface AnalysisPlacementData {
   Company: string;

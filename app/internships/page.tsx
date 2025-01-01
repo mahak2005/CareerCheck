@@ -19,16 +19,18 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Navbar } from "@/components/navbar";
+import { ArrowUpDown } from 'lucide-react';
 
 export default function InternshipsPage() {
   const [selectedYear, setSelectedYear] = useState("2024");
   const [selectedBranch, setSelectedBranch] = useState("cumulative");
   const [searchName, setSearchName] = useState("");
   const [finalOffer, setFinalOffer] = useState("");
-  const [stipendType, setStipendType] = useState<"min" | "max">("min"); // Type explicitly as "min" | "max"
+  const [stipendType, setStipendType] = useState<"min" | "max">("min");
   const [stipendValue, setStipendValue] = useState<number>(0);
   const [internshipData, setInternshipData] = useState<InternshipRecord[]>([]);
   const [loading, setLoading] = useState(false);
+  const [stipendSortOrder, setStipendSortOrder] = useState<'asc' | 'desc' | null>(null);
 
   const branches = [
     { value: "cumulative", label: "Cumulative" },
@@ -79,6 +81,22 @@ export default function InternshipsPage() {
       setSelectedBranch("cumulative");
     }
   }, [selectedYear, selectedBranch]);
+
+  const handleStipendSort = () => {
+    const sortedData = [...internshipData].sort((a, b) => {
+      // const stipendA = parseFloat(a.StipendINR.replace(/[^0-9.-]+/g,""));
+      // const stipendB = parseFloat(b.StipendINR.replace(/[^0-9.-]+/g,""));
+      const stipendA=a.StipendINR;
+      const stipendB=b.StipendINR;
+      if (stipendSortOrder === 'asc' || stipendSortOrder === null) {
+        return stipendB - stipendA;
+      } else {
+        return stipendA - stipendB;
+      }
+    });
+    setInternshipData(sortedData);
+    setStipendSortOrder(stipendSortOrder === 'asc' ? 'desc' : 'asc');
+  };
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-50">
@@ -139,7 +157,7 @@ export default function InternshipsPage() {
               <div className="flex gap-4">
                 <Select
                   value={stipendType}
-                  onValueChange={(value: "min" | "max") => setStipendType(value)} // Set the correct type here
+                  onValueChange={(value: "min" | "max") => setStipendType(value)}
                 >
                   <SelectTrigger>
                     <SelectValue placeholder="Min/Max" />
@@ -170,7 +188,19 @@ export default function InternshipsPage() {
                     <TableHead>S.No</TableHead>
                     <TableHead>Name</TableHead>
                     <TableHead>Final Offer</TableHead>
-                    <TableHead>Stipend</TableHead>
+                    <TableHead>
+                      <div className="flex items-center">
+                        Stipend
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="ml-2"
+                          onClick={handleStipendSort}
+                        >
+                          <ArrowUpDown className="h-4 w-4" />
+                        </Button>
+                      </div>
+                    </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -191,3 +221,4 @@ export default function InternshipsPage() {
     </div>
   );
 }
+
