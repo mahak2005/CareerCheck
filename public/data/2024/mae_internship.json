@@ -1,212 +1,254 @@
 [
   {
-    "﻿S.No": "1",
+    "﻿RollNumber": "06901042021",
     "Name": "Mansi Singh",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "2",
+    "﻿RollNumber": "06001042021",
     "Name": "Mehak Dhamija",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "3",
+    "﻿RollNumber": "01801042021",
     "Name": "Vanshita Hingorani",
-    "InternshipDetails": "Morgan Stanley"
+    "FinalOffer": "Morgan Stanley",
+    "StipendINR": "87000"
   },
   {
-    "﻿S.No": "4",
+    "﻿RollNumber": "08501042021",
     "Name": "Yashna Nagpal",
-    "InternshipDetails": "BNY Mellon "
+    "FinalOffer": "BNY Mellon",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "5",
+    "﻿RollNumber": "02401042021",
     "Name": "Tarushi Tyagi",
-    "InternshipDetails": "BNY Mellon"
+    "FinalOffer": "BNY Mellon",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "6",
+    "﻿RollNumber": "00101042021",
     "Name": "Gauri Maheshwari",
-    "InternshipDetails": "ITC Ltd."
+    "FinalOffer": "ITC Ltd.",
+    "StipendINR": "50000"
   },
   {
-    "﻿S.No": "7",
+    "﻿RollNumber": "03501042021",
     "Name": "Aishwarya Sinha",
-    "InternshipDetails": "Bechtel"
+    "FinalOffer": "Bechtel",
+    "StipendINR": "25000"
   },
   {
-    "﻿S.No": "8",
+    "﻿RollNumber": "05401042021",
     "Name": "Nidhi Daga",
-    "InternshipDetails": "Bechtel"
+    "FinalOffer": "Bechtel",
+    "StipendINR": "25000"
   },
   {
-    "﻿S.No": "9",
+    "﻿RollNumber": "02201042021",
     "Name": "Sneha",
-    "InternshipDetails": "TVS Motors"
+    "FinalOffer": "TVS Motors",
+    "StipendINR": "25000"
   },
   {
-    "﻿S.No": "10",
+    "﻿RollNumber": "02601042021",
     "Name": "Eshita Ojha",
-    "InternshipDetails": "Beckton Dickinson"
+    "FinalOffer": "Beckton Dickinson",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "11",
-    "Name": "Dhriti Bharadwaj ",
-    "InternshipDetails": "Technip Energies"
+    "﻿RollNumber": "09701042021",
+    "Name": "Dhriti Bharadwaj",
+    "FinalOffer": "Technip Energies",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "12",
+    "﻿RollNumber": "08001042021",
     "Name": "Vidushi Jain",
-    "InternshipDetails": "Technip Energies"
+    "FinalOffer": "Technip Energies",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "13",
+    "﻿RollNumber": "03710162021",
     "Name": "Prachi Priyamvada",
-    "InternshipDetails": "Technip Energies"
+    "FinalOffer": "Technip Energies",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "14",
+    "﻿RollNumber": "10001042021",
     "Name": "Aditi Agrahari",
-    "InternshipDetails": "Technip Energies"
+    "FinalOffer": "Technip Energies",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "15",
+    "﻿RollNumber": "09801042021",
     "Name": "Tisha Satija",
-    "InternshipDetails": "Technip Energies"
+    "FinalOffer": "Technip Energies",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "16",
+    "﻿RollNumber": "09601042021",
     "Name": "Pratibha Joshi",
-    "InternshipDetails": "Hero MotoCorp"
+    "FinalOffer": "Hero MotoCorp",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "17",
+    "﻿RollNumber": "01410162021",
     "Name": "Patil Naomi Sachin",
-    "InternshipDetails": "Hero MotoCorp"
+    "FinalOffer": "Hero MotoCorp",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "18",
+    "﻿RollNumber": "00110162021",
     "Name": "Aliza",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "19",
+    "﻿RollNumber": "08701042021",
     "Name": "Karuna Jaiswal",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "20",
+    "﻿RollNumber": "08201042021",
     "Name": "Shreya Singh",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "21",
+    "﻿RollNumber": "08801042021",
     "Name": "Rashi Jain",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "22",
+    "﻿RollNumber": "09301042021",
     "Name": "Arushi Gupta",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "23",
+    "﻿RollNumber": "08701042021",
     "Name": "Karuna Jaiswal",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "24",
+    "﻿RollNumber": "04510162021",
     "Name": "Debasmita Mondal",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "25",
+    "﻿RollNumber": "02410162021",
     "Name": "Prakriti Deuri",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "26",
+    "﻿RollNumber": "02310162021",
     "Name": "Praanya Bhatnagar",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "27",
+    "﻿RollNumber": "04410162021",
     "Name": "Vedanshi Jhanwar",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "28",
+    "﻿RollNumber": "02010162021",
     "Name": "Muskan Joshi",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "29",
+    "﻿RollNumber": "10201042021",
     "Name": "Ashita Vardhan",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "30",
+    "﻿RollNumber": "01910162021",
     "Name": "BHASHI",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "31",
+    "﻿RollNumber": "03310162021",
     "Name": "Shubhangi Shreya",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "32",
+    "﻿RollNumber": "04701042021",
     "Name": "Sneha Gracy Gidhi",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "33",
+    "﻿RollNumber": "09501042021",
     "Name": "Suhani Verma",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "34",
+    "﻿RollNumber": "03901042021",
     "Name": "Shreya Agarwal",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "35",
+    "﻿RollNumber": "04101042021",
     "Name": "Aditi Tripathi",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "36",
+    "﻿RollNumber": "00401042021",
     "Name": "Ishrita Saxena",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "37",
+    "﻿RollNumber": "06101042021",
     "Name": "Pratyaksha Mishra",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "38",
+    "﻿RollNumber": "07301042021",
     "Name": "Ananya Singh",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "39",
+    "﻿RollNumber": "04901042021",
     "Name": "Gunjan Goyal",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "40",
+    "﻿RollNumber": "06701042021",
     "Name": "Ishita Rakchhit",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "41",
+    "﻿RollNumber": "00501042021",
     "Name": "Unnati Jain",
-    "InternshipDetails": "Technip energies"
+    "FinalOffer": "Technip energies",
+    "StipendINR": "25000"
   },
   {
-    "﻿S.No": "42",
+    "﻿RollNumber": "07401042021",
     "Name": "Heena Saini",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "12000"
   }
 ]

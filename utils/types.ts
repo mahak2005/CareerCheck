@@ -5,18 +5,32 @@ export interface PlacementRecord {
   "CTC (LPA)": string;
 }
 
+// export interface InternshipRecord {
+//   "S.no": string; 
+//   Name: string;
+//   "InternshipDetails": string; 
+// }
 export interface InternshipRecord {
-  "S.no": string; 
+  RollNumber: string;
   Name: string;
-  "InternshipDetails": string; 
+  FinalOffer: string;
+  StipendINR: number;  // Renamed to match your new CSV field
 }
 
 
+
+// export interface BranchInternshipData {
+//   "S.no": string;  
+//   Name: string;  
+//   InternshipDetails: string; 
+// }
 export interface BranchInternshipData {
-  "S.no": string;  
-  Name: string;  
-  InternshipDetails: string; 
+  RollNumber: string;    // Updated from "S.no" to RollNumber
+  Name: string;          // No change
+  FinalOffer: string;    // Updated from "InternshipDetails" to FinalOffer
+  StipendINR: number;    // Added StipendINR to match the new structure
 }
+
 
 export interface CompanyPlacementData {
   Company: string;

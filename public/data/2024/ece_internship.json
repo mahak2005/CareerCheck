@@ -1,472 +1,218 @@
 [
   {
-    "﻿S.No": "1",
-    "Name": "Geetika Gupta",
-    "InternshipDetails": "S&P Global"
-  },
-  {
-    "﻿S.No": "2",
-    "Name": "Kirti Sharma",
-    "InternshipDetails": "Outlook Group"
-  },
-  {
-    "﻿S.No": "3",
-    "Name": "Shubhangi Tyagi",
-    "InternshipDetails": "OutLook"
-  },
-  {
-    "﻿S.No": "4",
-    "Name": "Aditi Gupta",
-    "InternshipDetails": "Google"
-  },
-  {
-    "﻿S.No": "5",
-    "Name": "Sakshi Tiwari",
-    "InternshipDetails": "Microsoft"
-  },
-  {
-    "﻿S.No": "6",
-    "Name": "Tanisha Sharma",
-    "InternshipDetails": "BNY MELLON"
-  },
-  {
-    "﻿S.No": "7",
-    "Name": "Palak Malhotra",
-    "InternshipDetails": "Amazon"
-  },
-  {
-    "﻿S.No": "8",
-    "Name": "Tanishi Nayak",
-    "InternshipDetails": "Wells Fargo"
-  },
-  {
-    "﻿S.No": "9",
-    "Name": "Diksha Raj",
-    "InternshipDetails": "Outlook"
-  },
-  {
-    "﻿S.No": "10",
-    "Name": "Kavyaa Kohli",
-    "InternshipDetails": "Providence"
-  },
-  {
-    "﻿S.No": "11",
-    "Name": "Shivangi",
-    "InternshipDetails": "ServiceNow"
-  },
-  {
-    "﻿S.No": "12",
-    "Name": "Snigdha Bisht",
-    "InternshipDetails": "Visa"
-  },
-  {
-    "﻿S.No": "13",
-    "Name": "Saachi Verma",
-    "InternshipDetails": "TATA 1mg"
-  },
-  {
-    "﻿S.No": "14",
-    "Name": "Anjali Patel",
-    "InternshipDetails": "The outlook group"
-  },
-  {
-    "﻿S.No": "15",
-    "Name": "Prachi Singla",
-    "InternshipDetails": "BNY Mellon"
-  },
-  {
-    "﻿S.No": "16",
-    "Name": "Kirti Chauhan",
-    "InternshipDetails": "Outlook Group"
-  },
-  {
-    "﻿S.No": "17",
-    "Name": "Shubhi Verma",
-    "InternshipDetails": "Microsoft"
-  },
-  {
-    "﻿S.No": "18",
-    "Name": "Ayushi",
-    "InternshipDetails": "Regeneron"
-  },
-  {
-    "﻿S.No": "19",
-    "Name": "Anushka Gupta",
-    "InternshipDetails": "American Express"
-  },
-  {
-    "﻿S.No": "20",
-    "Name": "E.Lavanya",
-    "InternshipDetails": "Wells Fargo"
-  },
-  {
-    "﻿S.No": "21",
-    "Name": "Arushi Sinha",
-    "InternshipDetails": "Salesforce"
-  },
-  {
-    "﻿S.No": "22",
-    "Name": "Diya Khajuria",
-    "InternshipDetails": "Providence"
-  },
-  {
-    "﻿S.No": "23",
-    "Name": "Amisha Sharma",
-    "InternshipDetails": "Google"
-  },
-  {
-    "﻿S.No": "24",
-    "Name": "Apoorva Singh",
-    "InternshipDetails": "Providence"
-  },
-  {
-    "﻿S.No": "25",
-    "Name": "Shreya Bansal",
-    "InternshipDetails": "Citi Bank"
-  },
-  {
-    "﻿S.No": "26",
-    "Name": "Kanika Kamalhans",
-    "InternshipDetails": "Wells Fargo"
-  },
-  {
-    "﻿S.No": "27",
-    "Name": "Himanshi Goel",
-    "InternshipDetails": "Urban Company"
-  },
-  {
-    "﻿S.No": "28",
-    "Name": "Khushi Chauhan",
-    "InternshipDetails": "ServiceNow"
-  },
-  {
-    "﻿S.No": "29",
-    "Name": "Anushka Singh",
-    "InternshipDetails": "Wells Fargo"
-  },
-  {
-    "﻿S.No": "30",
-    "Name": "Anushka Aggarwal",
-    "InternshipDetails": "Wells Fargo"
-  },
-  {
-    "﻿S.No": "31",
-    "Name": "Khushboo Kumari",
-    "InternshipDetails": "Outlook"
-  },
-  {
-    "﻿S.No": "32",
-    "Name": "Dhyani Patel",
-    "InternshipDetails": "SAP"
-  },
-  {
-    "﻿S.No": "33",
-    "Name": "Arshia Singhal",
-    "InternshipDetails": "American Express"
-  },
-  {
-    "﻿S.No": "34",
-    "Name": "Kashish Verma",
-    "InternshipDetails": "Cars24"
-  },
-  {
-    "﻿S.No": "35",
-    "Name": "Jeevika Arora",
-    "InternshipDetails": "Mitacs Globalink Research Internship"
-  },
-  {
-    "﻿S.No": "36",
-    "Name": "Shivangi Garg",
-    "InternshipDetails": "Microsoft"
-  },
-  {
-    "﻿S.No": "37",
-    "Name": "Manvi Yaduvanshi",
-    "InternshipDetails": "IBM"
-  },
-  {
-    "﻿S.No": "38",
-    "Name": "Kusha Varshney",
-    "InternshipDetails": "Regeneron"
-  },
-  {
-    "﻿S.No": "39",
-    "Name": "Anshita Jain",
-    "InternshipDetails": "Amazon"
-  },
-  {
-    "﻿S.No": "40",
-    "Name": "Ishita khatri",
-    "InternshipDetails": "Outlook Group"
-  },
-  {
-    "﻿S.No": "41",
-    "Name": "Khushnuma Sadaf",
-    "InternshipDetails": "Wells Fargo"
-  },
-  {
-    "﻿S.No": "42",
-    "Name": "Akanksha Rani",
-    "InternshipDetails": "Microsoft"
-  },
-  {
-    "﻿S.No": "43",
-    "Name": "Anamika Hooda",
-    "InternshipDetails": "Wells Fargo"
-  },
-  {
-    "﻿S.No": "44",
-    "Name": "Tejasvi Singh",
-    "InternshipDetails": "Microsoft"
-  },
-  {
-    "﻿S.No": "45",
-    "Name": "Sakshi",
-    "InternshipDetails": "Microsoft"
-  },
-  {
-    "﻿S.No": "46",
-    "Name": "Suhani",
-    "InternshipDetails": "Outlook Group"
-  },
-  {
-    "﻿S.No": "47",
-    "Name": "Aarna Singhal",
-    "InternshipDetails": "Goldman Sachs"
-  },
-  {
-    "﻿S.No": "48",
-    "Name": "Purva Garg",
-    "InternshipDetails": "Outlook Group"
-  },
-  {
-    "﻿S.No": "49",
-    "Name": "Deepanshi Jalan",
-    "InternshipDetails": "Visa"
-  },
-  {
-    "﻿S.No": "50",
-    "Name": "Kanishka Chandolia",
-    "InternshipDetails": "Outlook Group"
-  },
-  {
-    "﻿S.No": "51",
-    "Name": "Bhavya Devani",
-    "InternshipDetails": "Salesforce"
-  },
-  {
-    "﻿S.No": "52",
-    "Name": "Sonali Kumari",
-    "InternshipDetails": "IBM"
-  },
-  {
-    "﻿S.No": "53",
-    "Name": "Anushka saini",
-    "InternshipDetails": "Outlook Group"
-  },
-  {
-    "﻿S.No": "54",
-    "Name": "Riya Kumari",
-    "InternshipDetails": "Visa"
-  },
-  {
-    "﻿S.No": "55",
-    "Name": "Vanshika",
-    "InternshipDetails": "Outlook Group"
-  },
-  {
-    "﻿S.No": "56",
-    "Name": "Shreya Joshi",
-    "InternshipDetails": "Amazon"
-  },
-  {
-    "﻿S.No": "57",
-    "Name": "Ritu",
-    "InternshipDetails": "Outlook Group"
-  },
-  {
-    "﻿S.No": "58",
-    "Name": "Sidra Aslam Khan",
-    "InternshipDetails": "Regeneron"
-  },
-  {
-    "﻿S.No": "59",
+    "﻿RollNumber": "00201022021",
     "Name": "Harshita Verma",
-    "InternshipDetails": "Goldman Sachs"
+    "FinalOffer": "Goldman Sachs",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "60",
+    "﻿RollNumber": "00301022021",
     "Name": "Ishika sahrawat",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "61",
+    "﻿RollNumber": "00901022021",
     "Name": "Riya Garg",
-    "InternshipDetails": "Google"
+    "FinalOffer": "Google",
+    "StipendINR": "115000"
   },
   {
-    "﻿S.No": "62",
+    "﻿RollNumber": "01001022021",
     "Name": "Sneha Negi",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "63",
+    "﻿RollNumber": "01301022021",
     "Name": "Aakriti Rahia",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "64",
+    "﻿RollNumber": "01401022021",
     "Name": "Neha Kaushik",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "65",
+    "﻿RollNumber": "02001022021",
     "Name": "Amrita Behra",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "66",
+    "﻿RollNumber": "02401022021",
     "Name": "Ananya Arora",
-    "InternshipDetails": "Bharat Electronics Limited"
+    "FinalOffer": "Bharat Electronics Limited",
+    "StipendINR": "0"
   },
   {
-    "﻿S.No": "67",
+    "﻿RollNumber": "02501022021",
     "Name": "Mansi",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "68",
+    "﻿RollNumber": "02701022021",
     "Name": "Chetna Tomar",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "69",
+    "﻿RollNumber": "02801022021",
     "Name": "Sanya Gupta",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "70",
+    "﻿RollNumber": "03701022021",
     "Name": "Shreya Tiwari",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "71",
+    "﻿RollNumber": "04001022021",
     "Name": "Priya Mina",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "72",
+    "﻿RollNumber": "04101022021",
     "Name": "Muskaan Kumari",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "73",
+    "﻿RollNumber": "04601022021",
     "Name": "Jiya Sahni",
-    "InternshipDetails": "BNY Mellon"
+    "FinalOffer": "BNY Mellon",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "74",
+    "﻿RollNumber": "04901022021",
     "Name": "Anshika Jain",
-    "InternshipDetails": "BNY Mellon"
+    "FinalOffer": "BNY Mellon",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "75",
+    "﻿RollNumber": "05401022021",
     "Name": "Aditi Gahoi",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "2000"
   },
   {
-    "﻿S.No": "76",
+    "﻿RollNumber": "05501022021",
     "Name": "Vaibhavi Kumari",
-    "InternshipDetails": "Air Traffic Control"
+    "FinalOffer": "Air Traffic Control",
+    "StipendINR": "0"
   },
   {
-    "﻿S.No": "77",
+    "﻿RollNumber": "05601022021",
     "Name": "Bhoomi Tanwar",
-    "InternshipDetails": "Steel Authority of India (SAIL)"
+    "FinalOffer": "Steel Authority of India (SAIL)",
+    "StipendINR": "0"
   },
   {
-    "﻿S.No": "78",
+    "﻿RollNumber": "05701022021",
     "Name": "Jai Shree Jain",
-    "InternshipDetails": "AQR"
+    "FinalOffer": "AQR",
+    "StipendINR": "150000"
   },
   {
-    "﻿S.No": "79",
+    "﻿RollNumber": "05801022021",
     "Name": "Shambhavi Soni",
-    "InternshipDetails": "Western Digital"
+    "FinalOffer": "Western Digital",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "80",
+    "﻿RollNumber": "06001022021",
     "Name": "Himani Agarwal",
-    "InternshipDetails": "BNY Mellon"
+    "FinalOffer": "BNY Mellon",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "81",
+    "﻿RollNumber": "06201022021",
     "Name": "Hrishita Gupta",
-    "InternshipDetails": "Marvell"
+    "FinalOffer": "Marvell",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "82",
+    "﻿RollNumber": "06301022021",
     "Name": "Aishnee Sapra",
-    "InternshipDetails": "ServiceNow"
+    "FinalOffer": "ServiceNow",
+    "StipendINR": "70000"
   },
   {
-    "﻿S.No": "83",
+    "﻿RollNumber": "06401022021",
     "Name": "Khushi gupta",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "84",
+    "﻿RollNumber": "06901022021",
     "Name": "Shristi Singh",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   },
   {
-    "﻿S.No": "85",
+    "﻿RollNumber": "07301022021",
     "Name": "Yashika Takkar",
-    "InternshipDetails": "Amazon"
+    "FinalOffer": "Amazon",
+    "StipendINR": "110000"
   },
   {
-    "﻿S.No": "86",
+    "﻿RollNumber": "07601022021",
     "Name": "Neha Tyagi",
-    "InternshipDetails": "Barclays"
+    "FinalOffer": "Barclays",
+    "StipendINR": "104803"
   },
   {
-    "﻿S.No": "87",
+    "﻿RollNumber": "08101022021",
     "Name": "Tanya Arora",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "88",
+    "﻿RollNumber": "08201022021",
     "Name": "Ayushi Gupta",
-    "InternshipDetails": "ServiceNow"
+    "FinalOffer": "ServiceNow",
+    "StipendINR": "70000"
   },
   {
-    "﻿S.No": "89",
+    "﻿RollNumber": "08301022021",
     "Name": "Tanisha Singh",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "90",
+    "﻿RollNumber": "08501022021",
     "Name": "Akansha Khandelwal",
-    "InternshipDetails": "ISRO"
+    "FinalOffer": "ISRO",
+    "StipendINR": "0"
   },
   {
-    "﻿S.No": "91",
+    "﻿RollNumber": "08601022021",
     "Name": "Shelly Bhalla",
-    "InternshipDetails": "Marvell"
+    "FinalOffer": "Marvell",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "92",
+    "﻿RollNumber": "08701022021",
     "Name": "Nandini Parashar",
-    "InternshipDetails": "JP Morgan Chase & Co."
+    "FinalOffer": "JP Morgan Chase & Co.",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "93",
+    "﻿RollNumber": "08801022021",
     "Name": "Riya Gupta",
-    "InternshipDetails": "Expedia Group"
+    "FinalOffer": "Expedia Group",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "94",
+    "﻿RollNumber": "08901022021",
     "Name": "Sneha Wadhwa",
-    "InternshipDetails": "Outlook Group"
+    "FinalOffer": "Outlook Group",
+    "StipendINR": "20000"
   }
 ]

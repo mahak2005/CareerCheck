@@ -1,7 +1,6 @@
-"use client";
-
+'use client'
 import { useState, useEffect } from "react";
-import { InternshipRecord } from '@/utils/csv-parser';
+import { InternshipRecord } from "@/utils/csv-parser";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -21,12 +20,13 @@ import {
 } from "@/components/ui/table";
 import { Navbar } from "@/components/navbar";
 
-
 export default function InternshipsPage() {
   const [selectedYear, setSelectedYear] = useState("2024");
   const [selectedBranch, setSelectedBranch] = useState("cumulative");
   const [searchName, setSearchName] = useState("");
-  const [selectedCompanies, setSelectedCompanies] = useState<string[]>([]);
+  const [finalOffer, setFinalOffer] = useState("");
+  const [stipendType, setStipendType] = useState<"min" | "max">("min"); // Type explicitly as "min" | "max"
+  const [stipendValue, setStipendValue] = useState<number>(0);
   const [internshipData, setInternshipData] = useState<InternshipRecord[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -37,11 +37,11 @@ export default function InternshipsPage() {
     { value: "it", label: "IT" },
     { value: "ece", label: "ECE" },
     { value: "mae", label: "MAE" },
+    { value: "eceai", label: "ECE AI" },
     ...(selectedYear === "2025"
       ? [
-          { value: "eceai", label: "ECE AI" },
-          { value: "aiml", label: "AI ML" },
-        ]
+        { value: "aiml", label: "AI ML" },
+      ]
       : []),
   ];
 
@@ -58,7 +58,8 @@ export default function InternshipsPage() {
             year: selectedYear,
             branch: selectedBranch,
             name: searchName,
-            companies: selectedCompanies,
+            finalOffer: finalOffer,
+            stipendRange: { type: stipendType, value: stipendValue },
           }),
         });
         const { data } = await response.json();
@@ -69,13 +70,12 @@ export default function InternshipsPage() {
         setLoading(false);
       }
     }
-      
-  
+
     fetchData();
-  }, [selectedYear, selectedBranch, searchName, selectedCompanies]);
+  }, [selectedYear, selectedBranch, searchName, finalOffer, stipendType, stipendValue]);
 
   useEffect(() => {
-    if (selectedYear === "2024" && ["eceai", "aiml"].includes(selectedBranch)) {
+    if (selectedYear === "2024" && ["aiml"].includes(selectedBranch)) {
       setSelectedBranch("cumulative");
     }
   }, [selectedYear, selectedBranch]);
@@ -123,47 +123,39 @@ export default function InternshipsPage() {
               />
             </div>
 
-            {/* Company Filter */}
+            {/* Final Offer Filter */}
             <div className="space-y-2">
-              <label className="text-sm font-medium">Filter by Companies</label>
-              <Select
-                onValueChange={(value) =>
-                  setSelectedCompanies((prev) =>
-                    prev.includes(value)
-                      ? prev.filter((c) => c !== value)
-                      : [...prev, value]
-                  )
-                }
-              >
-                <SelectTrigger>
-                  <SelectValue placeholder="Select companies" />
-                </SelectTrigger>
-                <SelectContent>
-                  {Array.from(new Set(internshipData.map((d) => d.InternshipDetails))) // Get unique companies
-                    .sort() // Sort the companies in ascending order
-                    .map((company) => (
-                      <SelectItem key={company} value={company}>
-                        {company}
-                      </SelectItem>
-                    ))}
-                </SelectContent>
-              </Select>
-              {selectedCompanies.length > 0 && (
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {selectedCompanies.map((company) => (
-                    <Button
-                      key={company}
-                      variant="secondary"
-                      size="sm"
-                      onClick={() =>
-                        setSelectedCompanies((prev) => prev.filter((c) => c !== company))
-                      }
-                    >
-                      {company} ×
-                    </Button>
-                  ))}
-                </div>
-              )}
+              <label className="text-sm font-medium">Filter by Final Offer</label>
+              <Input
+                placeholder="Enter Final Offer"
+                value={finalOffer}
+                onChange={(e) => setFinalOffer(e.target.value)}
+              />
+            </div>
+
+            {/* Stipend Range Filter */}
+            <div className="space-y-2">
+              <label className="text-sm font-medium">Filter by Stipend Range</label>
+              <div className="flex gap-4">
+                <Select
+                  value={stipendType}
+                  onValueChange={(value: "min" | "max") => setStipendType(value)} // Set the correct type here
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Min/Max" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="min">Min</SelectItem>
+                    <SelectItem value="max">Max</SelectItem>
+                  </SelectContent>
+                </Select>
+                <Input
+                  type="number"
+                  value={stipendValue}
+                  onChange={(e) => setStipendValue(Number(e.target.value))}
+                  placeholder="Amount"
+                />
+              </div>
             </div>
           </div>
 
@@ -177,7 +169,8 @@ export default function InternshipsPage() {
                   <TableRow>
                     <TableHead>S.No</TableHead>
                     <TableHead>Name</TableHead>
-                    <TableHead>Internship</TableHead>
+                    <TableHead>Final Offer</TableHead>
+                    <TableHead>Stipend</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -185,7 +178,8 @@ export default function InternshipsPage() {
                     <TableRow key={index}>
                       <TableCell>{index + 1}</TableCell>
                       <TableCell>{row.Name}</TableCell>
-                      <TableCell>{row.InternshipDetails}</TableCell> {/* Updated column name */}
+                      <TableCell>{row.FinalOffer}</TableCell>
+                      <TableCell>{row.StipendINR}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

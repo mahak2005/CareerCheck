@@ -1,517 +1,620 @@
 [
   {
-    "﻿S.No": "1",
+    "﻿RollNumber": "00201012021",
     "Name": "Aastha Singhal",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "2",
+    "﻿RollNumber": "00401012021",
     "Name": "Ananya Gupta",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "3",
+    "﻿RollNumber": "00601012021",
     "Name": "Ananya Mishra",
-    "InternshipDetails": "Urban Company"
+    "FinalOffer": "Urban Company",
+    "StipendINR": "50000"
   },
   {
-    "﻿S.No": "4",
+    "﻿RollNumber": "00801012021",
     "Name": "Abantika Dasgupta",
-    "InternshipDetails": "Barclays"
+    "FinalOffer": "Barclays",
+    "StipendINR": "104803"
   },
   {
-    "﻿S.No": "5",
+    "﻿RollNumber": "01101012021",
     "Name": "Kirti",
-    "InternshipDetails": "Salesforce"
+    "FinalOffer": "Salesforce",
+    "StipendINR": "150000"
   },
   {
-    "﻿S.No": "6",
+    "﻿RollNumber": "01201012021",
     "Name": "Renuka Joshi",
-    "InternshipDetails": "Intuit"
+    "FinalOffer": "Intuit",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "7",
+    "﻿RollNumber": "01401012021",
     "Name": "Reva Arya",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "8",
+    "﻿RollNumber": "01701012021",
     "Name": "Anushka Girdhar",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "9",
+    "﻿RollNumber": "02001012021",
     "Name": "Riya Verma",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "10",
+    "﻿RollNumber": "02101012021",
     "Name": "Aditi Gulati",
-    "InternshipDetails": "JPMorgan Chase & Co."
+    "FinalOffer": "JPMorgan Chase & Co.",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "11",
+    "﻿RollNumber": "02301012021",
     "Name": "Monalika Patnaik",
-    "InternshipDetails": "Citibank"
+    "FinalOffer": "Citibank",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "12",
+    "﻿RollNumber": "02401012021",
     "Name": "Diksha",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "13",
+    "﻿RollNumber": "02501012021",
     "Name": "Aananya Nagpal",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "14",
+    "﻿RollNumber": "03401012021",
     "Name": "Bhumika Gupta",
-    "InternshipDetails": "Google"
+    "FinalOffer": "Google",
+    "StipendINR": "114000"
   },
   {
-    "﻿S.No": "15",
+    "﻿RollNumber": "03601012021",
     "Name": "Manya Chandna",
-    "InternshipDetails": "Arcesium"
+    "FinalOffer": "Arcesium",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "16",
+    "﻿RollNumber": "03801012021",
     "Name": "HImanshi garg",
-    "InternshipDetails": "Expedia"
+    "FinalOffer": "Expedia",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "17",
+    "﻿RollNumber": "03901012021",
     "Name": "Shreya Saroha",
-    "InternshipDetails": "Amazon"
+    "FinalOffer": "Amazon",
+    "StipendINR": "110000"
   },
   {
-    "﻿S.No": "18",
+    "﻿RollNumber": "04201012021",
     "Name": "Ananya Kundu",
-    "InternshipDetails": "Citibank"
+    "FinalOffer": "Citibank",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "19",
+    "﻿RollNumber": "04401012021",
     "Name": "Saumya Johar",
-    "InternshipDetails": "Visa"
+    "FinalOffer": "Visa",
+    "StipendINR": "65000"
   },
   {
-    "﻿S.No": "20",
+    "﻿RollNumber": "04701012021",
     "Name": "Vrinda Abrol",
-    "InternshipDetails": "Wells Fargo"
+    "FinalOffer": "Wells Fargo",
+    "StipendINR": "90000"
   },
   {
-    "﻿S.No": "21",
+    "﻿RollNumber": "05001012021",
     "Name": "Avishka Karn",
-    "InternshipDetails": "BNY Mellon"
+    "FinalOffer": "BNY Mellon",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "22",
+    "﻿RollNumber": "05101012021",
     "Name": "Laaiva",
-    "InternshipDetails": "BNY Mellon"
+    "FinalOffer": "BNY Mellon",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "23",
+    "﻿RollNumber": "05201012021",
     "Name": "Anshi Srivastav",
-    "InternshipDetails": "SAP Labs"
+    "FinalOffer": "SAP Labs",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "24",
+    "﻿RollNumber": "05301012021",
     "Name": "Shravani Nag",
-    "InternshipDetails": "Uber"
+    "FinalOffer": "Uber",
+    "StipendINR": "177000"
   },
   {
-    "﻿S.No": "25",
+    "﻿RollNumber": "05501012021",
     "Name": "Sneha Wadhwa",
-    "InternshipDetails": "Citibank"
+    "FinalOffer": "Citibank",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "26",
+    "﻿RollNumber": "05601012021",
     "Name": "Jiya Garg",
-    "InternshipDetails": "Salesforce"
+    "FinalOffer": "Salesforce",
+    "StipendINR": "150000"
   },
   {
-    "﻿S.No": "27",
+    "﻿RollNumber": "05701012021",
     "Name": "Kirti Aggarwal",
-    "InternshipDetails": "Amazon"
+    "FinalOffer": "Amazon",
+    "StipendINR": "110000"
   },
   {
-    "﻿S.No": "28",
+    "﻿RollNumber": "05801012021",
     "Name": "Aahana Tiwari",
-    "InternshipDetails": "Morgan Stanley"
+    "FinalOffer": "Morgan Stanley",
+    "StipendINR": "87000"
   },
   {
-    "﻿S.No": "29",
+    "﻿RollNumber": "06101012021",
     "Name": "Sridhi Chamoli",
-    "InternshipDetails": "IBM"
+    "FinalOffer": "IBM",
+    "StipendINR": "30000"
   },
   {
-    "﻿S.No": "30",
+    "﻿RollNumber": "06201012021",
     "Name": "Drishti Anand",
-    "InternshipDetails": "Citibank"
+    "FinalOffer": "Citibank",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "31",
+    "﻿RollNumber": "06301012021",
     "Name": "Akshita Jain",
-    "InternshipDetails": "Goldman Sachs"
+    "FinalOffer": "Goldman Sachs",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "32",
+    "﻿RollNumber": "06501012021",
     "Name": "Diya",
-    "InternshipDetails": "Expedia"
+    "FinalOffer": "Expedia",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "33",
+    "﻿RollNumber": "06701012021",
     "Name": "Vaishali",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "34",
+    "﻿RollNumber": "06801012021",
     "Name": "Priyal Bisht",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "35",
+    "﻿RollNumber": "06901012021",
     "Name": "Sheetal",
-    "InternshipDetails": "IBM"
+    "FinalOffer": "IBM",
+    "StipendINR": "30000"
   },
   {
-    "﻿S.No": "36",
+    "﻿RollNumber": "07001012021",
     "Name": "Rhyma Sharma",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "37",
+    "﻿RollNumber": "07101012021",
     "Name": "Deepali",
-    "InternshipDetails": "Wells Fargo"
+    "FinalOffer": "Wells Fargo",
+    "StipendINR": "90000"
   },
   {
-    "﻿S.No": "38",
+    "﻿RollNumber": "07301012021",
     "Name": "Mahek",
-    "InternshipDetails": "Western Digital"
+    "FinalOffer": "Western Digital",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "39",
+    "﻿RollNumber": "07401012021",
     "Name": "Harshi Sona",
-    "InternshipDetails": "BNY Mellon"
+    "FinalOffer": "BNY Mellon",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "40",
+    "﻿RollNumber": "8301012021",
     "Name": "Ananya Bansal",
-    "InternshipDetails": "SAP"
+    "FinalOffer": "SAP",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "41",
+    "﻿RollNumber": "8501012021",
     "Name": "Muskaan Vithal",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "42",
+    "﻿RollNumber": "8601012021",
     "Name": "Supriya Sharma",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "43",
+    "﻿RollNumber": "8701012021",
     "Name": "Arshiya Gedam",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "44",
+    "﻿RollNumber": "9301012021",
     "Name": "Anushka Dhoundiyal",
-    "InternshipDetails": "Citi"
+    "FinalOffer": "Citi",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "45",
+    "﻿RollNumber": "9501012021",
     "Name": "Srimayee Satapathy",
-    "InternshipDetails": "Visa"
+    "FinalOffer": "Visa",
+    "StipendINR": "90000"
   },
   {
-    "﻿S.No": "46",
+    "﻿RollNumber": "09601012021",
     "Name": "Tina Gupta",
-    "InternshipDetails": "BNY Mellon"
+    "FinalOffer": "BNY Mellon",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "47",
+    "﻿RollNumber": "09701012021",
     "Name": "Drishti Jain",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "48",
+    "﻿RollNumber": "09801012021",
     "Name": "Punya Garg",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "49",
+    "﻿RollNumber": "10001012021",
     "Name": "Vidya Barla",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "50",
+    "﻿RollNumber": "10101012021",
     "Name": "Kalpana Chaudhary",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "51",
+    "﻿RollNumber": "10301012021",
     "Name": "Palak Sharma",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "52",
+    "﻿RollNumber": "10501012021",
     "Name": "Shreya",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "53",
+    "﻿RollNumber": "10901012021",
     "Name": "Nidhi Chaudhary",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "54",
+    "﻿RollNumber": "11001012021",
     "Name": "Shriya Jha",
-    "InternshipDetails": "American express"
+    "FinalOffer": "American express",
+    "StipendINR": "85000"
   },
   {
-    "﻿S.No": "55",
+    "﻿RollNumber": "11401012021",
     "Name": "Navya Supriyan",
-    "InternshipDetails": "Visa"
+    "FinalOffer": "Visa",
+    "StipendINR": "90000"
   },
   {
-    "﻿S.No": "56",
+    "﻿RollNumber": "11501012021",
     "Name": "Agrima Gupta",
-    "InternshipDetails": "Deutsche Bank"
+    "FinalOffer": "Deutsche Bank",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "57",
+    "﻿RollNumber": "11601012021",
     "Name": "Manasi Duggal",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "58",
+    "﻿RollNumber": "11901012021",
     "Name": "Astha Varshney",
-    "InternshipDetails": "Goldman Sachs"
+    "FinalOffer": "Goldman Sachs",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "59",
+    "﻿RollNumber": "12001012021",
     "Name": "Deepakshi",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "60",
+    "﻿RollNumber": "12101012021",
     "Name": "Tanisha Bansal",
-    "InternshipDetails": "Synopsis"
+    "FinalOffer": "Synopsis",
+    "StipendINR": "30000"
   },
   {
-    "﻿S.No": "61",
+    "﻿RollNumber": "12201012021",
     "Name": "Nikhila K S",
-    "InternshipDetails": "SAP"
+    "FinalOffer": "SAP",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "62",
+    "﻿RollNumber": "12301012021",
     "Name": "Udita Verma",
-    "InternshipDetails": "Western Digital"
+    "FinalOffer": "Western Digital",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "63",
+    "﻿RollNumber": "12501012021",
     "Name": "Saumya Bharti",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "64",
+    "﻿RollNumber": "12701012021",
     "Name": "Puja Arora",
-    "InternshipDetails": "Wells Fargo"
+    "FinalOffer": "Wells Fargo",
+    "StipendINR": "90000"
   },
   {
-    "﻿S.No": "65",
+    "﻿RollNumber": "13201012021",
     "Name": "Shreya Chawla",
-    "InternshipDetails": "Twilio"
+    "FinalOffer": "Twilio",
+    "StipendINR": "101250"
   },
   {
-    "﻿S.No": "66",
+    "﻿RollNumber": "13601012021",
     "Name": "Khushi Jain",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "67",
+    "﻿RollNumber": "13701012021",
     "Name": "Smita Maurya",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "68",
+    "﻿RollNumber": "13801012021",
     "Name": "Himani Khurana",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "69",
+    "﻿RollNumber": "14201012021",
     "Name": "Tanu Yadav",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "70",
+    "﻿RollNumber": "14601012021",
     "Name": "Sakshi Varshney",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "71",
+    "﻿RollNumber": "15101012021",
     "Name": "Komal kushwaha",
-    "InternshipDetails": "Google"
+    "FinalOffer": "Google",
+    "StipendINR": "123333"
   },
   {
-    "﻿S.No": "72",
+    "﻿RollNumber": "15201012021",
     "Name": "Mahi Dhiman",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "73",
+    "﻿RollNumber": "15401012021",
     "Name": "Garima Gill",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "74",
+    "﻿RollNumber": "15501012021",
     "Name": "Khushi Rawat",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "75",
+    "﻿RollNumber": "17701012021",
     "Name": "Kirti gupta",
-    "InternshipDetails": "American Express"
+    "FinalOffer": "American Express",
+    "StipendINR": "85000"
   },
   {
-    "﻿S.No": "76",
+    "﻿RollNumber": "18501012021",
     "Name": "Ayushi Arora",
-    "InternshipDetails": "Google"
+    "FinalOffer": "Google",
+    "StipendINR": "123333"
   },
   {
-    "﻿S.No": "77",
+    "﻿RollNumber": "22601012021",
     "Name": "Bhavya prasad",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "78",
+    "﻿RollNumber": "21301012021",
     "Name": "Aditi Tomar",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "79",
+    "﻿RollNumber": "17001012021",
     "Name": "Teeya Ojha",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "80",
+    "﻿RollNumber": "18101012021",
     "Name": "Ananya Bhardwaj",
-    "InternshipDetails": "JP Morgan Chase & Co."
+    "FinalOffer": "JP Morgan Chase & Co.",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "81",
+    "﻿RollNumber": "16901012021",
     "Name": "Drishti Rani",
-    "InternshipDetails": "Citi Bank"
+    "FinalOffer": "Citi Bank",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "82",
+    "﻿RollNumber": "23101012021",
     "Name": "Kotapati Jahnavi",
-    "InternshipDetails": "Amazon"
+    "FinalOffer": "Amazon",
+    "StipendINR": "110000"
   },
   {
-    "﻿S.No": "83",
+    "﻿RollNumber": "22901012021",
     "Name": "Vedika Tyagi",
-    "InternshipDetails": "Citi Bank"
+    "FinalOffer": "Citi Bank",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "84",
+    "﻿RollNumber": "23301012021",
     "Name": "Saumya Mehra",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "85",
+    "﻿RollNumber": "17101012021",
     "Name": "Sophia Garg",
-    "InternshipDetails": "Wells Fargo"
+    "FinalOffer": "Wells Fargo",
+    "StipendINR": "90000"
   },
   {
-    "﻿S.No": "86",
+    "﻿RollNumber": "15901012021",
     "Name": "Jyoti Singh",
-    "InternshipDetails": "British Petroleum(BP)"
+    "FinalOffer": "British Petroleum(BP)",
+    "StipendINR": "70000"
   },
   {
-    "﻿S.No": "87",
+    "﻿RollNumber": "20101012021",
     "Name": "Gungun",
-    "InternshipDetails": "Wells Fargo"
+    "FinalOffer": "Wells Fargo",
+    "StipendINR": "90000"
   },
   {
-    "﻿S.No": "88",
+    "﻿RollNumber": "23101012021",
     "Name": "Kotapati Jahnavi",
-    "InternshipDetails": "Amazon"
+    "FinalOffer": "Amazon",
+    "StipendINR": "110000"
   },
   {
-    "﻿S.No": "89",
+    "﻿RollNumber": "22001012021",
     "Name": "Vanshika sehrawat",
-    "InternshipDetails": "Outlook group"
+    "FinalOffer": "Outlook group",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "90",
+    "﻿RollNumber": "23701012021",
     "Name": "Sona Varshney",
-    "InternshipDetails": "LinkedIn"
+    "FinalOffer": "LinkedIn",
+    "StipendINR": "80000"
   },
   {
-    "﻿S.No": "91",
+    "﻿RollNumber": "20301012021",
     "Name": "Khushi Anand",
-    "InternshipDetails": "British Petroleum(BP)"
+    "FinalOffer": "British Petroleum(BP)",
+    "StipendINR": "70000"
   },
   {
-    "﻿S.No": "92",
+    "﻿RollNumber": "16301012021",
     "Name": "Bhumika Mittal",
-    "InternshipDetails": "Arcesium"
+    "FinalOffer": "Arcesium",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "93",
+    "﻿RollNumber": "22201012021",
     "Name": "Tanvi Verma",
-    "InternshipDetails": "Citi Bank"
+    "FinalOffer": "Citi Bank",
+    "StipendINR": "75000"
   },
   {
-    "﻿S.No": "94",
+    "﻿RollNumber": "19601012021",
     "Name": "Khushi Choudhary",
-    "InternshipDetails": "LinkedIn"
+    "FinalOffer": "LinkedIn",
+    "StipendINR": "80000"
   },
   {
-    "﻿S.No": "95",
+    "﻿RollNumber": "17601012021",
     "Name": "Saumya Gupta",
-    "InternshipDetails": "Expedia"
+    "FinalOffer": "Expedia",
+    "StipendINR": "35000"
   },
   {
-    "﻿S.No": "96",
+    "﻿RollNumber": "23801012021",
     "Name": "Ikshu Jain",
-    "InternshipDetails": "Adobe"
+    "FinalOffer": "Adobe",
+    "StipendINR": "100000"
   },
   {
-    "﻿S.No": "97",
+    "﻿RollNumber": "20801012021",
     "Name": "Shobhita Khatri",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   },
   {
-    "﻿S.No": "98",
+    "﻿RollNumber": "19401012021",
     "Name": "Prerna Singhí",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "99",
+    "﻿RollNumber": "16201012021",
     "Name": "Kirti Sinha",
-    "InternshipDetails": "Microsoft"
+    "FinalOffer": "Microsoft",
+    "StipendINR": "125000"
   },
   {
-    "﻿S.No": "100",
+    "﻿RollNumber": "16401012021",
     "Name": "Nabhya Chaurasiya",
-    "InternshipDetails": "Twilio"
+    "FinalOffer": "Twilio",
+    "StipendINR": "106750"
   },
   {
-    "﻿S.No": "101",
+    "﻿RollNumber": "17401012021",
     "Name": "Harshita Verma",
-    "InternshipDetails": "ServiceNow"
+    "FinalOffer": "ServiceNow",
+    "StipendINR": "70000"
   },
   {
-    "﻿S.No": "102",
+    "﻿RollNumber": "17401012021",
     "Name": "Harshita Verma",
-    "InternshipDetails": "ServiceNow"
+    "FinalOffer": "ServiceNow",
+    "StipendINR": "70000"
   },
   {
-    "﻿S.No": "103",
+    "﻿RollNumber": "17901012021",
     "Name": "DEEPTI",
-    "InternshipDetails": "Outlook"
+    "FinalOffer": "Outlook",
+    "StipendINR": "12000"
   }
 ]

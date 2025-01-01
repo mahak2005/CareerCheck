@@ -11,10 +11,12 @@ export interface PlacementRecord {
   "CTC (LPA)": string;
 }
 export interface InternshipRecord {
-  "S.no": string;
+  RollNumber: string;
   Name: string;
-  "InternshipDetails": string;
+  FinalOffer: string;
+  StipendINR: number;  // Renamed to match your new CSV field
 }
+
 
 
 // const baseUrl = process.env.VERCEL_URL
@@ -58,29 +60,78 @@ export async function fetchPlacementData(year: string, branch: string): Promise<
 }
 export function filterInternshipData(
   data: InternshipRecord[],
-  filters: {
-    name?: string;
-    companies?: string[];
-    internshipDetails?: string;
-  }
-): InternshipRecord[] {
+  { name, finalOffer, stipendRange }: { name: string, finalOffer: string, stipendRange: { type: "min" | "max", value: number } }
+) {
   return data.filter((record) => {
-    if (filters.name && !record.Name.toLowerCase().includes(filters.name.toLowerCase())) {
-      return false;
+    const matchesName = name ? record.Name.toLowerCase().includes(name.toLowerCase()) : true;
+    const matchesFinalOffer = finalOffer ? record.FinalOffer.toLowerCase().includes(finalOffer.toLowerCase()) : true;
+
+    let matchesStipend = true;
+    if (stipendRange) {
+      const stipendCondition = stipendRange.type === "min"
+        ? record.StipendINR >= stipendRange.value
+        : record.StipendINR <= stipendRange.value;
+      matchesStipend = stipendCondition;
     }
 
-    // Access the 'Internship Details' property with bracket notation
-    if (filters.companies?.length && !filters.companies.includes(record["InternshipDetails"])) {
-      return false;
-    }
-
-    if (filters.internshipDetails && !record["InternshipDetails"].toLowerCase().includes(filters.internshipDetails.toLowerCase())) {
-      return false;
-    }
-
-    return true;
+    return matchesName && matchesFinalOffer && matchesStipend;
   });
 }
+
+export async function fetchInternshipData(year: string, branch: string): Promise<InternshipRecord[]> {
+  try {
+    console.log(`Fetching internship data for year: ${year}, branch: ${branch}`);
+
+    if (branch === 'cumulative') {
+      const branches = ['cse', 'it', 'ece', 'mae'];
+      if (year === '2024') {
+        branches.push('cseai','eceai');
+      }
+
+      let allData: InternshipRecord[] = [];
+
+      for (const b of branches) {
+        const response = await fetch(`${baseUrl}/data/${year}/${b}_internship.json`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data: BranchInternshipData[] = await response.json();
+
+        // Map BranchInternshipData to InternshipRecord
+        const mappedData: InternshipRecord[] = data.map((item) => ({
+          RollNumber: item.RollNumber,  // Map RollNumber
+          Name: item.Name,              // Map Name
+          FinalOffer: item.FinalOffer,  // Map FinalOffer
+          StipendINR: item.StipendINR   // Map StipendINR
+        }));
+
+        allData = allData.concat(mappedData);
+      }
+
+      return allData;
+    } else {
+      const response = await fetch(`${baseUrl}/data/${year}/${branch.toLowerCase()}_internship.json`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data: BranchInternshipData[] = await response.json();
+
+      // Map BranchInternshipData to InternshipRecord
+      return data.map((item) => ({
+        RollNumber: item.RollNumber,  // Map RollNumber
+        Name: item.Name,              // Map Name
+        FinalOffer: item.FinalOffer,  // Map FinalOffer
+        StipendINR: item.StipendINR   // Map StipendINR
+      }));
+    }
+  } catch (error) {
+    console.error(`Error fetching internship data: ${error}`);
+    return []; // Return an empty array in case of error
+  }
+}
+
 
 export async function fetchAnalysisData(year: string, type: 'placements' | 'internships'): Promise<AnalysisPlacementData[] | AnalysisInternshipData[]> {
   try {
@@ -102,119 +153,58 @@ export async function fetchAnalysisData(year: string, type: 'placements' | 'inte
   }
 }
 
-// //InternShip Analysis table
-// export async function fetchInternshipDataAnalysis(year: string): Promise<InternshipData[]> {
+
+
+
+// export async function fetchInternshipData(year: string, branch: string): Promise<InternshipRecord[]> {
 //   try {
-//     console.log(`Fetching internship data analysis for year: ${year}`);
+//     console.log(`Fetching internship data for year: ${year}, branch: ${branch}`);
 
-//     const url = `${baseUrl}/data/${year}/interns.json`;  // Path to the interns JSON for the selected year
-//     const response = await fetch(url);
+//     if (branch === 'cumulative') {
+//       const branches = ['cse', 'it', 'ece', 'mae'];
+//       if (year === '2024') {
+//         branches.push('cseai');
+//       }
 
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! status: ${response.status}`);
+//       let allData: InternshipRecord[] = [];
+
+//       for (const b of branches) {
+//         const response = await fetch(`${baseUrl}/data/${year}/${b}_internship.json`);
+//         if (!response.ok) {
+//           throw new Error(`HTTP error! status: ${response.status}`);
+//         }
+
+//         const data: BranchInternshipData[] = await response.json();
+
+//         // Map BranchInternshipData to InternshipRecord
+//         const mappedData: InternshipRecord[] = data.map((item) => ({
+//           "S.no": item["S.no"],  // Map S.no
+//           Name: item.Name,        // Map Name
+//           "InternshipDetails": item.InternshipDetails // Map InternshipDetails
+//         }));
+
+//         allData = allData.concat(mappedData);
+//       }
+
+//       return allData;
+//     } else {
+//       const response = await fetch(`${baseUrl}/data/${year}/${branch.toLowerCase()}_internship.json`);
+//       if (!response.ok) {
+//         throw new Error(`HTTP error! status: ${response.status}`);
+//       }
+
+//       const data: BranchInternshipData[] = await response.json();
+
+//       // Map BranchInternshipData to InternshipRecord
+//       return data.map((item) => ({
+//         "S.no": item["S.no"], // Map S.no
+//         Name: item.Name,       // Map Name
+//         "InternshipDetails": item.InternshipDetails // Map InternshipDetails
+//       }));
 //     }
-
-//     return await response.json();  // Return the internship data as an array of InternshipData
 //   } catch (error) {
-//     console.error(`Error fetching internship data analysis: ${error}`);
-//     return [];
-//   }
-// }
-
-
-// //Placement Analysis table
-// export async function fetchPlacementDataAnalysis(year: string): Promise<PlacementData[]> {
-//   try {
-//     console.log(`Fetching placement data analysis for year: ${year}`);
-
-//     const url = `${baseUrl}/data/${year}/placements.json`;  // Path to the placements JSON for the selected year
-//     const response = await fetch(url);
-
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! status: ${response.status}`);
-//     }
-
-//     return await response.json();  // Return the placement data as an array of PlacementData
-//   } catch (error) {
-//     console.error(`Error fetching placement data analysis: ${error}`);
-//     return [];
-//   }
-// }
-
-
-
-export async function fetchInternshipData(year: string, branch: string): Promise<InternshipRecord[]> {
-  try {
-    console.log(`Fetching internship data for year: ${year}, branch: ${branch}`);
-
-    if (branch === 'cumulative') {
-      const branches = ['cse', 'it', 'ece', 'mae'];
-      if (year === '2024') {
-        branches.push('cseai');
-      }
-
-      let allData: InternshipRecord[] = [];
-
-      for (const b of branches) {
-        const response = await fetch(`${baseUrl}/data/${year}/${b}_internship.json`);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data: BranchInternshipData[] = await response.json();
-
-        // Map BranchInternshipData to InternshipRecord
-        const mappedData: InternshipRecord[] = data.map((item) => ({
-          "S.no": item["S.no"],  // Map S.no
-          Name: item.Name,        // Map Name
-          "InternshipDetails": item.InternshipDetails // Map InternshipDetails
-        }));
-
-        allData = allData.concat(mappedData);
-      }
-
-      return allData;
-    } else {
-      const response = await fetch(`${baseUrl}/data/${year}/${branch.toLowerCase()}_internship.json`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const data: BranchInternshipData[] = await response.json();
-
-      // Map BranchInternshipData to InternshipRecord
-      return data.map((item) => ({
-        "S.no": item["S.no"], // Map S.no
-        Name: item.Name,       // Map Name
-        "InternshipDetails": item.InternshipDetails // Map InternshipDetails
-      }));
-    }
-  } catch (error) {
-    console.error(`Error fetching internship data: ${error}`);
-    return []; // Return an empty array in case of error
-  }
-}
-
-// export async function fetchInternshipDataAnalysis(year: string): Promise<InternData[]> {
-//   try {
-//     console.log(`Fetching internship data analysis for year: ${year}`);
-
-//     // Construct the file path based on the year provided
-//     const filePath = `data/${year}/${year}_interns.csv`;
-
-//     // You would normally use fs or an API call here to fetch the CSV data.
-//     const response = await fetch(filePath);
-
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! Status: ${response.status}`);
-//     }
-
-//     const data: InternData[] = await response.json(); // Assuming the CSV file has been parsed into JSON format
-
-//     return data;
-//   } catch (error) {
-//     console.error(`Error fetching internship data analysis: ${error}`);
-//     return [];
+//     console.error(`Error fetching internship data: ${error}`);
+//     return []; // Return an empty array in case of error
 //   }
 // }
 

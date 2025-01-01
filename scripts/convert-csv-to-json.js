@@ -70,7 +70,7 @@ branchYears.forEach(year => {
 
 // Process internship data for 2024 under 'data' directory
 const internshipYears = ['2024'];
-const internshipBranches = ['cse', 'it', 'ece', 'mae', 'cseai'];
+const internshipBranches = ['cse', 'it', 'ece', 'mae', 'cseai','eceai'];
 
 internshipYears.forEach(year => {
   internshipBranches.forEach(branch => {

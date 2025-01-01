@@ -1,11 +1,11 @@
 RollNumber,Name,FinalOffer,CTC (LPA)
 101012019,Ishita Gosain,Microsoft,51
-201012019,Shreya Singh,Citi,18
+201012019,Shreya Singh,Citi Bank,18
 301012019,Mansi Sharma,Microsoft,51
 401012019,Sonali Priya,Lowe's,20.25
-501012019,Kumari Kalyani,Deloitte USI,7.6
+501012019,Kumari Kalyani,Deloitte,7.6
 601012019,Shagun Yadav,Visa,28.55
-701012019,Amisha Sahu,Palo Alto,39
+701012019,Amisha Sahu,Palo Alto Networks,39
 801012019,Isha Gupta,Wells Fargo,24
 901012019,Raksha Jain,Amazon,46
 1001012019,Milan Agrawal,Microsoft,51
@@ -25,7 +25,7 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 2401012019,Aditi Vishwakarma,Walmart,25.67
 2501012019,Sachita Malhotra,Microsoft,51
 2601012019,Riya Singh,Visa,28.54
-2701012019,Yashmita,Service Now,33.59
+2701012019,Yashmita,ServiceNow,33.59
 2801012019,Bhawna Yadav,Titan,5
 2901012019,Anshika,Lowe's,20.25
 3001012019,Binwant Kaur,Microsoft,51
@@ -43,7 +43,7 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 4301012019,Bhaavya Rampal,Microsoft,51
 4401012019,Yaashika Anand,Wells Fargo,24
 4501012019,Divya Chahal,Twilio,46
-4601012019,Haripriya Bhargav,SAP,24
+4601012019,Haripriya Bhargav,SAP Labs,24
 4701012019,Mansi Singh,Loadshare,17
 4801012019,Anshee Mongia,Google,30.36
 4901012019,Shweta Kumari,Visa,28.54
@@ -58,23 +58,23 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 5801012019,Isha Gupta,Arcesium,35.5
 5901012019,Avantika Agrawal,Goldman Sachs,24
 6001012019,Aditi Gupta,Disney+Hotstar,32
-6101012019,Aanshi Goel,SAP,24
+6101012019,Aanshi Goel,SAP Labs,24
 6201012019,Arushi Garg,Google,30.36
 6401012019,Muskaan Chhikara,Wells Fargo,24
 6501012019,Radhika Aggarwal,Wells Fargo,24
 6601012019,Lydia Nenghoithem,American Express,18.05
 6701012019,Anushka Singh,Optum,14.49
-6801012019,Aruna Ippili,Airtel Payment Banks,14.75
-6901012019,Yashika,Palo Alto,39.81
+6801012019,Aruna Ippili,Airtel Payments Bank,14.75
+6901012019,Yashika,Palo Alto Networks,39.81
 7001012019,Priyadeep Bhalla,Cisco,24.7
 7101012019,Archana Yadav,Expedia,36.03
 7201012019,Anjali,Expedia,36.03
 7301012019,Saumya Jangid,Expedia,36.03
-7401012019,Khushboo Kem,TVS Motors,8
-7501012019,Nidhi,Providence,27
+7401012019,Khushboo Kem,TVS,8
+7501012019,Nidhi,Providence Global Centre,27
 7601012019,Punya Wahi,Wells Fargo,24
 7701012019,Abha Rawat,JPMC,17.7
-7801012019,Manisha Chaturvedi,SAP,24.5
+7801012019,Manisha Chaturvedi,SAP Labs,24.5
 7901012019,Ritu Gill,Optum,14.49
 8001012019,Apeksha Manchanda,Bloomberg,76.79
 8101012019,Ridhi Deswal,Mckinsey,12
@@ -84,17 +84,17 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 8501012019,Anushka Gupta,BNY Mellon,21
 8601012019,Astika Anand,Expedia,36
 8701012019,Mahima Narang,BNY Mellon,21
-8801012019,Prerna,SAP,24.5
+8801012019,Prerna,SAP Labs,24.5
 8901012019,Mitali Jain,Flipkart,32
 9001012019,Nikita,Microsoft,51
 9101012019,Ananya Verma,Visa,28.54
 9201012019,Tarusree Banik,Optum,14
-9301012019,Muskan Kamboj,Citi,18
+9301012019,Muskan Kamboj,Citi Bank,18
 9401012019,Snigdha Sinha,American Express,18.05
 9501012019,Bhavya Rakwal,Western Digital,20.5
 9601012019,Sanya Tiwari,Microsoft,51
 9701012019,Ananya Sadana,Higher Studies,NA
-9801012019,Nancy Jain,Fidelity,8
+9801012019,Nancy Jain,Fidelity International,8
 9901012019,Sakshi Jindal,Visa,28.54
 10001012019,Shalini Kumar,Pure Storage,27
 10101012019,Khushi,Microsoft,51
@@ -102,18 +102,18 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 10301012019,Raina Nagar,Optum,14
 10401012019,Vrinda Gupta,Microsoft,51
 10501012019,Aakarshita Choudhary,Goldman Sachs,24
-10601012019,Naina Yadav,SAP,24.5
+10601012019,Naina Yadav,SAP Labs,24.5
 10701012019,Sonia Verma,BNY Mellon,21
 10801012019,Deepanshi Singh,Microsoft,51
 10901012019,Swastika Ojha,Samsung,20
 11001012019,Vittesha Gupta,Expedia,36
 11101012019,Sristi Sharma,BNY Mellon,21
 11201012019,Nikita Thakur,Urban Company,32
-11301012019,Janaki Bhagya Sri,Providence,27
+11301012019,Janaki Bhagya Sri,Providence Global Centre,27
 11401012019,Amisha Jangra,Expedia,36
 11501012019,Khushboo Joshi,Visa,28.54
-11601012019,Sakshi Kumari Yadav,Citi,18
-11701012019,Nishtha Singh,Citi,18
+11601012019,Sakshi Kumari Yadav,Citi Bank,18
+11701012019,Nishtha Singh,Citi Bank,18
 11801012019,Muskaan Verma,Goldman Sachs,24
 11901012019,Charanjeev Kaur,Myntra,27
 12001012019,Nandini Saini,Uber,38
@@ -130,33 +130,33 @@ RollNumber,Name,FinalOffer,CTC (LPA)
 13301012019,Anjali Singh,Nokia,8.2
 13401012019,Shruthi Rao,Google,30.36
 13501012019,Vaibhavi ,Visa,28.54
-13601012019,Hemakshi Wahi,Palo Alto,39
+13601012019,Hemakshi Wahi,Palo Alto Networks,39
 13701012019,Nikita Garg,Google,30.36
 13801012019,Ridhima ,Microsoft,51
 13901012019,Manali ,PayU,16.5
 14001012019,Gaurikaa Kathpalia,Lowe's,20.25
 14101012019,Jayati Anjela Minj,Optum,14
 14201012019,Bharti Baweja,Higher Studies,NA
-14301012019,Disha Yadav,Wooger,15
+14301012019,Disha Yadav,Wooqer,15
 14401012019,Khushi Teza,Lowe's,20.25
-14501012019,Anupama Nayak,Citi,18
+14501012019,Anupama Nayak,Citi Bank,18
 14801012019,Shubhi Malhotra,Cisco,24.73
-14901012019,Aayushi Mahor,Wells Fargo SDE,24
+14901012019,Aayushi Mahor,Wells Fargo,24
 15001012019,Riya Ghalyan,Walmart,25.67
 15101012019,Nidhi Yadav,Oracle,17.97
 15201012019,Varsha Goya!,Optum,14
-15401012019,Pooja Das,Citi,18
+15401012019,Pooja Das,Citi Bank,18
 15501012019,Kavita Meena,Lowe's,20.25
 15601012019,Gurleen Dhod,Microsoft,51
-15701012019,Tulsi Kharke,Barco Electrics,12
+15701012019,Tulsi Kharke,Barco Electronics,12
 15801012019,Jahanvi Ojha,BNY Mellon,21
-16001012019,Pooja Yadav,Wells Fargo PAM,24
+16001012019,Pooja Yadav,Wells Fargo,24
 16101012019,Muskaan Kamal Kat.,Oracle,17.97
 16201012019,Kirti Sain,Intuit,39.13
-16301012019,Shikha ,SAP,24.5
+16301012019,Shikha ,SAP Labs,24.5
 16401012019,Revika Anand,Higher Studies,NA
 16501012019,Srishti Negi,Google,30.36
-16601012019,Lipika Jain,Palo Alto,39
+16601012019,Lipika Jain,Palo Alto Networks,39
 16701012019,Glory Singh,Jubilant Foodworks,18
 16801012019,Tanya ,Bechtel,6.8
 16901012019,Arya Jad,Lowe's,20.25

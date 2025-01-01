@@ -1,18 +1,18 @@
-RollNumber,Name,FinalOffer,CTC (LPA) drop
+RollNumber,Name,FinalOffer,CTC (LPA)
 101172020,Nishi,Publicis Sapient,17
 201172020,Lakshita Nand,Wells Fargo,24
 301172020,Priya Sharma,Wells Fargo,24
 401172020,Srishti Gupta,Google,30
-501172020,Riya Gupta,Moody's Analytics,9
-601172020,Shriya Saxena,Bharti Airtel,15
+501172020,Riya Gupta,Moody Analytics,9
+601172020,Shriya Saxena,Airtel Payments Bank,15
 701172020,Nancy Rani,Citi Bank,18
-801172020,Ritika Yadav,Airtel,15
+801172020,Ritika Yadav,Airtel Payments Bank,15
 901172020,Shambhavi Rai,Google,30
 1101172020,Tanya Chhikara,Oracle,19
 1201172020,Shatakshi Verma,Lowe's,19
 1301172020,Ritika Pal,Chegg Inc.,26
-1401172020,Pooja,Airtel,15
-1501172020,Deepali Thakur,Citicorp Services India,18
+1401172020,Pooja,Airtel Payments Bank,15
+1501172020,Deepali Thakur,CitiCorp,18
 1601172020,Sonanshi Goel,Microsoft,51
 1701172020,Nandini Verma,Oracle,19
 1801172020,Aaheli Paul,Wells Fargo,24
@@ -40,7 +40,7 @@ RollNumber,Name,FinalOffer,CTC (LPA) drop
 4701172020,Pratyaksha Gupta,Urban Company,32
 4801172020,Vidhi Khubchandani,BNY Mellon,22
 4901172020,Ujali Sharma,Microsoft,51
-5001172020,Shweta Choudhary,Mercari India,16
+5001172020,Shweta Choudhary,Mercari,16
 5101172020,Princy Singhal,Salesforce,44
 5201172020,Khushi Punia,Microsoft,51
 5301172020,Muskan Gupta,Microsoft,51
@@ -52,7 +52,7 @@ RollNumber,Name,FinalOffer,CTC (LPA) drop
 6001172020,Srishti Kumari,Barclays,13
 6201172020,Riya Chaudhary,JPMC,20
 6301172020,Kanika kanojia,Citi Bank,18
-6401172020,Nishali Devi,Airtel Digital,15
+6401172020,Nishali Devi,Airtel Payments Bank,15
 6601172020,Varsha Malyan,Airtel Payments Bank,15
 7001172020,Ekta Gupta,Amdocs(6 Months Internship),Stipend: 20000
 7101172020,Bhumika Mahor,PepsiCo,11

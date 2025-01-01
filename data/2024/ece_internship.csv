@@ -1,95 +1,37 @@
-﻿S.No,Name,InternshipDetails
-1,Geetika Gupta,S&P Global
-2,Kirti Sharma,Outlook Group
-3,Shubhangi Tyagi,OutLook
-4,Aditi Gupta,Google
-5,Sakshi Tiwari,Microsoft
-6,Tanisha Sharma,BNY MELLON
-7,Palak Malhotra,Amazon
-8,Tanishi Nayak,Wells Fargo
-9,Diksha Raj,Outlook
-10,Kavyaa Kohli,Providence
-11,Shivangi,ServiceNow
-12,Snigdha Bisht,Visa
-13,Saachi Verma,TATA 1mg
-14,Anjali Patel,The outlook group
-15,Prachi Singla,BNY Mellon
-16,Kirti Chauhan,Outlook Group
-17,Shubhi Verma,Microsoft
-18,Ayushi,Regeneron
-19,Anushka Gupta,American Express
-20,E.Lavanya,Wells Fargo
-21,Arushi Sinha,Salesforce
-22,Diya Khajuria,Providence
-23,Amisha Sharma,Google
-24,Apoorva Singh,Providence
-25,Shreya Bansal,Citi Bank
-26,Kanika Kamalhans,Wells Fargo
-27,Himanshi Goel,Urban Company
-28,Khushi Chauhan,ServiceNow
-29,Anushka Singh,Wells Fargo
-30,Anushka Aggarwal,Wells Fargo
-31,Khushboo Kumari,Outlook
-32,Dhyani Patel,SAP
-33,Arshia Singhal,American Express
-34,Kashish Verma,Cars24
-35,Jeevika Arora,Mitacs Globalink Research Internship
-36,Shivangi Garg,Microsoft
-37,Manvi Yaduvanshi,IBM
-38,Kusha Varshney,Regeneron
-39,Anshita Jain,Amazon
-40,Ishita khatri,Outlook Group
-41,Khushnuma Sadaf,Wells Fargo
-42,Akanksha Rani,Microsoft
-43,Anamika Hooda,Wells Fargo
-44,Tejasvi Singh,Microsoft
-45,Sakshi,Microsoft
-46,Suhani,Outlook Group
-47,Aarna Singhal,Goldman Sachs
-48,Purva Garg,Outlook Group
-49,Deepanshi Jalan,Visa
-50,Kanishka Chandolia,Outlook Group
-51,Bhavya Devani,Salesforce
-52,Sonali Kumari,IBM
-53,Anushka saini,Outlook Group
-54,Riya Kumari,Visa
-55,Vanshika,Outlook Group
-56,Shreya Joshi,Amazon
-57,Ritu,Outlook Group
-58,Sidra Aslam Khan,Regeneron
-59,Harshita Verma,Goldman Sachs
-60,Ishika sahrawat,Outlook Group
-61,Riya Garg,Google
-62,Sneha Negi,Outlook Group
-63,Aakriti Rahia,Outlook Group
-64,Neha Kaushik,Outlook Group
-65,Amrita Behra,Outlook Group
-66,Ananya Arora,Bharat Electronics Limited
-67,Mansi,Outlook Group
-68,Chetna Tomar,Outlook Group
-69,Sanya Gupta,Outlook Group
-70,Shreya Tiwari,Outlook Group
-71,Priya Mina,Outlook Group
-72,Muskaan Kumari,Outlook Group
-73,Jiya Sahni,BNY Mellon
-74,Anshika Jain,BNY Mellon
-75,Aditi Gahoi,Outlook Group
-76,Vaibhavi Kumari,Air Traffic Control
-77,Bhoomi Tanwar,Steel Authority of India (SAIL)
-78,Jai Shree Jain,AQR
-79,Shambhavi Soni,Western Digital
-80,Himani Agarwal,BNY Mellon
-81,Hrishita Gupta,Marvell
-82,Aishnee Sapra,ServiceNow
-83,Khushi gupta,Outlook Group
-84,Shristi Singh,Outlook Group
-85,Yashika Takkar,Amazon
-86,Neha Tyagi,Barclays
-87,Tanya Arora,Microsoft
-88,Ayushi Gupta,ServiceNow
-89,Tanisha Singh,Adobe
-90,Akansha Khandelwal,ISRO
-91,Shelly Bhalla,Marvell
-92,Nandini Parashar,JP Morgan Chase & Co.
-93,Riya Gupta,Expedia Group
-94,Sneha Wadhwa,Outlook Group
+﻿RollNumber,Name,FinalOffer,StipendINR
+00201022021,Harshita Verma,Goldman Sachs,100000
+00301022021,Ishika sahrawat,Outlook Group,20000
+00901022021,Riya Garg,Google,115000
+01001022021,Sneha Negi,Outlook Group,20000
+01301022021,Aakriti Rahia,Outlook Group,20000
+01401022021,Neha Kaushik,Outlook Group,20000
+02001022021,Amrita Behra,Outlook Group,20000
+02401022021,Ananya Arora,Bharat Electronics Limited,0
+02501022021,Mansi,Outlook Group,20000
+02701022021,Chetna Tomar,Outlook Group,20000
+02801022021,Sanya Gupta,Outlook Group,20000
+03701022021,Shreya Tiwari,Outlook Group,20000
+04001022021,Priya Mina,Outlook Group,20000
+04101022021,Muskaan Kumari,Outlook Group,20000
+04601022021,Jiya Sahni,BNY Mellon,75000
+04901022021,Anshika Jain,BNY Mellon,75000
+05401022021,Aditi Gahoi,Outlook Group,2000
+05501022021,Vaibhavi Kumari,Air Traffic Control,0
+05601022021,Bhoomi Tanwar,Steel Authority of India (SAIL),0
+05701022021,Jai Shree Jain,AQR,150000
+05801022021,Shambhavi Soni,Western Digital,35000
+06001022021,Himani Agarwal,BNY Mellon,75000
+06201022021,Hrishita Gupta,Marvell,35000
+06301022021,Aishnee Sapra,ServiceNow,70000
+06401022021,Khushi gupta,Outlook Group,20000
+06901022021,Shristi Singh,Outlook Group,20000
+07301022021,Yashika Takkar,Amazon,110000
+07601022021,Neha Tyagi,Barclays,104803
+08101022021,Tanya Arora,Microsoft,125000
+08201022021,Ayushi Gupta,ServiceNow,70000
+08301022021,Tanisha Singh,Adobe,100000
+08501022021,Akansha Khandelwal,ISRO,0
+08601022021,Shelly Bhalla,Marvell,35000
+08701022021,Nandini Parashar,JP Morgan Chase & Co.,75000
+08801022021,Riya Gupta,Expedia Group,35000
+08901022021,Sneha Wadhwa,Outlook Group,20000
