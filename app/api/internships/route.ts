@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { fetchInternshipData, filterInternshipData } from '@/utils/csv-parser';
-import { InternshipRecord } from '@/utils/types'; // Import InternshipRecord
+import { InternshipRecord } from '@/utils/types';
 
 export async function POST(request: Request) {
     try {

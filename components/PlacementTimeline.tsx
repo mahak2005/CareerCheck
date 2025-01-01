@@ -58,7 +58,6 @@ const TimelineItem = ({ event, isLeft }: { event: TimelineEvent, isLeft: boolean
     </motion.div>
   )
 }
-
 export default function PlacementTimeline() {
   return (
     <div className="container mx-auto w-full h-full px-4 md:px-10">
