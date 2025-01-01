@@ -42,7 +42,7 @@ const TimelineItem = ({ event, isLeft }: { event: TimelineEvent, isLeft: boolean
       }}
       className={`mb-8 flex flex-col md:flex-row justify-between items-center w-full ${isLeft ? 'md:flex-row-reverse' : ''}`}
     >
-      <div className="order-1 md:w-5/12"></div>
+      <div className="hidden md:block order-1 md:w-5/12"></div>
       <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto font-semibold text-lg text-white">{event.year}</h1>
       </div>
@@ -58,11 +58,12 @@ const TimelineItem = ({ event, isLeft }: { event: TimelineEvent, isLeft: boolean
     </motion.div>
   )
 }
+
 export default function PlacementTimeline() {
   return (
-    <div className="container mx-auto w-full h-full px-4 md:px-10">
+    <div className="container mx-auto w-full h-full px-2 sm:px-4 md:px-10">
       <div className="relative wrap overflow-hidden py-10 h-full">
-        <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-4 md:left-1/2"></div>
+        <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border hidden md:block left-1/2"></div>
         {timelineData.map((event, index) => (
           <TimelineItem key={event.year} event={event} isLeft={index % 2 === 0} />
         ))}
@@ -70,3 +71,4 @@ export default function PlacementTimeline() {
     </div>
   )
 }
+
