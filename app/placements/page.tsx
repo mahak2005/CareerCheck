@@ -19,7 +19,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Navbar } from "@/components/navbar"
-import { ArrowUpDown } from 'lucide-react'
 import type { PlacementRecord } from "@/utils/csv-parser"
 
 export default function PlacementsPage() {
@@ -30,7 +29,6 @@ export default function PlacementsPage() {
   const [ctcRange, setCtcRange] = useState({ min: "", max: "" })
   const [placementData, setPlacementData] = useState<PlacementRecord[]>([])
   const [loading, setLoading] = useState(false)
-  const [ctcSortOrder, setCtcSortOrder] = useState<'asc' | 'desc' | null>(null)
 
   const branches = [
     { value: "cumulative", label: "Cumulative" },
@@ -75,20 +73,6 @@ export default function PlacementsPage() {
       setSelectedBranch("cumulative")
     }
   }, [selectedYear, selectedBranch])
-
-  const handleCtcSort = () => {
-    const sortedData = [...placementData].sort((a, b) => {
-      const ctcA = parseFloat(a["CTC (LPA)"])
-      const ctcB = parseFloat(b["CTC (LPA)"])
-      if (ctcSortOrder === 'asc' || ctcSortOrder === null) {
-        return ctcB - ctcA
-      } else {
-        return ctcA - ctcB
-      }
-    })
-    setPlacementData(sortedData)
-    setCtcSortOrder(ctcSortOrder === 'asc' ? 'desc' : 'asc')
-  }
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-50">
@@ -149,8 +133,8 @@ export default function PlacementsPage() {
                   <SelectValue placeholder="Select companies" />
                 </SelectTrigger>
                 <SelectContent>
-                  {Array.from(new Set(placementData.map((d) => d.FinalOffer)))
-                    .sort()
+                  {Array.from(new Set(placementData.map((d) => d.FinalOffer))) // Get unique companies
+                    .sort() // Sort the companies in ascending order
                     .map((company) => (
                       <SelectItem key={company} value={company}>
                         {company}
@@ -211,19 +195,7 @@ export default function PlacementsPage() {
                     <TableHead>Roll Number</TableHead>
                     <TableHead>Name</TableHead>
                     <TableHead>Final Offer</TableHead>
-                    <TableHead>
-                      <div className="flex items-center">
-                        CTC (LPA)
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="ml-2"
-                          onClick={handleCtcSort}
-                        >
-                          <ArrowUpDown className="h-4 w-4" />
-                        </Button>
-                      </div>
-                    </TableHead>
+                    <TableHead>CTC (LPA)</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
