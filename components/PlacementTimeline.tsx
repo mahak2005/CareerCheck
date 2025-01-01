@@ -37,16 +37,16 @@ const TimelineItem = ({ event, isLeft }: { event: TimelineEvent, isLeft: boolean
       initial="hidden"
       animate={controls}
       variants={{
-        hidden: { opacity: 0, x: isLeft ? -50 : 50 },
-        visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
       }}
-      className={`mb-8 flex justify-between items-center w-full ${isLeft ? 'flex-row-reverse' : ''}`}
+      className={`mb-8 flex flex-col md:flex-row justify-between items-center w-full ${isLeft ? 'md:flex-row-reverse' : ''}`}
     >
-      <div className="order-1 w-5/12"></div>
-      <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-4 h-4 rounded-full">
-        <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
+      <div className="order-1 md:w-5/12"></div>
+      <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+        <h1 className="mx-auto font-semibold text-lg text-white">{event.year}</h1>
       </div>
-      <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+      <div className="order-1 bg-gray-100 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 mt-4 md:mt-0">
         <h3 className="mb-3 font-bold text-gray-800 text-xl">{event.year}</h3>
         <p className="text-sm leading-snug tracking-wide text-gray-700 text-opacity-100">
           Highest CTC: {event.highestCTC}<br />
@@ -61,9 +61,9 @@ const TimelineItem = ({ event, isLeft }: { event: TimelineEvent, isLeft: boolean
 
 export default function PlacementTimeline() {
   return (
-    <div className="container mx-auto w-full h-full">
-      <div className="relative wrap overflow-hidden p-10 h-full">
-        <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
+    <div className="container mx-auto w-full h-full px-4 md:px-10">
+      <div className="relative wrap overflow-hidden py-10 h-full">
+        <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-4 md:left-1/2"></div>
         {timelineData.map((event, index) => (
           <TimelineItem key={event.year} event={event} isLeft={index % 2 === 0} />
         ))}
