@@ -12,10 +12,10 @@ const companies = [
     name: 'Google WE Scholar', 
     logo: '/logo/google logo.png',
     students: [
-      { id: '1', name: 'Devika Jain', year: 2024, branch: 'AI-ML', image: '/we/devikawe.jpg' },
-      { id: '2', name: 'Sakshi Soni', year: 2024, branch: 'CSE', image: '/we/sakshiwe.jpg' },
-      { id: '3', name: 'Ishita Narang', year: 2023, branch: 'IT', image: '/we/ishitawe.jpg' },
-      { id: '4', name: 'Saumya Johar', year: 2022, branch: 'CSE', image: '/we/saumyawe.jpg' },
+      { id: '1', name: 'Devika Jain', year: 2024, branch: 'AI-ML', image: '/we/devikawe.jpg', linkedin:'https://www.linkedin.com/in/devika-jain/' },
+      { id: '2', name: 'Sakshi Soni', year: 2024, branch: 'CSE', image: '/we/sakshiwe.jpg', linkedin:'https://www.linkedin.com/in/sakshisoni23/'},
+      { id: '3', name: 'Ishita Narang', year: 2023, branch: 'IT', image: '/we/ishitawe.jpg', linkedin:'https://www.linkedin.com/in/ishitanarang23/' },
+      { id: '4', name: 'Saumya Johar', year: 2022, branch: 'CSE', image: '/we/saumyawe.jpg'},
       { id: '5', name: 'Bhumika Gupta', year: 2022, branch: 'CSE', image: '/we/bhumikawe.jpg' },
       { id: '6', name: 'Samiksha Garg', year: 2021, branch: 'IT', image: '/step/samikshastep.jpg'},
       { id: '39', name: 'Purvi Chaurasia', year: 2022, branch: 'CSE-AI', image: '/uber/purviuber.jpg' },
@@ -94,30 +94,30 @@ const companies = [
 ]
 
 export default function CompanyPage() {
-  
-  const params = useParams()
-  const companyId = params.companyId as string
+  const params = useParams();
+  const companyId = params.companyId as string;
 
-  const [company, setCompany] = useState<typeof companies[0] | null>(null)
-  const [yearFilter, setYearFilter] = useState<number | null>(null)
-  const [branchFilter, setBranchFilter] = useState<string | null>(null)
+  const [company, setCompany] = useState<typeof companies[0] | null>(null);
+  const [yearFilter, setYearFilter] = useState<number | null>(null);
+  const [branchFilter, setBranchFilter] = useState<string | null>(null);
 
   useEffect(() => {
-    const foundCompany = companies.find(c => c.id === companyId)
-    setCompany(foundCompany || null)
-  }, [companyId])
+    const foundCompany = companies.find((c) => c.id === companyId);
+    setCompany(foundCompany || null);
+  }, [companyId]);
 
   if (!company) {
-    return <div className="text-center py-10">Loading...</div>
+    return <div className="text-center py-10">Loading...</div>;
   }
 
-  const filteredStudents = company.students.filter(student => 
-    (!yearFilter || student.year === yearFilter) &&
-    (!branchFilter || student.branch === branchFilter)
-  )
+  const filteredStudents = company.students.filter(
+    (student) =>
+      (!yearFilter || student.year === yearFilter) &&
+      (!branchFilter || student.branch === branchFilter)
+  );
 
-  const years = Array.from(new Set(company.students.map(s => s.year)))
-  const branches = Array.from(new Set(company.students.map(s => s.branch)))
+  const years = Array.from(new Set(company.students.map((s) => s.year)));
+  const branches = Array.from(new Set(company.students.map((s) => s.branch)));
 
   return (
     <div className="container mx-auto px-4">
@@ -133,22 +133,26 @@ export default function CompanyPage() {
         <h1 className="text-3xl font-bold">{company.name}</h1>
       </div>
       <div className="mb-4 flex flex-wrap gap-4">
-        <select 
+        <select
           onChange={(e) => setYearFilter(e.target.value ? Number(e.target.value) : null)}
           className="border rounded-md p-2 text-black"
         >
           <option value="">All Years</option>
-          {years.map(year => (
-            <option key={year} value={year}>Year {year}</option>
+          {years.map((year) => (
+            <option key={year} value={year}>
+              Year {year}
+            </option>
           ))}
         </select>
-        <select 
+        <select
           onChange={(e) => setBranchFilter(e.target.value || null)}
           className="border rounded-md p-2 text-black"
         >
           <option value="">All Branches</option>
-          {branches.map(branch => (
-            <option key={branch} value={branch}>{branch}</option>
+          {branches.map((branch) => (
+            <option key={branch} value={branch}>
+              {branch}
+            </option>
           ))}
         </select>
       </div>
@@ -157,8 +161,6 @@ export default function CompanyPage() {
           <StudentCard key={student.id} {...student} />
         ))}
       </div>
-      {/* <Footer /> */}
     </div>
-  )
+  );
 }
-
