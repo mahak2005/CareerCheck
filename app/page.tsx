@@ -15,7 +15,7 @@ export default function Home() {
             Placements: Because Passion Doesnt Pay Bills.</h3>
           <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
             Empowering students and professionals to make informed career decisions. 
-            Explore our placement history and see how we have helped shape successful careers.
+            Explore IGDTUW placement history and see how IGDTUW have helped shape successful careers.
           </p>
           {/* <div className="mt-8">
             <Link href="/home" passHref>
