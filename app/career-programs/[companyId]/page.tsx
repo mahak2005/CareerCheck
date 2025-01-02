@@ -120,47 +120,51 @@ export default function CompanyPage() {
   const branches = Array.from(new Set(company.students.map((s) => s.branch)));
 
   return (
-    <div className="container mx-auto px-4">
-      <Navbar />
-      <div className="flex items-center mb-6">
-        <Image
-          src={company.logo}
-          alt={`${company.name} logo`}
-          width={100}
-          height={100}
-          className="mr-4"
-        />
-        <h1 className="text-3xl font-bold">{company.name}</h1>
-      </div>
-      <div className="mb-4 flex flex-wrap gap-4">
-        <select
-          onChange={(e) => setYearFilter(e.target.value ? Number(e.target.value) : null)}
-          className="border rounded-md p-2 text-black"
-        >
-          <option value="">All Years</option>
-          {years.map((year) => (
-            <option key={year} value={year}>
-              Year {year}
-            </option>
+      <div className="container mx-auto px-4">
+        <Navbar />
+        <div className="flex items-center mb-6">
+          <Image
+            src={company.logo}
+            alt={`${company.name} logo`}
+            width={100}
+            height={100}
+            className="mr-4"
+          />
+          <h1 className="text-3xl font-bold">{company.name}</h1>
+        </div>
+        <div className="mb-4 flex flex-wrap gap-4">
+          <select
+            onChange={(e) => setYearFilter(e.target.value ? Number(e.target.value) : null)}
+            className="border rounded-md p-2 text-black"
+          >
+            <option value="">All Years</option>
+            {years.map((year) => (
+              <option key={year} value={year}>
+                Year {year}
+              </option>
+            ))}
+          </select>
+          <select
+            onChange={(e) => setBranchFilter(e.target.value || null)}
+            className="border rounded-md p-2 text-black"
+          >
+            <option value="">All Branches</option>
+            {branches.map((branch) => (
+              <option key={branch} value={branch}>
+                {branch}
+              </option>
+            ))}
+          </select>
+        </div>
+        <p className="mb-4 text-gray-700">
+          The year mentioned for each student indicates the year they were selected for {company.name}, not their graduation batch.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+          {filteredStudents.map((student) => (
+            <StudentCard key={student.id} {...student} />
           ))}
-        </select>
-        <select
-          onChange={(e) => setBranchFilter(e.target.value || null)}
-          className="border rounded-md p-2 text-black"
-        >
-          <option value="">All Branches</option>
-          {branches.map((branch) => (
-            <option key={branch} value={branch}>
-              {branch}
-            </option>
-          ))}
-        </select>
+        </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        {filteredStudents.map((student) => (
-          <StudentCard key={student.id} {...student} />
-        ))}
-      </div>
-    </div>
-  );
+    );
+    
 }
