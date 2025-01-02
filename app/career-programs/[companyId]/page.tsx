@@ -42,12 +42,12 @@ const companies = [
     logo: '/logo/deshawlogo.png',
     students: [
       { id: '13', name: 'Gunjan Gupta', year: 2022, branch: 'IT', image: '/desis/gunjandesis.jpg',linkedin:'https://www.linkedin.com/in/gunjan-gupta-225713200/'},
-      { id: '14', name: 'Nikki Gautum', year: 2024, branch: 'CSE', image: '/desis/nikkidesis.jpg' },
-      { id: '15', name: 'Kanika Chouhan', year: 2024, branch: 'CSE', image: '/desis/kanikadesis.jpg' },
-      { id: '16', name: 'Paridhi Jain', year: 2022, branch: 'IT', image: '/desis/paridhidesis.jpg' },
-      { id: '17', name: 'Khushi Mittal', year: 2024, branch: 'ECE-AI', image: '/desis/khushidesis.jpg' },
-      { id: '18', name: 'Gyanvi', year: 2021, branch: 'CSE', image: '/desis/gyanvidesis.jpg' },
-      { id: '38', name: 'Anshika Goel', year: 2024, branch: 'AIML', image: '/ln/anshikaln.jpg' },
+      { id: '14', name: 'Nikki Gautum', year: 2024, branch: 'CSE', image: '/desis/nikkidesis.jpg', linkedin:'https://www.linkedin.com/in/nikkigautam/' },
+      { id: '15', name: 'Kanika Chouhan', year: 2024, branch: 'CSE', image: '/desis/kanikadesis.jpg',linkedin:'https://www.linkedin.com/in/kanikachouhan/' },
+      { id: '16', name: 'Paridhi Jain', year: 2022, branch: 'IT', image: '/desis/paridhidesis.jpg',linkedin:'https://www.linkedin.com/in/paridhi-jain02/' },
+      { id: '17', name: 'Khushi Mittal', year: 2024, branch: 'ECE-AI', image: '/desis/khushidesis.jpg', linkedin:'https://www.linkedin.com/in/khushi-mittal-155204274/' },
+      { id: '18', name: 'Gyanvi', year: 2021, branch: 'CSE', image: '/desis/gyanvidesis.jpg', linkedin:'https://www.linkedin.com/in/gyanvi24/' },
+      { id: '38', name: 'Anshika Goel', year: 2024, branch: 'AIML', image: '/ln/anshikaln.jpg', linkedin:'https://www.linkedin.com/in/anshikagoyal10/' },
     ]
   },
   {
@@ -55,12 +55,12 @@ const companies = [
     name: 'Amazon ML Summer School',
     logo: '/logo/amazon logo.png',
     students: [
-      { id: '19', name: 'Jhanavi Malhotra', year: 2024, branch: 'CSEAI', image: '/ml/jhanaviml.jpg' },
-      { id: '20', name: 'Rewa Choudhary', year: 2024, branch: 'ECEAI', image: '/ml/rewaml.jpg' },
-      { id: '21', name: 'Ishani Jain', year: 2022, branch: 'IT', image: '/ml/ishaniml.jpg' },
-      { id: '22', name: 'Saumya Samir', year: 2022, branch: 'CSE', image: '/ml/saumyaml.jpg' },
-      { id: '23', name: 'Sakshi Singh', year: 2024, branch: 'ECEAI', image: '/ml/sakshiml.jpg' },
-      { id: '24', name: 'Arushi Arora', year: 2024, branch: 'AIML', image: '/ml/arushiml.jpg' },
+      { id: '19', name: 'Jhanavi Malhotra', year: 2024, branch: 'CSEAI', image: '/ml/jhanaviml.jpg', linkedin:'https://www.linkedin.com/in/jhanavi-malhotra/'},
+      { id: '20', name: 'Rewa Choudhary', year: 2024, branch: 'ECEAI', image: '/ml/rewaml.jpg', linkedin:'https://www.linkedin.com/in/rewa-chaudhary-a8490124b/' },
+      { id: '21', name: 'Ishani Jain', year: 2022, branch: 'IT', image: '/ml/ishaniml.jpg',linkedin:'https://www.linkedin.com/in/ishani-jain/' },
+      { id: '22', name: 'Saumya Samir', year: 2022, branch: 'CSE', image: '/ml/saumyaml.jpg', linkedin:'https://www.linkedin.com/in/saumya-samir-6a0128207/' },
+      { id: '23', name: 'Sakshi Singh', year: 2024, branch: 'ECEAI', image: '/ml/sakshiml.jpg', linkedin:'https://www.linkedin.com/in/sakshi-singh-352750243/' },
+      { id: '24', name: 'Arushi Arora', year: 2024, branch: 'AIML', image: '/ml/arushiml.jpg', linkedin:'https://www.linkedin.com/in/arushi-arora-2aa95b258/' },
 
     ]
   },
