@@ -24,7 +24,7 @@ export interface InternshipRecord {
 //   : 'http://localhost:3000';
 const baseUrl =
   process.env.NODE_ENV === 'production'
-    ? 'https://career-check.vercel.app' // Your production site URL
+    ? 'https://careercheckigdtuw.vercel.app/' // Your production site URL
     : 'http://localhost:3000';
 
 export async function fetchPlacementData(year: string, branch: string): Promise<PlacementRecord[]> {
